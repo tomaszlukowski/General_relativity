@@ -1,0 +1,21 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+options:
+  numbered: true
+
+chapters:
+- file: Lectures/Week1
+- file: Lectures/Week2
+- file: Lectures/Week3
+- file: Lectures/Week4
+- file: Lectures/Week5
+- file: Lectures/Week6
+- file: Lectures/Week7
+- file: Lectures/Week8
+- file: Lectures/Week9
+- file: Lectures/Week10
+- file: Lectures/Week11
