@@ -9,21 +9,23 @@ In Newtonian physics, time is **absolute** $\rightarrow$ all observables and clo
 Laws of Newtonian physics are invariant under the transformation:
 
 $$
-x'=x-vt\\
-t'=t
+\begin{align*}
+&x'=x-vt\\
+&t'=t
+\end{align*}
 $$
 
-For example, $\ddot{x}=0\Rightarrow \ddot{x}'=\ddot{x}-\frac{d^2}{dt^2}(vt)=\ddot(x)=0$.
+For example, $\ddot{x}=0\Rightarrow \ddot{x}'=\ddot{x}-\frac{d^2}{dt^2}(vt)=\ddot{x}=0$.
 
 In particular, this defines an absolute global time coordinate.
 
-Experiments show that this is *good* for velocities $|v|\ll c$. But for $v=\mathcal{O}(c)$, this breaks down and we need special relativity (SR).
+Experiments show that this is *good* for velocities $|v|\ll c$. But for $v=\mathcal{O}(c)$, this breaks down and we need **special relativity** (SR).
 
 In SR we still have *inertial frames* with coordinates $(t,\underline{x})$ in which free particles travel at constant velocity $\frac{d^2x}{dt^2}=0$.
 
 But, the transformation between them is different!
 
-## Special relativity: Lorentz transformation.
+## Special relativity: Lorentz transformations.
 
 > picture
 
@@ -31,9 +33,7 @@ $$
 \begin{pmatrix}ct'\\x'\end{pmatrix}=\begin{pmatrix}\gamma&-\frac{\gamma v}{c}\\ -\frac{\gamma v}{c}&\gamma\end{pmatrix}\begin{pmatrix}ct\\x\end{pmatrix}
 $$
 
-where $\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\geq 1$.
-
-(As $x\to \infty$, this reduces to Newtonian rule).
+where $\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\geq 1$. (As $c\to \infty$, this reduces to Newtonian rule).
 
 A very important consequence is that time measurements are **not** the same for all observers.
 
@@ -54,13 +54,13 @@ i.e. $\eta_{00}=-1$ and $\eta_{ij}=\delta_{ij}$ where $i,j=1,2,3$.
 The separation $\Delta x^\mu=x_2^\mu-x_1^\mu$ between events at $x_1$ and $x_2$ transforms under Lorentz transformations:
 
 $$
-\Delta x^{'\mu}=\Lambda^{\mu}_{\,\,\nu}\Delta x^\nu \mbox{ with } \eta_{\mu\nu}\Lambda^{\mu}_{\,\,\mu'}\Lambda^{\nu}_{\,\,\nu'}=\eta_{\mu'\nu'}
+\Delta x^{'\mu}=\Lambda^{\mu}_{\,\,\nu}\Delta x^\nu \,\,\textnormal{  with  }\,\, \eta_{\mu\nu}\Lambda^{\mu}_{\,\,\mu'}\Lambda^{\nu}_{\,\,\nu'}=\eta_{\mu'\nu'}
 $$
 
 So, the quantity
 
 $$
-\Delta s^2=\eta_{\mu\nu}\Delta x^\mu\Delta x^\nu=-c^2\Delta t^+\Delta x^2+\Delta y^2+\Delta z^2
+\Delta s^2=\eta_{\mu\nu}\Delta x^\mu\Delta x^\nu=-c^2\Delta t^2+\Delta x^2+\Delta y^2+\Delta z^2
 $$
 
 is invariant. The interval $\Delta x^\mu$ is
@@ -84,13 +84,13 @@ In Special Relativity:
 The proper time recorded by a clock moving along a timelike trajectory:
 
 $$
-c\Delta \tau=\int_{\mbox{Start}}^{\mbox{End}}\sqrt{-ds^2}=\int_{\lambda=\lambda_0}^{\lambda=\lambda_1}\sqrt(-(\frac{ds}{d\lambda})^2)d\lambda
+c\Delta \tau=\int_{\textnormal{Start}}^{\textnormal{End}}\sqrt{-ds^2}=\int_{\lambda=\lambda_0}^{\lambda=\lambda_1}\sqrt{-\left(\frac{ds}{d\lambda}\right)^2}d\lambda
 $$
 
 For timelike trajectories we have $ds^2<0$ that implies $ds^2=-c^2 d\tau^2$. Then $c\,d\tau=\sqrt{-ds^2}$
 
 $$
-c\Delta\tau=\int c\, d\tau=\int \sqrt{-ds^2}=\int\sqrt{-()\frac{ds}{d\lambda})^2}d\lambda=\int \sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}d\lambda
+c\Delta\tau=\int c\, d\tau=\int \sqrt{-ds^2}=\int\sqrt{-\left(\frac{ds}{d\lambda}\right)^2}d\lambda=\int \sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}d\lambda
 $$
 
 The $t$ coordinate of an inertial frame corresponds to the proper time as recorded by a clock which is stationary in that frame.
@@ -108,7 +108,7 @@ For any timelike path, we can use $\tau$ as the parameter and then $ds^2=-c^2 d\
 We define the **4-velocity** of the particle as
 
 $$
-v^\mu=\frac{dx^\mu}{d\tau}=(\frac{d(ct)}{d\tau},\frac{d\underline{x}}{d\tau})=\frac{dt}{d\tau}(c,\frac{d\underline{x}}{dt})=\gamma(v)(c,\underline{v})
+v^\mu=\frac{dx^\mu}{d\tau}=\left(\frac{d(ct)}{d\tau},\frac{d\underline{x}}{d\tau}\right)=\frac{dt}{d\tau}\left(c,\frac{d\underline{x}}{dt}\right)=\gamma(v)(c,\underline{v})
 $$
 
 where $\underline{v}=\frac{d\underline{x}}{dt}$. Recall also the 4-momentum is $p^\mu=mv^\mu$. This has $p^2=\eta_{\mu\nu}p^{\mu}p^{\nu}=m^2\eta_{\mu\nu}v^{\mu}v^{\nu}=-m^2c^2$.
@@ -117,7 +117,7 @@ Set $c=1$. The **4-momentum** has components $p^{\mu}=(E,\underline{p})$. Give a
 
 > picture
 
-In the rest frame of observer $v^{\mu}=(1,\underline{0})$ and $p^{\mu}=(E,\underline{p})$, we have $\eta_{\mu\nu}v^{mu}p^{\nu}=-E$ that implies $E=-\eta_{\mu\nu}v^{mu}p^{\nu}$.
+In the rest frame of observer $v^{\mu}=(1,\underline{0})$ and $p^{\mu}=(E,\underline{p})$, we have $\eta_{\mu\nu}v^{\mu}p^{\nu}=-E$ that implies $E=-\eta_{\mu\nu}v^{\mu}p^{\nu}$.
 
 ## Action of relativistic particles
 We already defined proper time $\Delta\tau=\int\sqrt{-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu}d\lambda=\int d\tau$.
@@ -163,7 +163,7 @@ The 4-velocity $v^\mu=(\frac{d(ct)}{d\tau},\frac{d\underline{x}}{d\tau})=\gamma(
 We have
 
 $$
-S=-mc^2\int \gamma^{-1}dt=-mc^2\int \sqrt{1-\frac{v^2}{c^2}}dt\sim -mc^2\int (1-\frac{1}{2}\frac{v^2}{c^2})dt=int (\frac{1}{2}mv^2-mc^2)dt
+S=-mc^2\int \gamma^{-1}dt=-mc^2\int \sqrt{1-\frac{v^2}{c^2}}dt\sim -mc^2\int \left(1-\frac{1}{2}\frac{v^2}{c^2}\right)dt=\int \left(\frac{1}{2}mv^2-mc^2\right)dt
 $$
 
 This only worked for $m\neq 0$.
@@ -171,7 +171,7 @@ This only worked for $m\neq 0$.
 Nicer action: $S=-\int \eta_{\mu\nu}\dot{x}^\mu\dot{x}^\nu$. The Euler-Lagrange equations are:
 
 $$
-\ddot{x}^\mu=0\Rightarrow\frac{d}{d\lambda}(\eta_{\mu\nu}\dot{x}^{\mu}\dot{x}^\nu)=0\Rightarrow \eta_{\mu\nu}\dot{x}^{\mu}\dot{x}^\nu=\mbox{constat along the path}=-E
+\ddot{x}^\mu=0\Rightarrow\frac{d}{d\lambda}(\eta_{\mu\nu}\dot{x}^{\mu}\dot{x}^\nu)=0\Rightarrow \eta_{\mu\nu}\dot{x}^{\mu}\dot{x}^\nu=\textnormal{constant along the path}=-E
 $$
 
 If $E=0$ we have a null path $\rightarrow$ massless particle. If $E>0$ we have a timelike path $\rightarrow$ massive particle. In the latter case rescale $\lambda\to\lambda'=\sqrt{E}\lambda$ that implies $\eta_{\mu\nu}\dot{x}^\mu\dot{x}^\nu=-1$. new parameter $\lambda'$ is the proper time $\tau$.

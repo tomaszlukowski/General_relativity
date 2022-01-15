@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -213,6 +215,29 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tidal-forces">
+   2.1. Tidal forces
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gravitational-red-shift-and-time-dilation">
+   2.2. Gravitational red-shift and time dilation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#idea-curved-spacetime">
+   2.3. Idea: curved spacetime
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -223,6 +248,87 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="week-2">
 <h1><span class="section-number">2. </span>Week 2<a class="headerlink" href="#week-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tidal-forces">
+<h2><span class="section-number">2.1. </span>Tidal forces<a class="headerlink" href="#tidal-forces" title="Permalink to this headline">¶</a></h2>
+<p>If we have a non-uniform gravitational field with potentila <span class="math notranslate nohighlight">\(\phi(\underline{x}\)</span>, there will be tidal forces.</p>
+<p>For example: consider the field due to a point mas (e.g. a planet) at two nerby points <span class="math notranslate nohighlight">\(\underline{x}_1\)</span> and <span class="math notranslate nohighlight">\(\underline{x}_2\)</span>:</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>The  force vectors are not parallel and particles will have a relative acceleration (towards each other). In a freely falling frame, the free particles will seem to accelerate towards each other.</p>
+<p>More generally: if we have two nearby particles at <span class="math notranslate nohighlight">\(\underline{x}_1=\underline{x}(t)\)</span> and <span class="math notranslate nohighlight">\(\underline{x}_2=\underline{x}(t)+\underline{y}(t)\)</span>, then both satisfy <span class="math notranslate nohighlight">\(\ddot{\underline{x}}=-\underline{\nabla}\phi\)</span>, namely <span class="math notranslate nohighlight">\(\ddot{\underline{x}}_1=-\underline{\nabla}\phi\Big|_{\underline{x}_1}\)</span> and <span class="math notranslate nohighlight">\(\ddot{\underline{x}}_2=-\underline{\nabla}\phi\Big|_{\underline{x}_2}\)</span>. This implies that</p>
+<div class="math notranslate nohighlight">
+\[
+\underline{y}=\underline{x}_2-\underline{x}_1 \Rightarrow \ddot{\underline{y}}=-\left(\underline{\nabla}\phi\Big|_{\underline{x}+\underline{y}}-\underline{\nabla}\phi\Big|_{\underline{x}}\right)\Rightarrow \ddot{y}_i=-\left(\partial_i\phi\Big|_{\underline{x}+\underline{y}}-\partial_i\phi\Big|_{\underline{x}}\right)\sim -\left(y^j\partial_j\partial_i\phi\Big|_{\underline{x}}+\mathcal{O}(y^2)\right)
+\]</div>
+<p>This means that roughly <span class="math notranslate nohighlight">\(\ddot{y}_i=-(\partial_j\partial_i\phi)y^j\)</span>, so <span class="math notranslate nohighlight">\(\ddot{y}_i\)</span>, the relative acceleration, is small if <span class="math notranslate nohighlight">\(y\)</span> is small. But as the separation <span class="math notranslate nohighlight">\(\underline{y}\)</span> graows, the relative acceleration becomes more significant (if <span class="math notranslate nohighlight">\(\partial_i\partial_j\phi\neq 0\)</span>). In general relativity, we think of gravity as beeing <em>locally</em> indistinguishable from accelerating frame:</p>
+<blockquote>
+<div><p>Locally = ignoring tidal forces</p>
+</div></blockquote>
+</div>
+<div class="section" id="gravitational-red-shift-and-time-dilation">
+<h2><span class="section-number">2.2. </span>Gravitational red-shift and time dilation<a class="headerlink" href="#gravitational-red-shift-and-time-dilation" title="Permalink to this headline">¶</a></h2>
+<p>Consider photon moving down towards Earth. At some instance:</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>Sat this is time <span class="math notranslate nohighlight">\(t=0\)</span> in the local inertial frame of the cabin (freely-falling). In local inertial frame: cabin height = <span class="math notranslate nohighlight">\(\Delta h\)</span>, photon frequency = <span class="math notranslate nohighlight">\(\nu\)</span>. Local inertial observer just sees Special Relativity.</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>But: at <span class="math notranslate nohighlight">\(t=0\)</span>, the cabin at rest with respect to lattice, which implies that observer also sees photon frequency <span class="math notranslate nohighlight">\(\nu\)</span>. At event B: now the cabin has velocity downwards:</p>
+<div class="math notranslate nohighlight">
+\[
+v\sim gt\sim \frac{g\Delta h}{c}
+\]</div>
+<p>In the local inertial frame, the lattice observer at B is moving upwards towards the photon with velocity <span class="math notranslate nohighlight">\(v\)</span>. Then the lattice observer sees a Doppler-shifted frequency:</p>
+<div class="math notranslate nohighlight">
+\[
+\nu_{\textnormal{obs}}=\left(1+\frac{v}{c}\right)\nu \Rightarrow \Delta\nu=\nu_{\textnormal{obs}}-\nu=\frac{v}{c}\nu=\frac{g\Delta h}{c^2}\nu
+\]</div>
+<p>This means that <span class="math notranslate nohighlight">\(\frac{\Delta\nu}{\nu}=\frac{g\Delta h}{c^2}\)</span> and <span class="math notranslate nohighlight">\(g=-\frac{d\Phi}{dh}\)</span>, so <span class="math notranslate nohighlight">\(\Delta \Phi=-g\Delta h\)</span>, and finally</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta \log\nu=-\frac{1}{c^2}\Delta\Phi\Rightarrow \nu_{\textnormal{obs}}=\nu_0 e^{-(\Phi-Phi_0)/c^2}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\nu_0\)</span> is the frequency at potential <span class="math notranslate nohighlight">\(\Phi_0\)</span>.</p>
+<p>Important point: the frequency shift is not due to anything happening to the photon as it <em>falls</em>. It is due to the clocks of the observer running at different speeds. The fixed observer at B is moving with respect to the local inertial frame of the cabin, so their clock appears to run slow in the local inertial frame (standard special relativity Doppler shift).</p>
+</div>
+<div class="section" id="idea-curved-spacetime">
+<h2><span class="section-number">2.3. </span>Idea: curved spacetime<a class="headerlink" href="#idea-curved-spacetime" title="Permalink to this headline">¶</a></h2>
+<p>Imagine the curved surface of a sphere and a tangent plane to it at some point.</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>In a small neighbourhood of the point where the plane touches the sphere, the sphere <em>looks flat</em>. But as you move away from tha point, the effects of curvature become important.</p>
+<p>Could the local inertial frames in general relativity be loke the tangent space (locally) to some curved spacetime?</p>
+<p>In special relativity, a massive particle has action:</p>
+<div class="math notranslate nohighlight">
+\[
+S=-m\Delta\tau=-m\int \sqrt{-\eta_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu}}d\lambda
+ \]</div>
+<p>Consider a <em>curved metric</em>: <span class="math notranslate nohighlight">\(\eta_{\mu\nu}\to g_{\mu\nu}(x)\)</span> with</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2=g_{\mu\nu}(x)dx^\mu dx^\nu=-(1+2\phi)dt^2+(1-2\phi)d\underline{x}^2
+ \]</div>
+<p>where <span class="math notranslate nohighlight">\(\phi=\phi(\underline{x})\)</span> and <span class="math notranslate nohighlight">\(d\underline{x}=\delta_{ij}dx^idx^j\)</span>. In this case <span class="math notranslate nohighlight">\(g_{tt}=-(1+2\phi)\)</span>, <span class="math notranslate nohighlight">\(g_{ij}=(1-2\phi)\delta_{ij}\)</span>, <span class="math notranslate nohighlight">\(g_{ti}=0\)</span>. Then</p>
+<div class="math notranslate nohighlight">
+\[
+S=-m\int \sqrt{-g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu}d\lambda=-m\int \sqrt{(1+2\phi)\left(\frac{dt}{d\lambda}\right)^2-(1-2\phi)\left(\frac{d\underline{x}}{d\lambda}\right)^2}d\lambda
+ \]</div>
+<p>Trick: use parameter <span class="math notranslate nohighlight">\(\lambda=t\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+S= -m\int\sqrt{(1+2\phi)-(1-2\phi)\left(\frac{d\underline{x}}{dt}\right)^2}dt=-m\int\sqrt{1+2\phi-\left(\frac{d\underline{x}}{dt}\right)^2+2\phi \left(\frac{d\underline{x}}{dt}\right)^2}dt
+ \]</div>
+<p>Now take small velocity (<span class="math notranslate nohighlight">\(\frac{d\underline{x}}{dt}\)</span> small) and weak field (<span class="math notranslate nohighlight">\(\phi\)</span> small) limit.  Then we can now remove the last term in the square root since it is negligable. Moreover, we can expand the square root in the Taylor series:</p>
+<div class="math notranslate nohighlight">
+\[
+S=-m\int(1+\phi-\frac{1}{2}\left(\frac{d\underline{x}}{dt}\right)^2)dt=\int \left(\frac{1}{2}m\underline{v}^2-m\phi\right)dt+const.
+\]</div>
+<p>The first term <span class="math notranslate nohighlight">\(\frac{1}{2}m\underline{v}^2\)</span> is just the kinetic energy and the second one is a potential energy, and we get the action of a non-relativistic particle in gravitational potential <span class="math notranslate nohighlight">\(\phi(x)\)</span>.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

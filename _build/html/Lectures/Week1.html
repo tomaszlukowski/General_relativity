@@ -226,8 +226,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#special-relativity-lorentz-transformation">
-   1.2. Special relativity: Lorentz transformation.
+  <a class="reference internal nav-link" href="#special-relativity-lorentz-transformations">
+   1.2. Special relativity: Lorentz transformations.
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -262,17 +262,19 @@
 <p>Laws of Newtonian physics are invariant under the transformation:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-x'=x-vt\\
-t'=t
+\begin{align*}
+&amp;x'=x-vt\\
+&amp;t'=t
+\end{align*}
 \end{split}\]</div>
-<p>For example, <span class="math notranslate nohighlight">\(\ddot{x}=0\Rightarrow \ddot{x}'=\ddot{x}-\frac{d^2}{dt^2}(vt)=\ddot(x)=0\)</span>.</p>
+<p>For example, <span class="math notranslate nohighlight">\(\ddot{x}=0\Rightarrow \ddot{x}'=\ddot{x}-\frac{d^2}{dt^2}(vt)=\ddot{x}=0\)</span>.</p>
 <p>In particular, this defines an absolute global time coordinate.</p>
-<p>Experiments show that this is <em>good</em> for velocities <span class="math notranslate nohighlight">\(|v|\ll c\)</span>. But for <span class="math notranslate nohighlight">\(v=\mathcal{O}(c)\)</span>, this breaks down and we need special relativity (SR).</p>
+<p>Experiments show that this is <em>good</em> for velocities <span class="math notranslate nohighlight">\(|v|\ll c\)</span>. But for <span class="math notranslate nohighlight">\(v=\mathcal{O}(c)\)</span>, this breaks down and we need <strong>special relativity</strong> (SR).</p>
 <p>In SR we still have <em>inertial frames</em> with coordinates <span class="math notranslate nohighlight">\((t,\underline{x})\)</span> in which free particles travel at constant velocity <span class="math notranslate nohighlight">\(\frac{d^2x}{dt^2}=0\)</span>.</p>
 <p>But, the transformation between them is different!</p>
 </div>
-<div class="section" id="special-relativity-lorentz-transformation">
-<h2><span class="section-number">1.2. </span>Special relativity: Lorentz transformation.<a class="headerlink" href="#special-relativity-lorentz-transformation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="special-relativity-lorentz-transformations">
+<h2><span class="section-number">1.2. </span>Special relativity: Lorentz transformations.<a class="headerlink" href="#special-relativity-lorentz-transformations" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>picture</p>
 </div></blockquote>
@@ -280,8 +282,7 @@ t'=t
 \[\begin{split}
 \begin{pmatrix}ct'\\x'\end{pmatrix}=\begin{pmatrix}\gamma&amp;-\frac{\gamma v}{c}\\ -\frac{\gamma v}{c}&amp;\gamma\end{pmatrix}\begin{pmatrix}ct\\x\end{pmatrix}
 \end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\geq 1\)</span>.</p>
-<p>(As <span class="math notranslate nohighlight">\(x\to \infty\)</span>, this reduces to Newtonian rule).</p>
+<p>where <span class="math notranslate nohighlight">\(\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\geq 1\)</span>. (As <span class="math notranslate nohighlight">\(c\to \infty\)</span>, this reduces to Newtonian rule).</p>
 <p>A very important consequence is that time measurements are <strong>not</strong> the same for all observers.</p>
 <p>The amount of time which passes according to a physical clock depends on how the clock moves.</p>
 <blockquote>
@@ -297,12 +298,12 @@ t'=t
 <p>The separation <span class="math notranslate nohighlight">\(\Delta x^\mu=x_2^\mu-x_1^\mu\)</span> between events at <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> transforms under Lorentz transformations:</p>
 <div class="math notranslate nohighlight">
 \[
-\Delta x^{'\mu}=\Lambda^{\mu}_{\,\,\nu}\Delta x^\nu \mbox{ with } \eta_{\mu\nu}\Lambda^{\mu}_{\,\,\mu'}\Lambda^{\nu}_{\,\,\nu'}=\eta_{\mu'\nu'}
+\Delta x^{'\mu}=\Lambda^{\mu}_{\,\,\nu}\Delta x^\nu \,\,\textnormal{  with  }\,\, \eta_{\mu\nu}\Lambda^{\mu}_{\,\,\mu'}\Lambda^{\nu}_{\,\,\nu'}=\eta_{\mu'\nu'}
 \]</div>
 <p>So, the quantity</p>
 <div class="math notranslate nohighlight">
 \[
-\Delta s^2=\eta_{\mu\nu}\Delta x^\mu\Delta x^\nu=-c^2\Delta t^+\Delta x^2+\Delta y^2+\Delta z^2
+\Delta s^2=\eta_{\mu\nu}\Delta x^\mu\Delta x^\nu=-c^2\Delta t^2+\Delta x^2+\Delta y^2+\Delta z^2
 \]</div>
 <p>is invariant. The interval <span class="math notranslate nohighlight">\(\Delta x^\mu\)</span> is</p>
 <ul class="simple">
@@ -327,12 +328,12 @@ t'=t
 <p>The proper time recorded by a clock moving along a timelike trajectory:</p>
 <div class="math notranslate nohighlight">
 \[
-c\Delta \tau=\int_{\mbox{Start}}^{\mbox{End}}\sqrt{-ds^2}=\int_{\lambda=\lambda_0}^{\lambda=\lambda_1}\sqrt(-(\frac{ds}{d\lambda})^2)d\lambda
+c\Delta \tau=\int_{\textnormal{Start}}^{\textnormal{End}}\sqrt{-ds^2}=\int_{\lambda=\lambda_0}^{\lambda=\lambda_1}\sqrt{-\left(\frac{ds}{d\lambda}\right)^2}d\lambda
 \]</div>
 <p>For timelike trajectories we have <span class="math notranslate nohighlight">\(ds^2&lt;0\)</span> that implies <span class="math notranslate nohighlight">\(ds^2=-c^2 d\tau^2\)</span>. Then <span class="math notranslate nohighlight">\(c\,d\tau=\sqrt{-ds^2}\)</span></p>
 <div class="math notranslate nohighlight">
 \[
-c\Delta\tau=\int c\, d\tau=\int \sqrt{-ds^2}=\int\sqrt{-()\frac{ds}{d\lambda})^2}d\lambda=\int \sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}d\lambda
+c\Delta\tau=\int c\, d\tau=\int \sqrt{-ds^2}=\int\sqrt{-\left(\frac{ds}{d\lambda}\right)^2}d\lambda=\int \sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}d\lambda
 \]</div>
 <p>The <span class="math notranslate nohighlight">\(t\)</span> coordinate of an inertial frame corresponds to the proper time as recorded by a clock which is stationary in that frame.</p>
 <blockquote>
@@ -347,14 +348,14 @@ c\Delta \tau=\int\sqrt{c^2}d\lambda=c\int d\lambda=c\Delta\lambda=c\Delta t
 <p>We define the <strong>4-velocity</strong> of the particle as</p>
 <div class="math notranslate nohighlight">
 \[
-v^\mu=\frac{dx^\mu}{d\tau}=(\frac{d(ct)}{d\tau},\frac{d\underline{x}}{d\tau})=\frac{dt}{d\tau}(c,\frac{d\underline{x}}{dt})=\gamma(v)(c,\underline{v})
+v^\mu=\frac{dx^\mu}{d\tau}=\left(\frac{d(ct)}{d\tau},\frac{d\underline{x}}{d\tau}\right)=\frac{dt}{d\tau}\left(c,\frac{d\underline{x}}{dt}\right)=\gamma(v)(c,\underline{v})
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\underline{v}=\frac{d\underline{x}}{dt}\)</span>. Recall also the 4-momentum is <span class="math notranslate nohighlight">\(p^\mu=mv^\mu\)</span>. This has <span class="math notranslate nohighlight">\(p^2=\eta_{\mu\nu}p^{\mu}p^{\nu}=m^2\eta_{\mu\nu}v^{\mu}v^{\nu}=-m^2c^2\)</span>.</p>
 <p>Set <span class="math notranslate nohighlight">\(c=1\)</span>. The <strong>4-momentum</strong> has components <span class="math notranslate nohighlight">\(p^{\mu}=(E,\underline{p})\)</span>. Give an invariant expression for the energy of the particle as seen by an observer with 4-velocity <span class="math notranslate nohighlight">\(v^{\mu}\)</span>.</p>
 <blockquote>
 <div><p>picture</p>
 </div></blockquote>
-<p>In the rest frame of observer <span class="math notranslate nohighlight">\(v^{\mu}=(1,\underline{0})\)</span> and <span class="math notranslate nohighlight">\(p^{\mu}=(E,\underline{p})\)</span>, we have <span class="math notranslate nohighlight">\(\eta_{\mu\nu}v^{mu}p^{\nu}=-E\)</span> that implies <span class="math notranslate nohighlight">\(E=-\eta_{\mu\nu}v^{mu}p^{\nu}\)</span>.</p>
+<p>In the rest frame of observer <span class="math notranslate nohighlight">\(v^{\mu}=(1,\underline{0})\)</span> and <span class="math notranslate nohighlight">\(p^{\mu}=(E,\underline{p})\)</span>, we have <span class="math notranslate nohighlight">\(\eta_{\mu\nu}v^{\mu}p^{\nu}=-E\)</span> that implies <span class="math notranslate nohighlight">\(E=-\eta_{\mu\nu}v^{\mu}p^{\nu}\)</span>.</p>
 </div>
 <div class="section" id="action-of-relativistic-particles">
 <h2><span class="section-number">1.3. </span>Action of relativistic particles<a class="headerlink" href="#action-of-relativistic-particles" title="Permalink to this headline">¶</a></h2>
@@ -395,13 +396,13 @@ S=-mc^2\int d\tau=-mc^2\int \frac{d\tau}{dt}dt
 <p>We have</p>
 <div class="math notranslate nohighlight">
 \[
-S=-mc^2\int \gamma^{-1}dt=-mc^2\int \sqrt{1-\frac{v^2}{c^2}}dt\sim -mc^2\int (1-\frac{1}{2}\frac{v^2}{c^2})dt=int (\frac{1}{2}mv^2-mc^2)dt
+S=-mc^2\int \gamma^{-1}dt=-mc^2\int \sqrt{1-\frac{v^2}{c^2}}dt\sim -mc^2\int \left(1-\frac{1}{2}\frac{v^2}{c^2}\right)dt=\int \left(\frac{1}{2}mv^2-mc^2\right)dt
 \]</div>
 <p>This only worked for <span class="math notranslate nohighlight">\(m\neq 0\)</span>.</p>
 <p>Nicer action: <span class="math notranslate nohighlight">\(S=-\int \eta_{\mu\nu}\dot{x}^\mu\dot{x}^\nu\)</span>. The Euler-Lagrange equations are:</p>
 <div class="math notranslate nohighlight">
 \[
-\ddot{x}^\mu=0\Rightarrow\frac{d}{d\lambda}(\eta_{\mu\nu}\dot{x}^{\mu}\dot{x}^\nu)=0\Rightarrow \eta_{\mu\nu}\dot{x}^{\mu}\dot{x}^\nu=\mbox{constat along the path}=-E
+\ddot{x}^\mu=0\Rightarrow\frac{d}{d\lambda}(\eta_{\mu\nu}\dot{x}^{\mu}\dot{x}^\nu)=0\Rightarrow \eta_{\mu\nu}\dot{x}^{\mu}\dot{x}^\nu=\textnormal{constant along the path}=-E
 \]</div>
 <p>If <span class="math notranslate nohighlight">\(E=0\)</span> we have a null path <span class="math notranslate nohighlight">\(\rightarrow\)</span> massless particle. If <span class="math notranslate nohighlight">\(E&gt;0\)</span> we have a timelike path <span class="math notranslate nohighlight">\(\rightarrow\)</span> massive particle. In the latter case rescale <span class="math notranslate nohighlight">\(\lambda\to\lambda'=\sqrt{E}\lambda\)</span> that implies <span class="math notranslate nohighlight">\(\eta_{\mu\nu}\dot{x}^\mu\dot{x}^\nu=-1\)</span>. new parameter <span class="math notranslate nohighlight">\(\lambda'\)</span> is the proper time <span class="math notranslate nohighlight">\(\tau\)</span>.</p>
 </div>
