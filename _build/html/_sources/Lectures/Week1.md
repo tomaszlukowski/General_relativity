@@ -4,7 +4,11 @@
 
 In Newtonian physics, time is **absolute** $\rightarrow$ all observables and clocks agree on all time measurements.
 
-> picture
+```{image} ../Week1_pictures/week1_picture1.png
+:class: bg-primary mb-1
+:width: 600px
+:align: center
+```
 
 Laws of Newtonian physics are invariant under the transformation:
 
@@ -27,7 +31,11 @@ But, the transformation between them is different!
 
 ## Special relativity: Lorentz transformations.
 
-> picture
+```{image} ../Week1_pictures/week1_picture2.png
+:class: bg-primary mb-1
+:width: 600px
+:align: center
+```
 
 $$
 \begin{pmatrix}ct'\\x'\end{pmatrix}=\begin{pmatrix}\gamma&-\frac{\gamma v}{c}\\ -\frac{\gamma v}{c}&\gamma\end{pmatrix}\begin{pmatrix}ct\\x\end{pmatrix}
@@ -39,7 +47,11 @@ A very important consequence is that time measurements are **not** the same for 
 
 The amount of time which passes according to a physical clock depends on how the clock moves.
 
-> picture
+```{image} ../Week1_pictures/week1_picture3.png
+:class: bg-primary mb-1
+:width: 300px
+:align: center
+```
 
 The time recorded by the two clocks $A$ and $B$ may not be the same.
 
@@ -68,11 +80,19 @@ is invariant. The interval $\Delta x^\mu$ is
 - **null** if $\Delta s^2=0$
 - **timelike** if $\Delta s^2<0$
 
-> picture
+```{image} ../Week1_pictures/week1_picture4.png
+:class: bg-primary mb-1
+:width: 300px
+:align: center
+```
 
 Consider a path in spacetime (with parameter $\lambda$)
 
-> picture
+```{image} ../Week1_pictures/week1_picture5.png
+:class: bg-primary mb-1
+:width: 600px
+:align: center
+```
 
 Let $\delta s^2=\eta_{\mu\nu}\delta x^\mu\delta x^\nu\sim \frac{dx^\mu}{d\lambda}\delta\lambda$. The path is spacelike/null/timelike if $\delta s^2$ is spacelike/null/timelike along the whole path.
 
@@ -95,7 +115,11 @@ $$
 
 The $t$ coordinate of an inertial frame corresponds to the proper time as recorded by a clock which is stationary in that frame.
 
-> picture
+```{image} ../Week1_pictures/week1_picture6.png
+:class: bg-primary mb-1
+:width: 300px
+:align: center
+```
 
 In this case $\frac{dx^{\mu}}{d\lambda}=(\frac{d(c\lambda)}{d\lambda},\underline{0})=(c,\underline{0})$ and $\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}=(-1)c^2=-c^2$.
 
@@ -115,7 +139,11 @@ where $\underline{v}=\frac{d\underline{x}}{dt}$. Recall also the 4-momentum is $
 
 Set $c=1$. The **4-momentum** has components $p^{\mu}=(E,\underline{p})$. Give an invariant expression for the energy of the particle as seen by an observer with 4-velocity $v^{\mu}$.
 
-> picture
+```{image} ../Week1_pictures/week1_picture7.png
+:class: bg-primary mb-1
+:width: 600px
+:align: center
+```
 
 In the rest frame of observer $v^{\mu}=(1,\underline{0})$ and $p^{\mu}=(E,\underline{p})$, we have $\eta_{\mu\nu}v^{\mu}p^{\nu}=-E$ that implies $E=-\eta_{\mu\nu}v^{\mu}p^{\nu}$.
 
