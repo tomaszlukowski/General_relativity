@@ -4,11 +4,12 @@ This are lecture notes for the 7PAM1033 General Relativity module taught at the 
 
 ## Lecture content
 
-1. From Special Relativity to General Relativity
-2. Geometry and tensors
-3. Schwarzschild spacetime
-4. Einstein equations
-5. Homogeneous isotropic universes
+1. Recap of Newtonian mechanics and Special Relativity
+2. Foundations of General Relativity
+2. Tensor calculus
+3. Geodesics and particle motion - Schwarzschild spacetime
+4. Einstein's field equations
+5. Cosmology
 
 ## Recommended books and online resources
 - **Books**

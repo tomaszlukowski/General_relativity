@@ -1,4 +1,4 @@
-# Week 2
+# Week 2 (under development)
 
 ## Tidal forces
 
