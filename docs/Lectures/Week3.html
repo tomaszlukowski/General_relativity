@@ -1,0 +1,511 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3. Week 3 &#8212; General relativity</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Week 4" href="Week4.html" />
+    <link rel="prev" title="2. Week 2" href="Week2.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">General relativity</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   General relativity
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week1.html">
+   1. Week 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week2.html">
+   2. Week 2
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   3. Week 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week4.html">
+   4. Week 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week5.html">
+   5. Week 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week6.html">
+   6. Week 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week7.html">
+   7. Week 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week8.html">
+   8. Week 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week9.html">
+   9. Week 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week10.html">
+   10. Week 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week11.html">
+   11. Week 11
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Lectures/Week3.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tensor-calculus">
+   3.1. Tensor calculus
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metric-tensor">
+   3.2. Metric tensor
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finite-distances-intervals">
+   3.3. Finite distances/intervals
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="week-3">
+<h1><span class="section-number">3. </span>Week 3<a class="headerlink" href="#week-3" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tensor-calculus">
+<h2><span class="section-number">3.1. </span>Tensor calculus<a class="headerlink" href="#tensor-calculus" title="Permalink to this headline">¶</a></h2>
+<p>In special relativity: Lorentz transformations</p>
+<div class="math notranslate nohighlight">
+\[
+x'^\mu=\Lambda^\mu_{\,\,\nu}x^\nu
+\]</div>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>Similarly, a covector <span class="math notranslate nohighlight">\(\omega_\mu\)</span> transforms via</p>
+<div class="math notranslate nohighlight">
+\[
+\omega'_{\mu}=(\Lambda^{-1})^\nu_{\,\,\mu}\omega_\nu
+\]</div>
+<p>Example: check that <span class="math notranslate nohighlight">\(v^\mu\omega_\mu\)</span> is invariant, i.e. <span class="math notranslate nohighlight">\(v'^\mu\omega'_\mu=v^\mu\omega_\mu\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+v'^\mu\omega'_\mu=(\Lambda^\mu_{\,\,\nu}v^\nu)((\Lambda^{-1})^\lambda_{\,\,\mu}\omega_\lambda)=(\Lambda^{-1})^\lambda_{\,\,\mu}\Lambda^\mu_{\,\,\nu} v^\mu\omega_\lambda=\delta^\lambda_\nu v^\nu\omega_\lambda=v^\lambda \omega_\lambda
+\]</div>
+<p>Tensors with more indices transform with one <span class="math notranslate nohighlight">\(\Lambda^\mu_{\,\,\nu}\)</span> for each upper index and a <span class="math notranslate nohighlight">\((\Lambda^{-1})^\kappa_{\,\,\nu}\)</span> for each lower index.</p>
+<p>Example: <span class="math notranslate nohighlight">\(T'^\mu_{\,\,\nu}=\Lambda^\mu_\lambda(\Lambda^{-1})^\kappa_{\,\,\nu}T^\lambda_{\,\,\kappa}\)</span> that implies that <span class="math notranslate nohighlight">\(T^\mu_{\,\,\nu}v^\nu\)</span> transforms like a vector (if <span class="math notranslate nohighlight">\(v^\mu\)</span> is a vector).</p>
+<p>In special relativity:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Lambda^\mu_{\,\,\nu}\)</span> is constant</p></li>
+<li><p>the lorentzian metric <span class="math notranslate nohighlight">\(\eta_{\mu\nu}=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}\)</span> is invariant</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\eta_{\mu\nu}=(\Lambda^{-1})^\lambda_{\,\,\mu}(\Lambda^{-1})^\kappa_{\,\,\nu}\eta_{\lambda\kappa}
+\]</div>
+<p>General coordinates: for example 2d polar coordinates</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>Distance between points:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\delta s^2=\delta x^2+\delta y^2=\begin{pmatrix}\delta x&amp;\delta y\end{pmatrix}\begin{pmatrix} 1&amp;0\\0&amp;1\end{pmatrix}\begin{pmatrix}\delta x\\\delta y\end{pmatrix}
+\end{split}\]</div>
+<p>Write <span class="math notranslate nohighlight">\(x^1=x\)</span> and <span class="math notranslate nohighlight">\(x^2=y\)</span>, then <span class="math notranslate nohighlight">\(\delta s^2=\delta_{ij}\delta x^i\delta x^j\)</span>. What about in <span class="math notranslate nohighlight">\((r,\theta)\)</span> coordinates? We can use the chain rule:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\delta x=\frac{\partial x}{\partial r}\delta r+\frac{\partial x}{\partial \theta}\delta \theta\\
+\delta y=\frac{\partial y}{\partial r}\delta r+\frac{\partial y}{\partial \theta}\delta \theta
+\end{align*}
+\end{split}\]</div>
+<p>or equivalently</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \delta x\\\delta y\end{pmatrix}=\begin{pmatrix}\frac{\partial x}{\partial r}&amp;\frac{\partial x}{\partial \theta}\\\frac{\partial y}{\partial r}&amp;\frac{\partial y}{\partial \theta}\end{pmatrix}\begin{pmatrix} \delta r\\\delta \theta\end{pmatrix}
+\end{split}\]</div>
+<p>Writing <span class="math notranslate nohighlight">\(x'^{1}=r\)</span> and <span class="math notranslate nohighlight">\(x'^{2}=\theta\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[
+\delta x^i=\frac{\partial x^i}{\partial x'^j}\delta x'^j
+\]</div>
+<p>In our case we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+x=r\cos\theta\\
+y=r\sin\theta
+\end{align*}
+\end{split}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} \delta x\\\delta y\end{pmatrix}=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\\sin\theta&amp;\cos\theta\end{pmatrix}\begin{pmatrix} \delta r\\\delta \theta\end{pmatrix}
+\end{split}\]</div>
+<p>If we denote by <span class="math notranslate nohighlight">\(J=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\\sin\theta&amp;\cos\theta\end{pmatrix}\)</span> we get</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\delta s^2&amp;=\begin{pmatrix}\delta x&amp;\delta y\end{pmatrix}\begin{pmatrix} 1&amp;0\\0&amp;1\end{pmatrix}\begin{pmatrix}\delta x\\\delta y\end{pmatrix}=
+\begin{pmatrix}\delta r&amp;\delta \theta\end{pmatrix}(J)^T\begin{pmatrix} 1&amp;0\\0&amp;1\end{pmatrix}(J)\begin{pmatrix}\delta r\\\delta \theta\end{pmatrix}\\
+&amp;=\begin{pmatrix}\delta r&amp;\delta \theta\end{pmatrix}\begin{pmatrix} 1&amp;0\\0&amp;r^2\end{pmatrix}\begin{pmatrix}\delta r\\\delta \theta\end{pmatrix}=\delta r^2+r^2 \delta \theta^2
+\end{align*}
+\end{split}\]</div>
+<p>We can write it as</p>
+<div class="math notranslate nohighlight">
+\[
+\delta s^2=g'_{ij}\delta x'^i\delta x'^j
+\]</div>
+<p>with <span class="math notranslate nohighlight">\((g'_{ij})=\begin{pmatrix}1&amp;0\\0&amp;r^2\end{pmatrix}\)</span>. Importantly, this matrix depends on position.</p>
+<p>Note:</p>
+<div class="math notranslate nohighlight">
+\[
+g'_{ij}=\frac{\partial x^k}{\partial x'^i}\delta_{kl}\frac{\partial x^l}{\partial x'^j}
+\]</div>
+<p>Interpretation:</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>The right-hand side picture also describes 2d space, so long as we use <span class="math notranslate nohighlight">\(\delta s^2=\delta r^2+r^2\delta\theta^2\)</span> to define distance!</p>
+<p>We call <span class="math notranslate nohighlight">\(\delta s^2\)</span> the <strong>line element</strong> and <span class="math notranslate nohighlight">\(g_{ij}\)</span> are the components of the <strong>metric</strong>.</p>
+<p>When we change coordinates:</p>
+<div class="math notranslate nohighlight">
+\[
+\delta x^i=\frac{\partial x^i}{\partial x'^j}\delta x'^j
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+g'_{ij}=g_{kl}\frac{\partial x^k}{\partial x'^i}\frac{\partial x^l}{\partial x'^j}
+\]</div>
+<p>Vectors:</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>Vector transformations:</p>
+<div class="math notranslate nohighlight">
+\[
+v'^\mu=\frac{\partial x'^\mu}{\partial x^\nu}v^\nu
+\]</div>
+<p>If we have <span class="math notranslate nohighlight">\(v^\mu(x)\)</span> and <span class="math notranslate nohighlight">\(v'^\mu(x')\)</span> satysfying the formula above, then <span class="math notranslate nohighlight">\(v^\mu(x)\)</span> is a vector field.</p>
+<p>Other tensor fields follow the same pattern as in special relativity. For example: covector field <span class="math notranslate nohighlight">\(\omega_\mu(x)\)</span> has the transformation rule</p>
+<div class="math notranslate nohighlight">
+\[
+\omega'_{\mu}(x')=\frac{\partial x^\nu}{\partial x'^\mu}\Big|_x \omega_\nu(x)
+\]</div>
+<p>With these definitions the contraction <span class="math notranslate nohighlight">\(v^\mu\omega_mu\)</span> is invariant: <span class="math notranslate nohighlight">\(v'^\mu\omega'_{\mu}=v^\mu\omega_\mu\)</span>, it is a scalar field.</p>
+<p>A scalar field is a function that transforms as</p>
+<div class="math notranslate nohighlight">
+\[
+\phi'(x')=\phi(x)
+\]</div>
+<p>Exercise: check that <span class="math notranslate nohighlight">\(v^\mu\omega_\mu\)</span> is invariant.</p>
+<p>Important example: given a scalar field <span class="math notranslate nohighlight">\(\phi(x)\)</span>, the derivatives <span class="math notranslate nohighlight">\(\partial_\mu \phi=\frac{\partial\phi}{\partial x^\mu}\)</span> are a covector. Proof:</p>
+<div class="math notranslate nohighlight">
+\[
+\partial'_\mu\phi'=\frac{\partial\phi'}{\partial x'^\mu}=\left(\frac{\partial x^\nu}{\partial x'^\mu}\frac{\partial}{\partial x^\nu}\right)\phi=\left(\frac{\partial x^\nu}{\partial x'^{\mu}}\right)\partial_\nu\phi
+\]</div>
+<p>This means that given a vector <span class="math notranslate nohighlight">\(x^\mu\)</span>, the derivative of <span class="math notranslate nohighlight">\(\phi\)</span> along <span class="math notranslate nohighlight">\(v^\mu\)</span>, that is <span class="math notranslate nohighlight">\(v^\mu\partial_\mu\phi\)</span> is a scalar field.</p>
+<p>Definition: <span class="math notranslate nohighlight">\(T^{\mu_1\ldots\mu_m}_{\nu_1\ldots\nu_n}\)</span> is a tensor if</p>
+<div class="math notranslate nohighlight">
+\[
+T'^{\mu_1\ldots\mu_m}_{\nu_1\ldots\nu_n}=\left(\frac{\partial x'^{\mu_1}}{\partial x^{\lambda_1}}\ldots\frac{\partial x'^{\mu_m}}{\partial x^{\lambda_m}}\right)\left(\frac{\partial x^{\kappa_1}}{\partial x'^{\nu_1}}\ldots\frac{\partial x^{\kappa_m}}{\partial x'^{\nu_m}}\right)T^{\lambda_1\ldots\lambda_m}_{\kappa_1\ldots\kappa_n}
+\]</div>
+<p>Philosophy: only tensor quantities are <em>physical</em>. We want to describe physics in a coordinate invariant way.</p>
+<blockquote>
+<div><p>Tensor equations are true in all coordinate systems if they are true in any one.</p>
+</div></blockquote>
+<p>Some tensors can have components which are invariant:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\delta^\mu_\nu=\begin{cases}1,&amp;\mu=\nu\\0,&amp;\textnormal{otherwise}\end{cases}
+\end{split}\]</div>
+<p>is invariant since</p>
+<div class="math notranslate nohighlight">
+\[
+\delta'^{\mu}_\nu=\frac{\partial x'^\mu}{\partial x^\lambda}\frac{\partial x^\kappa}{\partial x'^\nu}\delta^\lambda_\kappa=\frac{\partial x'^\mu}{\partial x^\lambda}\frac{\partial x^\lambda}{\partial x'^\nu}=\frac{\partial x'^\mu}{\partial x^\nu}=\delta^\mu_\nu
+\]</div>
+</div>
+<div class="section" id="metric-tensor">
+<h2><span class="section-number">3.2. </span>Metric tensor<a class="headerlink" href="#metric-tensor" title="Permalink to this headline">¶</a></h2>
+<p>Two properties:</p>
+<ul class="simple">
+<li><p>symmetric <span class="math notranslate nohighlight">\(g_{\mu\nu}=g_{\nu\mu}\)</span></p></li>
+<li><p>non-degenerate <span class="math notranslate nohighlight">\(\det g_{\mu\nu}\neq0\)</span></p></li>
+</ul>
+<p>The metric tensor defines a line element</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2=g_{\mu\nu}(x)dx^\mu dx^\nu
+\]</div>
+<p>Invariant because <span class="math notranslate nohighlight">\(dx^\mu\)</span> and <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> are tensors and you have contracted indices.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(g\)</span> has <em>signature</em> <span class="math notranslate nohighlight">\((-,+,+,+)\)</span>, that is you can diagonalise <span class="math notranslate nohighlight">\(g\)</span> to get <span class="math notranslate nohighlight">\(\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}\)</span>.</p></li>
+</ul>
+<p>Since <span class="math notranslate nohighlight">\(\det(g)\neq 0\)</span> then the inverse <span class="math notranslate nohighlight">\(g^{-1}\)</span> exists. Write <span class="math notranslate nohighlight">\((g^{-1})^{\mu\nu}=g^{\mu\nu}\)</span>. It is also a tensor.</p>
+<p>We can raise and lower indices with <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> and <span class="math notranslate nohighlight">\(g^{\mu\nu}\)</span>. For example: if we have <span class="math notranslate nohighlight">\(T_{\mu\nu}\)</span> then <span class="math notranslate nohighlight">\(T^{\mu}_{\,\,\nu}=g^{\mu\lambda}T_{\lambda\nu}\)</span>, and similarly we have for example <span class="math notranslate nohighlight">\(X_{\mu\nu\lambda}=g_{\mu\kappa}X^\kappa_{\,\,\nu\lambda}\)</span>. Because <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span>, <span class="math notranslate nohighlight">\(g^{\mu\nu}\)</span> and <span class="math notranslate nohighlight">\(T_{\mu\nu}\)</span> are tensors then also <span class="math notranslate nohighlight">\(T^{\mu}_{\,\,\nu}\)</span> defines as a contraction is also a tensor.</p>
+</div>
+<div class="section" id="finite-distances-intervals">
+<h2><span class="section-number">3.3. </span>Finite distances/intervals<a class="headerlink" href="#finite-distances-intervals" title="Permalink to this headline">¶</a></h2>
+<p>Suppose we have a (curved) path with parameter <span class="math notranslate nohighlight">\(\lambda\)</span>:</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>Define <span class="math notranslate nohighlight">\(ds=\sqrt{|g_{\mu\nu}(x)dx^\mu dx^\nu|}\)</span>. For a timelike path <span class="math notranslate nohighlight">\(ds^2&lt;0\)</span> along the path so <span class="math notranslate nohighlight">\(ds=\sqrt{-g_{\mu\nu} dx^\mu dx^\nu}=d\tau\)</span>. For a spacelike path <span class="math notranslate nohighlight">\(ds^2&gt;0\)</span> so <span class="math notranslate nohighlight">\(ds=\sqrt{g_{\mu\nu} dx^\mu dx^\nu}\)</span>.</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>The length/interval along the finite path is:</p>
+<div class="math notranslate nohighlight">
+\[
+S=\int ds=\int \sqrt{|g_{\mu\nu}\dot{x}^\mu \dot{x}^\nu|}d\lambda
+\]</div>
+<p>Exercise: If we choose a different parameter <span class="math notranslate nohighlight">\(\tilde\lambda\)</span>, show that we get the same answer for <span class="math notranslate nohighlight">\(S\)</span>.</p>
+<p>Exercise: Say <span class="math notranslate nohighlight">\(y^\mu=x^\mu+\epsilon\,\zeta^\mu(x)\)</span> such that <span class="math notranslate nohighlight">\(g_{\lambda\kappa}(y)\frac{\partial y^\lambda}{\partial x^\mu}\frac{\partial y^\kappa}{\partial x^\nu}=g_{\mu\nu}(x)\)</span>. Show that</p>
+<div class="math notranslate nohighlight">
+\[
+\zeta^\lambda\partial_\lambda g_{\mu\nu}+(\partial_\mu \zeta^\lambda)g_{\lambda\nu}+(\partial_\nu \zeta^\lambda)g_{\mu\lambda}=0
+\]</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Lectures"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Week2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">2. </span>Week 2</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Week4.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Week 4</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Tomasz Lukowski<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

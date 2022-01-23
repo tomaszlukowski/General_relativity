@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. Week 2 &#8212; General relativity</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Week 3" href="Week3.html" />
+    <link rel="prev" title="1. Week 1" href="Week1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">General relativity</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   General relativity
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week1.html">
+   1. Week 1
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   2. Week 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week3.html">
+   3. Week 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week4.html">
+   4. Week 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week5.html">
+   5. Week 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week6.html">
+   6. Week 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week7.html">
+   7. Week 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week8.html">
+   8. Week 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week9.html">
+   9. Week 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week10.html">
+   10. Week 10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Week11.html">
+   11. Week 11
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Lectures/Week2.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tidal-forces">
+   2.1. Tidal forces
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gravitational-red-shift-and-time-dilation">
+   2.2. Gravitational red-shift and time dilation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#idea-curved-spacetime">
+   2.3. Idea: curved spacetime
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="week-2">
+<h1><span class="section-number">2. </span>Week 2<a class="headerlink" href="#week-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tidal-forces">
+<h2><span class="section-number">2.1. </span>Tidal forces<a class="headerlink" href="#tidal-forces" title="Permalink to this headline">¶</a></h2>
+<p>If we have a non-uniform gravitational field with potentila <span class="math notranslate nohighlight">\(\phi(\underline{x}\)</span>, there will be tidal forces.</p>
+<p>For example: consider the field due to a point mas (e.g. a planet) at two nerby points <span class="math notranslate nohighlight">\(\underline{x}_1\)</span> and <span class="math notranslate nohighlight">\(\underline{x}_2\)</span>:</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>The  force vectors are not parallel and particles will have a relative acceleration (towards each other). In a freely falling frame, the free particles will seem to accelerate towards each other.</p>
+<p>More generally: if we have two nearby particles at <span class="math notranslate nohighlight">\(\underline{x}_1=\underline{x}(t)\)</span> and <span class="math notranslate nohighlight">\(\underline{x}_2=\underline{x}(t)+\underline{y}(t)\)</span>, then both satisfy <span class="math notranslate nohighlight">\(\ddot{\underline{x}}=-\underline{\nabla}\phi\)</span>, namely <span class="math notranslate nohighlight">\(\ddot{\underline{x}}_1=-\underline{\nabla}\phi\Big|_{\underline{x}_1}\)</span> and <span class="math notranslate nohighlight">\(\ddot{\underline{x}}_2=-\underline{\nabla}\phi\Big|_{\underline{x}_2}\)</span>. This implies that</p>
+<div class="math notranslate nohighlight">
+\[
+\underline{y}=\underline{x}_2-\underline{x}_1 \Rightarrow \ddot{\underline{y}}=-\left(\underline{\nabla}\phi\Big|_{\underline{x}+\underline{y}}-\underline{\nabla}\phi\Big|_{\underline{x}}\right)\Rightarrow \ddot{y}_i=-\left(\partial_i\phi\Big|_{\underline{x}+\underline{y}}-\partial_i\phi\Big|_{\underline{x}}\right)\sim -\left(y^j\partial_j\partial_i\phi\Big|_{\underline{x}}+\mathcal{O}(y^2)\right)
+\]</div>
+<p>This means that roughly <span class="math notranslate nohighlight">\(\ddot{y}_i=-(\partial_j\partial_i\phi)y^j\)</span>, so <span class="math notranslate nohighlight">\(\ddot{y}_i\)</span>, the relative acceleration, is small if <span class="math notranslate nohighlight">\(y\)</span> is small. But as the separation <span class="math notranslate nohighlight">\(\underline{y}\)</span> graows, the relative acceleration becomes more significant (if <span class="math notranslate nohighlight">\(\partial_i\partial_j\phi\neq 0\)</span>). In general relativity, we think of gravity as beeing <em>locally</em> indistinguishable from accelerating frame:</p>
+<blockquote>
+<div><p>Locally = ignoring tidal forces</p>
+</div></blockquote>
+</div>
+<div class="section" id="gravitational-red-shift-and-time-dilation">
+<h2><span class="section-number">2.2. </span>Gravitational red-shift and time dilation<a class="headerlink" href="#gravitational-red-shift-and-time-dilation" title="Permalink to this headline">¶</a></h2>
+<p>Consider photon moving down towards Earth. At some instance:</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>Sat this is time <span class="math notranslate nohighlight">\(t=0\)</span> in the local inertial frame of the cabin (freely-falling). In local inertial frame: cabin height = <span class="math notranslate nohighlight">\(\Delta h\)</span>, photon frequency = <span class="math notranslate nohighlight">\(\nu\)</span>. Local inertial observer just sees Special Relativity.</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>But: at <span class="math notranslate nohighlight">\(t=0\)</span>, the cabin at rest with respect to lattice, which implies that observer also sees photon frequency <span class="math notranslate nohighlight">\(\nu\)</span>. At event B: now the cabin has velocity downwards:</p>
+<div class="math notranslate nohighlight">
+\[
+v\sim gt\sim \frac{g\Delta h}{c}
+\]</div>
+<p>In the local inertial frame, the lattice observer at B is moving upwards towards the photon with velocity <span class="math notranslate nohighlight">\(v\)</span>. Then the lattice observer sees a Doppler-shifted frequency:</p>
+<div class="math notranslate nohighlight">
+\[
+\nu_{\textnormal{obs}}=\left(1+\frac{v}{c}\right)\nu \Rightarrow \Delta\nu=\nu_{\textnormal{obs}}-\nu=\frac{v}{c}\nu=\frac{g\Delta h}{c^2}\nu
+\]</div>
+<p>This means that <span class="math notranslate nohighlight">\(\frac{\Delta\nu}{\nu}=\frac{g\Delta h}{c^2}\)</span> and <span class="math notranslate nohighlight">\(g=-\frac{d\Phi}{dh}\)</span>, so <span class="math notranslate nohighlight">\(\Delta \Phi=-g\Delta h\)</span>, and finally</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta \log\nu=-\frac{1}{c^2}\Delta\Phi\Rightarrow \nu_{\textnormal{obs}}=\nu_0 e^{-(\Phi-Phi_0)/c^2}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\nu_0\)</span> is the frequency at potential <span class="math notranslate nohighlight">\(\Phi_0\)</span>.</p>
+<p>Important point: the frequency shift is not due to anything happening to the photon as it <em>falls</em>. It is due to the clocks of the observer running at different speeds. The fixed observer at B is moving with respect to the local inertial frame of the cabin, so their clock appears to run slow in the local inertial frame (standard special relativity Doppler shift).</p>
+</div>
+<div class="section" id="idea-curved-spacetime">
+<h2><span class="section-number">2.3. </span>Idea: curved spacetime<a class="headerlink" href="#idea-curved-spacetime" title="Permalink to this headline">¶</a></h2>
+<p>Imagine the curved surface of a sphere and a tangent plane to it at some point.</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>In a small neighbourhood of the point where the plane touches the sphere, the sphere <em>looks flat</em>. But as you move away from tha point, the effects of curvature become important.</p>
+<p>Could the local inertial frames in general relativity be loke the tangent space (locally) to some curved spacetime?</p>
+<p>In special relativity, a massive particle has action:</p>
+<div class="math notranslate nohighlight">
+\[
+S=-m\Delta\tau=-m\int \sqrt{-\eta_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu}}d\lambda
+ \]</div>
+<p>Consider a <em>curved metric</em>: <span class="math notranslate nohighlight">\(\eta_{\mu\nu}\to g_{\mu\nu}(x)\)</span> with</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2=g_{\mu\nu}(x)dx^\mu dx^\nu=-(1+2\phi)dt^2+(1-2\phi)d\underline{x}^2
+ \]</div>
+<p>where <span class="math notranslate nohighlight">\(\phi=\phi(\underline{x})\)</span> and <span class="math notranslate nohighlight">\(d\underline{x}=\delta_{ij}dx^idx^j\)</span>. In this case <span class="math notranslate nohighlight">\(g_{tt}=-(1+2\phi)\)</span>, <span class="math notranslate nohighlight">\(g_{ij}=(1-2\phi)\delta_{ij}\)</span>, <span class="math notranslate nohighlight">\(g_{ti}=0\)</span>. Then</p>
+<div class="math notranslate nohighlight">
+\[
+S=-m\int \sqrt{-g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu}d\lambda=-m\int \sqrt{(1+2\phi)\left(\frac{dt}{d\lambda}\right)^2-(1-2\phi)\left(\frac{d\underline{x}}{d\lambda}\right)^2}d\lambda
+ \]</div>
+<p>Trick: use parameter <span class="math notranslate nohighlight">\(\lambda=t\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+S= -m\int\sqrt{(1+2\phi)-(1-2\phi)\left(\frac{d\underline{x}}{dt}\right)^2}dt=-m\int\sqrt{1+2\phi-\left(\frac{d\underline{x}}{dt}\right)^2+2\phi \left(\frac{d\underline{x}}{dt}\right)^2}dt
+ \]</div>
+<p>Now take small velocity (<span class="math notranslate nohighlight">\(\frac{d\underline{x}}{dt}\)</span> small) and weak field (<span class="math notranslate nohighlight">\(\phi\)</span> small) limit.  Then we can now remove the last term in the square root since it is negligable. Moreover, we can expand the square root in the Taylor series:</p>
+<div class="math notranslate nohighlight">
+\[
+S=-m\int(1+\phi-\frac{1}{2}\left(\frac{d\underline{x}}{dt}\right)^2)dt=\int \left(\frac{1}{2}m\underline{v}^2-m\phi\right)dt+const.
+\]</div>
+<p>The first term <span class="math notranslate nohighlight">\(\frac{1}{2}m\underline{v}^2\)</span> is just the kinetic energy and the second one is a potential energy, and we get the action of a non-relativistic particle in gravitational potential <span class="math notranslate nohighlight">\(\phi(x)\)</span>.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Lectures"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Week1.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">1. </span>Week 1</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Week3.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Week 3</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Tomasz Lukowski<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
