@@ -249,7 +249,7 @@ for the trajectory depicted below:
 Define the action for a relativistic free particle
 
 $$
-S=-m\int d\tau.
+S=-mc^2\int d\tau.
 $$
 
 We can use the Euler-Lagrange equations

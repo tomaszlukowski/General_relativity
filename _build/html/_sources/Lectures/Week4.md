@@ -196,5 +196,35 @@ $$
 For tensors with more indices, we get a sum of terms with each summand corresponding to an index. For example:
 
 $$
-[\nabla_\mu,\nabla_\nu] T^\lambda_{\,\,\,\kappa}=R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\rho} T^\rho_{\,\,\,\kappa}-R_{\mu\nu\,\,\,\rho}^{\,\,\,\,\,\,\kappa} T^\kappa_{\,\,\,\rho}
+[\nabla_\mu,\nabla_\nu] T^\lambda_{\,\,\,\kappa}=R_{\mu\nu\,\,\,\rho}^{\,\,\,\,\,\,\lambda} T^\rho_{\,\,\,\kappa}-R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\rho} T^\kappa_{\,\,\,\rho}
 $$
+
+This means that it is sufficient to find a simple tensor to know what is the action of the commutator of covariant derivatives on any tensor.
+
+We claim that for the Levi-Civita tensor, the Riemann tensor takes the following form:
+
+$$
+R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda}=\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\lambda}-\partial_\nu \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\lambda}+ \Gamma_{\mu\,\,\,\rho}^{\,\,\,\lambda}\Gamma_{\nu\,\,\,\kappa}^{\,\,\,\rho}-\Gamma_{\nu\,\,\,\rho}^{\,\,\,\lambda}\Gamma_{\mu\,\,\,\kappa}^{\,\,\,\rho}
+$$
+
+We will prove this statement later in these lectures.
+
+For future use we will need to define two more tensors:
+- **Ricci tensor**: $R_{\mu\nu}=R_{\lambda\mu\,\,\,\nu}^{\,\,\,\,\,\,\lambda}$
+- **Ricci scalar**: $R=g^{\mu\nu}R_{\mu\nu}$
+
+We conclude this part with an explicit calculation of these tensors for the simple case of the two-sphere. The line element is
+
+$$
+ds^2=R^2 (d\theta^2+\sin^2\theta d\phi^2)=g_{\theta\theta}d\theta^2+g_{\phi\phi}d\phi^2+2g_{\theta\phi}d\theta d\phi=g_{ij} dx^i dx^j
+$$
+
+where $x^1=\theta$ and $x^2=\phi$. We can read off the elements of the metric tensor from this line element: $g_{\theta\theta}=R^2$ and $g_{\phi\phi}=R^2\sin^s\theta$. In a matrix form
+
+$$
+g=\begin{pmatrix} R^2&0\\0^R^2\sin^2\theta\end{pmatrix},\qquad\qquad g^{-1}=\begin{pmatrix} R^{-2}&0\\0^R^{-2}(\sin\theta)^{-2}\end{pmatrix}
+$$
+
+```{admonition} Exercise
+Calculate the Christoffel symbols, the Riemann tensor, the Ricci tensor and Ricci scalar for the two-sphere.
+```
