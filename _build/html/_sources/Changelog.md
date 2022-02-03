@@ -1,5 +1,9 @@
 # Change log
 
+## 03.02.2022
+
+- Week 3 lectures completed
+
 ## 30.01.2022
 
 - Week 2 lectures completed

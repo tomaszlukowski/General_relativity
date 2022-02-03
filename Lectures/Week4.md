@@ -1,57 +1,7 @@
-# Week 4 (missing)
+# Week 4 (under development)
 
 
-## Symmetry and antisymmetry
 
-Given tensor $T_{\mu\nu}$ we can define two new tensors:
-
-$$
-\begin{align*}
-T_{[\mu\nu]}=\frac{1}{2}\left(T_{\mu\nu}-T_{\nu\mu}\right)=: A_{\mu\nu}\\
-T_{(\mu\nu)}=\frac{1}{2}\left(T_{\mu\nu}+T_{\nu\mu}\right)=: S_{\mu\nu}
-\end{align*}
-$$
-
-We have the following simple properties of the new tensors:
-
-$$
-\begin{align*}
-&A_{\mu\nu}=A_{[\mu\nu]},\qquad A_{\mu\nu}=-A_{\nu\mu}\\
-&S_{\mu\nu}=S_{(\mu\nu)},\qquad S_{\mu\nu}=S_{\nu\mu}
-\end{align*}
-$$
-
-Furthermore, we have
-
-$$
-T_{\mu\nu}=T_{[\mu\nu]}+T_{(\mu\nu)}
-$$
-
-We call the tensor $A_{\mu\nu}$ the antisymmetrisation of $T_{\mu\nu}$ and the tensor $S_{\mu\nu}$ the symmetrisation of $T_{\mu\nu}$.
-
-There are more complicated examples that we can construct if we have tensors with more indices. For example
-
-$$
-R_{[\mu\nu][\lambda\kappa]}=\frac{1}{2}\left(R_{\mu\nu[\lambda\kappa]}-R_{\nu\mu[\lambda\kappa]}\right)=\frac{1}{4}\left(R_{\mu\nu\lambda\kappa-R_{\mu\nu\kappa\lambda}+R_{\nu\mu\kappa\lambda-R_{\nu\mu\lambda\kappa\right)
-$$
-
-We can also define an (anti)-symmetrisation of more than two indices. For example:
-
-$$
-X_{[\mu\nu\lambda]}=\frac{1}{3!}\left(X_{\mu\nu\lambda}+X_{\nu\lambda\mu}+X_{\lambda\mu\nu}-X_{\nu\mu\lambda}-X_{\mu\lambda\nu}-X_{\lambda\nu\mu}\right)
-$$
-
-If we set $A_{\mu\nu\lambda}=X_{[\mu\nu\lambda]}$ and $S_{\mu\nu\lambda}=X_{(\mu\nu\lambda)}$ then $A_{\mu\nu\lambda}=-A_{\nu\mu\lambda}$ and $S_{\mu\nu\lambda}=S_{\nu\mu\lambda}$.
-
-```{note}
-If we contract symmetric indeces with antisymmetric indices then the answer is zero!
-```
-
-For example: if $A_{\mu\nu}^{\lambda}=A_{[\mu\nu]}^{\lambda}$ and $B^{\mu\nu\lambda}=B^{(\mu\nu\lambda)}$ then $B^{\mu\nu\lambda}A_{\nu\lambda}^\kappa=0$.
-
-Moreover, if we antisymmetrise the indices of a tensor that is already symmetric in these indices then we also get zero. For example, of $g_{\mu\nu}=g_{(\mu\nu)}$ the $g_{\mu\nu}=\frac{1}{2}\left(g_{\mu\nu}-g_{\nu\mu}\right)=\frac{1}{2}\left(g_{\mu\nu}-g_{\mu\nu}\right)=0$.
-
-Important theorem: If we have $A\cdot B=C$ where $C$ is a tensor for any tensor $B$ then this implies that $A$ is a tensor.
 
 ## Differentiation of Tensors
 Let us consider a scalar field $\phi(x)$. We can define a covector field $\partial_\mu\phi$. It transforms as:
