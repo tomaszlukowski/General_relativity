@@ -222,7 +222,7 @@ The notion of local inertial frame can be intuitively understood in the followin
 
 In the previous section we said that constant gravitational force cannot be distinguished from a constant acceleration. However, if we have a changing, non-uniform gravitational field with potential $\phi(\underline{x})$, then there will be tidal forces and we will be able to distinguish the two scenarios if we perform a non-local experinment. The following discussion allows us to quantify what we mean by the word 'local' when we define local inertial frames.
 
-For example: consider the field due to a point mas (e.g. a planet) at two nerby points $\underline{x}_1$ and $\underline{x}_2$:
+For example: consider the field due to a point mass (e.g. a planet) at two nearby points $\underline{x}_1$ and $\underline{x}_2$:
 
 ```{image} ../Week2_pictures/week2_picture1.png
 :class: bg-primary mb-1

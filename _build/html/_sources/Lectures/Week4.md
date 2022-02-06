@@ -259,6 +259,7 @@ R_{\phi\phi}=R_{\phi\phi\,\,\,\phi}^{\,\,\,\,\,\,\,\phi}+R_{\theta\phi\,\,\,\phi
 $$
 
 and
+
 $$
 R_{\theta\theta}=R_{\phi\theta\,\,\,\theta}^{\,\,\,\,\,\,\,\phi}+R_{\theta\theta\,\,\,\theta}^{\,\,\,\,\,\,\,\theta}=1+0=1
 $$
