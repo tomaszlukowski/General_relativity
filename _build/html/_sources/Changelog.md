@@ -1,5 +1,13 @@
 # Change log
 
+## 08.02.2022
+
+- Week 6 first draft
+
+## 07.02.2022
+
+- Week 5 first draft
+
 ## 06.02.2022
 
 - Week 4 lectures completed

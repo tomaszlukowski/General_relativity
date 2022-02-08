@@ -294,7 +294,7 @@ $$
 Therefore, if an asymptotic observer at $r\to \infty$ measures time $t$ then the observer at distance $r$ will measure time
 
 $$
-T(r)=t\sqrt{1+\frac{2\phi(x)}{c^2}}
+T(r)=t\sqrt{1+\frac{2\phi(r)}{c^2}}
 $$
 
 which means that time goes slower in the presence of a massive, gravitational object.
@@ -320,19 +320,19 @@ We assume that the cabin has the height $\Delta h$ and the photon has frequency 
  This event is also observed by an observer attached to the rigid lattice. At $t=0$, the cabin is at rest with respect to lattice, which implies that observer also sees photon frequency $\nu$. At event B, the cabin has velocity downwards:
 
 $$
-v\approx gt\approx \frac{g\Delta h}{c}
+v\approx -gt\approx -\frac{g\Delta h}{c}
 $$
 
 In the local inertial frame, the lattice observer at B is moving upwards towards the photon with velocity $v$. Then the lattice observer sees a Doppler-shifted frequency:
 
 $$
-\boxed{\nu_{\textnormal{obs}}=\left(1+\frac{v}{c}\right)\nu}\quad \Rightarrow\quad \boxed{\Delta\nu=\nu_{\textnormal{obs}}-\nu=\frac{v}{c}\nu=\frac{g\Delta h}{c^2}\nu}\quad \Rightarrow \quad \boxed{\frac{\Delta\nu}{\nu}=\frac{g\Delta h}{c^2}}
+\boxed{\nu_{\textnormal{obs}}=\left(1+\frac{v}{c}\right)\nu}\quad \Rightarrow\quad \boxed{\Delta\nu=\nu_{\textnormal{obs}}-\nu=\frac{v}{c}\nu=-\frac{g\Delta h}{c^2}\nu}\quad \Rightarrow \quad \boxed{\frac{\Delta\nu}{\nu}=-\frac{g\Delta h}{c^2}}
 $$
 
 Since we have $g=\frac{d\phi}{dx}$, then $\Delta \phi=g\Delta h$, and finally
 
 $$
-\boxed{\Delta \log\nu=\frac{1}{c^2}\Delta\phi}\quad \Rightarrow\quad \boxed{\nu_{\textnormal{obs}}=\nu_0 e^{(\phi-\phi_0)/c^2}}
+\boxed{\Delta \log\nu=-\frac{1}{c^2}\Delta\phi}\quad \Rightarrow\quad \boxed{\nu_{\textnormal{obs}}=\nu_0 e^{-(\phi-\phi_0)/c^2}}
 $$
 
 where $\nu_0$ is the frequency at potential $\phi_0$.
@@ -346,7 +346,7 @@ where $\nu_0$ is the frequency at potential $\phi_0$.
 As an example, let us take $\phi(r)=-\frac{GM}{r}$. Then
 
 $$
-\nu_{\textnormal{obs}}=\nu_0 \exp\left(\frac{GM}{c^2 r_0}-\frac{GM}{c^2 r}\right)\approx \nu_0\left(1+\frac{GM}{c^2 r_0}-\frac{GM}{c^2 r}\right)=\nu_0\left(1+\frac{GM}{c^2 r_0 r}\Delta h\right)
+\nu_{\textnormal{obs}}=\nu_0 \exp\left(\frac{GM}{c^2 r}-\frac{GM}{c^2 r_0}\right)\approx \nu_0\left(1+\frac{GM}{c^2 r}-\frac{GM}{c^2 r_0}\right)=\nu_0\left(1+\frac{GM}{c^2 r_0 r}\Delta h\right)
 $$
 
 This means that the observed frequency is higher than the frequency in the local inertial frame. If we reverted the situation and send a light ray upwards then the frequency observed by an observer far away from the gravity source would measure a lower frequency than the one sent. This is a red-shift associated to gravitational fields.
