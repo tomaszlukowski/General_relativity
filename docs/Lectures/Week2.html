@@ -122,7 +122,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week5.html">
-   5. Week 5 (under construction)
+   5. Week 5
   </a>
  </li>
  <li class="toctree-l1">
@@ -329,50 +329,49 @@
 <p>In the previous lecture we introduced a reparametrisation invariant action for a free particle in Special Relativity:</p>
 <div class="math notranslate nohighlight">
 \[
-S=-m c\int d\lambda \sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}
+S=-m c\int d\lambda \sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}\,.
 \]</div>
-<p>Since this action is reparametrisation invariant, we can choose how to parametrise the physical path using the time coordinate <span class="math notranslate nohighlight">\(t\)</span> of some inertial observer: <span class="math notranslate nohighlight">\(\lambda=t\)</span>. Then we can re-write the above action as</p>
+<p>Since this action is reparametrisation invariant, we can choose how to parametrise any physical path using the time coordinate <span class="math notranslate nohighlight">\(t\)</span> of some inertial observer: <span class="math notranslate nohighlight">\(\lambda=t\)</span>. Then we can re-write the above action as</p>
 <div class="math notranslate nohighlight" id="equation-non-rel-action">
-<span class="eqno">(2.1)<a class="headerlink" href="#equation-non-rel-action" title="Permalink to this equation">¶</a></span>\[S=-mc^2\int dt \sqrt{1-\frac{\dot{\underline{x}}^2}{c^2}}=-mc^2\int dt \,\gamma\]</div>
-<p>where <span class="math notranslate nohighlight">\(\dot{\underline{x}}=\frac{d\underline{x}}{dt}\)</span>. By doing this we lost explicit reparametrisation invariance but it will allow us to take the first step towards a reparametrisation invariant action for an interacting particle.</p>
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-non-rel-action" title="Permalink to this equation">¶</a></span>\[S=-mc^2\int dt \sqrt{1-\frac{\dot{\vec{x}}^2}{c^2}}=-mc^2\int dt \,\gamma\,\]</div>
+<p>where <span class="math notranslate nohighlight">\(\dot{\vec{x}}=\frac{d\vec{x}}{dt}\)</span>. By doing this we lost explicit reparametrisation invariance but it will allow us to take the first step towards a reparametrisation invariant action for an interacting particle.</p>
 <div class="section" id="electrodynamics">
 <h3><span class="section-number">2.1.1. </span>Electrodynamics<a class="headerlink" href="#electrodynamics" title="Permalink to this headline">¶</a></h3>
 <p>So far, we considered a free relativistic particle and we would like to add some extra terms in the action that would describe a force acting on this particle. In the non-relativistic context we would just add a potential term:</p>
 <div class="math notranslate nohighlight">
 \[
-S_{non-rel}=\int dt\left[\frac{m}{2}\dot{\underline{x}}^2-V(\underline{x})\right]
+S_{non-rel}=\int dt\left[\frac{m}{2}\dot{\vec{x}}^2-V(\vec{x})\right]
 \]</div>
 <p>We want to write a relativistic action that depends on <span class="math notranslate nohighlight">\(x^\mu\)</span>, is Lorentz invariant, and also is reparametrisation invariant. It is clear that this restricts our options on the shape of the potential.</p>
-<p>Let us start by modifying the action <a class="reference internal" href="#equation-non-rel-action">(2.1)</a> and add a potential term, as we would do in the non-relativistic case:</p>
+<p>Let us start by modifying the action <a class="reference internal" href="#equation-non-rel-action">(2.1)</a> by adding a potential term, as we would do in the non-relativistic case:</p>
 <div class="math notranslate nohighlight">
 \[
-S=\int dt\left[ -mc^2\sqrt{1-\frac{\dot{\underline{x}}^2}{c^2}}-V(\underline{x})\right]=\int d\lambda\left[\sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}-V(x^\mu)\right]
+S=\int dt\left[ -mc^2\sqrt{1-\frac{\dot{\vec{x}}^2}{c^2}}-V(\vec{x})\right]=\int d\lambda\left[\sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}-V(x^\mu)\right],
 \]</div>
 <p>and ask if this can come from an action that is reparametrisation invariant? We need to find a potential function that scales in such a way that after change of a parametrisation, the scale compensates the one coming from the <span class="math notranslate nohighlight">\(d\lambda\)</span> term. One option would be to add a linear term in <span class="math notranslate nohighlight">\( \frac{dx^\mu}{d\lambda}\)</span>. Then, to preserve the Lorentz invariance, we need to contract it with something. This motivates us to introduce a function <span class="math notranslate nohighlight">\(A_\mu(x)\)</span> to write:</p>
 <div class="math notranslate nohighlight">
 \[
-S=\int d\lambda\left[\sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}-q A_{\mu}(x)\frac{dx^\mu}{d\lambda}\right]
+S=\int d\lambda\left[\sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}-q A_{\mu}(x)\frac{dx^\mu}{d\lambda}\right].
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(q\)</span> is a constant that determines the strength of coupling of our particle to the new term <span class="math notranslate nohighlight">\(A_\mu(x)\)</span>. It is easy to check that this action is reparametrisation invariant.</p>
-<p>To understand the physics of this action, we again choose the parametrisation to come from an inertial observer: <span class="math notranslate nohighlight">\(\lambda=t\)</span> in some inertial coordinate system. If we write <span class="math notranslate nohighlight">\(A_\mu=(\frac{\phi(x)}{c},\underline{A}(x))\)</span> we can write our action as:</p>
+<p>To understand the physics of this action, we again choose the parametrisation to come from an inertial observer: <span class="math notranslate nohighlight">\(\lambda=t\)</span> in some inertial coordinate system. If we write <span class="math notranslate nohighlight">\(A_\mu=(\frac{\phi(x)}{c},\vec{A}(x))\)</span> we can write our action as:</p>
 <div class="math notranslate nohighlight">
 \[
-S=\int dt\left[ -mc^2\sqrt{1-\frac{\dot{\underline{x}}^2}{c^2}}-q\,\phi(\underline{x})-q\underline{A}(\underline{x})\cdot\underline{\dot{x}}\right]
+S=\int dt\left[ -mc^2\sqrt{1-\frac{\dot{\vec{x}}^2}{c^2}}-q\,\phi(\vec{x})-q\vec{A}(\vec{x})\cdot\vec{\dot{x}}\right]
 \]</div>
-<p>This is nothing else than the action of a particle with electric charge <span class="math notranslate nohighlight">\(q\)</span> moving in the background of an electromagnetic field described by potentials <span class="math notranslate nohighlight">\(\phi(x)\)</span> and <span class="math notranslate nohighlight">\(\underline{A}(x)\)</span>. We therefore rediscovered the relativistic electrodynamics.</p>
+<p>This is nothing else than the action of a particle with electric charge <span class="math notranslate nohighlight">\(q\)</span> moving in the background of an electromagnetic field described by potentials <span class="math notranslate nohighlight">\(\phi(x)\)</span> and <span class="math notranslate nohighlight">\(\vec{A}(x)\)</span>. We therefore rediscovered the relativistic electrodynamics.</p>
 </div>
 <div class="section" id="gravity">
 <h3><span class="section-number">2.1.2. </span>Gravity<a class="headerlink" href="#gravity" title="Permalink to this headline">¶</a></h3>
 <p>To discover gravity we need to make a different modification of the action and consider the following generalisation:</p>
 <div class="math notranslate nohighlight" id="equation-action-gravity-1">
-<span class="eqno">(2.2)<a class="headerlink" href="#equation-action-gravity-1" title="Permalink to this equation">¶</a></span>\[S= -mc^2\int dt\sqrt{1+\frac{2\phi(\underline{x})}{c^2}-\frac{\dot{\underline{x}}^2}{c^2}}\]</div>
-<p>that is clearly reparametrisation invariant.</p>
-<p>If we now focus on the non-relativistic limit when <span class="math notranslate nohighlight">\(\frac{|\underline{\dot{x}}|}{c}\ll 1\)</span> and <span class="math notranslate nohighlight">\(\frac{2\phi(\underline{x})}{c^2}\ll 1\)</span>, then we can Taylor expand this action to get</p>
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-action-gravity-1" title="Permalink to this equation">¶</a></span>\[S= -mc^2\int dt\sqrt{1+\frac{2\phi(\vec{x})}{c^2}-\frac{\dot{\vec{x}}^2}{c^2}}.\]</div>
+<p>If we now focus on the non-relativistic limit when <span class="math notranslate nohighlight">\(\frac{|\vec{\dot{x}}|}{c}\ll 1\)</span> and <span class="math notranslate nohighlight">\(\frac{2\phi(\vec{x})}{c^2}\ll 1\)</span>, then we can Taylor expand this action to get</p>
 <div class="math notranslate nohighlight">
 \[
-S=\int dt \left[-mc^2 +\frac{m}{2}\underline{\dot{x}}^2-m\phi(\underline{x})+\ldots\right]
+S=\int dt \left[-mc^2 +\frac{m}{2}\vec{\dot{x}}^2-m\phi(\vec{x})+\ldots\right].
 \]</div>
-<p>The first term is a constant giving the rest mass energy of the particle, while the remaining two terms describe a non-relativistic particle moving in the potential <span class="math notranslate nohighlight">\(m\phi(\underline{x})\)</span>. Since this potential is proportional to the mass of the particle we identify the force associate to it as gravity.</p>
+<p>The first term is a constant giving the rest mass energy of the particle, while the remaining two terms describe a non-relativistic particle moving in the potential <span class="math notranslate nohighlight">\(m\phi(\vec{x})\)</span>. Since this potential is proportional to the mass of the particle we identify the force associate to it as gravity.</p>
 <p>There is a subtle but important detail in the derivation above: notice that the same mass <span class="math notranslate nohighlight">\(m\)</span> appears both in front of the kinetic term and the potential term and from the point of view of the Newtonian physics there is no reason why these two coefficients should be the same. However, since we started from a relativistic action, they come from the same coefficient sitting in front of the integral in the action. In Newtonian physics, we could call the mass in the kinetic term the inertial mass <span class="math notranslate nohighlight">\(m_I\)</span>, while the mass in front of the potential term, the gravitational mass <span class="math notranslate nohighlight">\(m_G\)</span>. The fact that in relativistic physics they are naturally equal has been confirmed in classical physics long time ago to high precision (around <span class="math notranslate nohighlight">\(10^{-13}\)</span>) and it is known as the (weak) equivalence principle.</p>
 <div class="tip admonition">
 <p class="admonition-title">Equivalence principle</p>
@@ -384,50 +383,50 @@ m_I=m_G
 \end{align*}
 \end{split}\]</div>
 </div>
-<p>Now we would like to rewrite the action <a class="reference internal" href="#equation-action-gravity-1">(2.2)</a> in a manifestly relativistic and reparametrisation invariant way. First, we observe that the <span class="math notranslate nohighlight">\(1\)</span> in <a class="reference internal" href="#equation-action-gravity-1">(2.2)</a> comes from the square-root <span class="math notranslate nohighlight">\(\sqrt{1+\ldots}\)</span> and therefore from the <span class="math notranslate nohighlight">\(\eta_{00}\)</span> component of the Minkowski space metric. To get the term <span class="math notranslate nohighlight">\(1+\frac{2\phi(\underline{x})}{c^2}\)</span>, we can promote this component to be coordinate dependent. More generally, we can promote all entries of <span class="math notranslate nohighlight">\(\eta_{\mu\nu}\)</span> to function on the spacetime we call <span class="math notranslate nohighlight">\(g_{\mu\nu}(x)\)</span>, and therefore we introduce a curved spacetime metric</p>
+<p>Now we would like to rewrite the action <a class="reference internal" href="#equation-action-gravity-1">(2.2)</a> in a manifestly relativistic and reparametrisation invariant way. First, we observe that the <span class="math notranslate nohighlight">\(1\)</span> in <a class="reference internal" href="#equation-action-gravity-1">(2.2)</a> comes from the square-root <span class="math notranslate nohighlight">\(\sqrt{1+\ldots}\)</span> and therefore from the <span class="math notranslate nohighlight">\(\eta_{00}\)</span> component of the Minkowski space metric. To get the term <span class="math notranslate nohighlight">\(1+\frac{2\phi(\vec{x})}{c^2}\)</span>, we can promote this component to be coordinate dependent. More generally, we can promote all entries of <span class="math notranslate nohighlight">\(\eta_{\mu\nu}\)</span> to be functions on the spacetime we call <span class="math notranslate nohighlight">\(g_{\mu\nu}(x)\)</span>, and therefore we introduce a curved spacetime metric</p>
 <div class="math notranslate nohighlight">
 \[
-ds^2=g_{\mu\nu}(x)dx^\mu dx^\nu
+ds^2=g_{\mu\nu}(x)dx^\mu dx^\nu\,.
 \]</div>
 <p>Then a reparametrisation invariant action takes the form:</p>
 <div class="math notranslate nohighlight">
 \[
-S=-mc \int d\lambda \sqrt{-g_{\mu\nu}(x)\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}
+S=-mc \int d\lambda \sqrt{-g_{\mu\nu}(x)\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}.
 \]</div>
 <p>This action describes a particle moving in curved spacetime.</p>
 </div>
 </div>
 <div class="section" id="equivalence-principle">
 <h2><span class="section-number">2.2. </span>Equivalence principle<a class="headerlink" href="#equivalence-principle" title="Permalink to this headline">¶</a></h2>
-<p>A consequence of the weak equivalence principle <span class="math notranslate nohighlight">\(m_I=m_G\)</span> is that it is not possible to tell the difference between a constant acceleration and a constant gravitational field. In particular:</p>
+<p>A consequence of the weak equivalence principle <span class="math notranslate nohighlight">\(m_I=m_G\)</span> is that it is <strong>not</strong> possible to tell the difference between a constant acceleration and a constant gravitational field. In particular:</p>
 <ul class="simple">
-<li><p>if an observer is experiencing a constant acceleration, it is not possible to say whether the observer is at rest in a gravitational field or is undergoing a constant acceleration</p></li>
-<li><p>if an observer does not experience any forces, it is not possible to distinguish the situation where the observer is in free-fall in a gravitational field or is floating in space with no sources of force acting on it</p></li>
+<li><p>if an observer is experiencing a constant acceleration, it is not possible to say whether the observer is at rest in a gravitational field or is undergoing a constant acceleration,</p></li>
+<li><p>if an observer does not experience any forces, it is not possible to distinguish the situation where the observer is in free-fall in a gravitational field or is floating in space with no sources of force acting on it.</p></li>
 </ul>
 <div class="section" id="uniformly-accelerating-observer">
 <h3><span class="section-number">2.2.1. </span>Uniformly accelerating observer<a class="headerlink" href="#uniformly-accelerating-observer" title="Permalink to this headline">¶</a></h3>
 <p>We want to focus first on the former case and find a set of coordinates that are adapted to a uniformly accelerating observer. We will view things from the point of view of an inertial frame with coordinates <span class="math notranslate nohighlight">\((ct,x,y,z)\)</span>. We consider an object experiencing a constant acceleration <span class="math notranslate nohighlight">\(a\)</span> in direction <span class="math notranslate nohighlight">\(x\)</span>. We want to describe this motion from the point of view of the inertial observer.</p>
-<p>Recall from your special relativity course that if we have two consecutive boosts, <span class="math notranslate nohighlight">\(v_1\)</span> followed by <span class="math notranslate nohighlight">\(v_2\)</span>, then the resulting velocity is</p>
+<p>Recall from your Special Relativity course that if we have two consecutive boosts, <span class="math notranslate nohighlight">\(v_1\)</span> followed by <span class="math notranslate nohighlight">\(v_2\)</span>, then the resulting velocity is</p>
 <div class="math notranslate nohighlight">
 \[
-v=\frac{v_1+v_2}{1+\frac{v_1v_2}{c^2}}
+v=\frac{v_1+v_2}{1+\frac{v_1v_2}{c^2}}\,.
 \]</div>
 <p>This can be described in a simpler way by introducing the <em>rapidity</em> <span class="math notranslate nohighlight">\(\phi\)</span> that is related to the velocity by</p>
 <div class="math notranslate nohighlight">
 \[
-v=c\tanh \phi
+v=c\tanh \phi\,.
 \]</div>
 <p>Rapidities are useful because they add linearly under successive boosts: if <span class="math notranslate nohighlight">\(v_1=c\tanh \phi_1\)</span> and <span class="math notranslate nohighlight">\(v_2=c\tanh \phi_2\)</span> then <span class="math notranslate nohighlight">\(\frac{v_1+v_2}{1+\frac{v_1v_2}{c^2}}=c\tanh (\phi_1+\phi_2)\)</span>. Moreover, a constant acceleration means rapidity increases linearly in time <span class="math notranslate nohighlight">\(\tau\)</span>, where <span class="math notranslate nohighlight">\(\tau\)</span> is the accelerating observer’s time. Then we have</p>
 <div class="math notranslate nohighlight">
 \[
-v(\tau)=\frac{dx}{dt}=c\tanh\left(\frac{a\tau}{c}\right)
+v(\tau)=\frac{dx}{dt}=c\tanh\left(\frac{a\tau}{c}\right).
 \]</div>
 <p>We now want to parametrise the motion of the accelerating observer in the inertial coordinate system. To this end we find the relation between the coordinates <span class="math notranslate nohighlight">\(t\)</span> and <span class="math notranslate nohighlight">\(x\)</span> and the accelerating observer’s time <span class="math notranslate nohighlight">\(\tau\)</span>. We look for a trajectory that passes the origin of the inertial frame, and we synchronise clocks of two observers by choosing <span class="math notranslate nohighlight">\(t=0\)</span> when <span class="math notranslate nohighlight">\(\tau=0\)</span>. This leads us to</p>
 <div class="math notranslate nohighlight">
 \[
   \boxed{\frac{dt}{d\tau}=\gamma(v)=\sqrt{\frac{1}{1-\frac{v^2}{c^2}}}=\cosh\left(\frac{a\tau}{c}\right)}\quad\Rightarrow\quad \boxed{t=\frac{c}{a}\sinh\left(\frac{a\tau}{c}\right)}
 \]</div>
-<p>around</p>
+<p>This implies</p>
 <div class="math notranslate nohighlight">
 \[
 \boxed{v(\tau)=\frac{dx}{dt}=\frac{dx}{d\tau}\frac{d\tau}{dt}}\quad\Rightarrow \quad \boxed{\frac{dx}{dt}=c\sinh\left(\frac{a\tau}{c}\right)}\quad\Rightarrow\quad \boxed{x=\frac{c^2}{a}\cosh\left(\frac{a\tau}{c}\right)-\frac{c^2}{a}}
@@ -435,51 +434,51 @@ v(\tau)=\frac{dx}{dt}=c\tanh\left(\frac{a\tau}{c}\right)
 <p>The resulting trajectory is a hyperbola</p>
 <div class="math notranslate nohighlight">
 \[
-\left(x+\frac{c^2}{a}\right)^2-c^2t^2=\frac{c^4}{a^2}
+\left(x+\frac{c^2}{a}\right)^2-c^2t^2=\frac{c^4}{a^2}\,.
 \]</div>
 <p>This trajectory is depicted in the figure below</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week2_pictures/week2_picture4.png"><img alt="Week2_pictures/week2_picture4.png" class="bg-primary mb-1 align-center" src="Week2_pictures/week2_picture4.png" style="width: 300px;" /></a>
-<p>We notice that the trajectory asymptotes to the straight lines <span class="math notranslate nohighlight">\(ct=\pm (x+c^2/a)\)</span>, indicating that the velocity of the accelerating observer does not exceed speed of light.</p>
+<p>We notice that the trajectory asymptotes to the straight lines <span class="math notranslate nohighlight">\(ct=\pm (x+c^2/a)\)</span>, indicating that the velocity of the accelerating observer does not exceed the speed of light.</p>
 <p>Now we would like to introduce a natural coordinate system from the point of view of the accelerating observer. For the time coordinate, we can naturally take the proper time <span class="math notranslate nohighlight">\(\tau\)</span> of this observer, but this is defined only on the observer’s worldline and we need to extend this definition to cover all four-dimensional space.</p>
 <p>There exists a natural set of coordinates in this case. First, if we draw straight lines from any point on the worldline labelled by the proper time <span class="math notranslate nohighlight">\(\tau\)</span> to the point <span class="math notranslate nohighlight">\((0,-\frac{c^2}{a})\)</span>, we can declare all the points on this line to have the same values of <span class="math notranslate nohighlight">\(\tau\)</span>. Then we can find a Lorentz transformation that maps the <span class="math notranslate nohighlight">\(x\)</span>-axis to a line of constant <span class="math notranslate nohighlight">\(\tau\)</span> and use this Lorentz transformation to define the spatial coordinate <span class="math notranslate nohighlight">\(\rho\)</span>. The remaining two coordinates <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> are shared for both observers. This leads us to the following relation:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-&amp;ct=\left(\rho+\frac{c^2}{a}\right)\sinh\left(\frac{a\tau}{c}\right)\\
-&amp;x=\left(\rho+\frac{c^2}{a}\right)\cosh\left(\frac{a\tau}{c}\right)-\frac{c^2}{a}
+&amp;ct=\left(\rho+\frac{c^2}{a}\right)\sinh\left(\frac{a\tau}{c}\right)\,,\\
+&amp;x=\left(\rho+\frac{c^2}{a}\right)\cosh\left(\frac{a\tau}{c}\right)-\frac{c^2}{a}\,.
 \end{align*}
 \end{split}\]</div>
 <p>We illustrate this coordinate system in the figure below.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week2_pictures/week2_picture5.png"><img alt="Week2_pictures/week2_picture5.png" class="bg-primary mb-1 align-center" src="Week2_pictures/week2_picture5.png" style="width: 300px;" /></a>
-<p>This coordinates do not cover all of Minkowski space but only the quadrant in the figure. This comes from the fact that not all signals from all regions of the space-time can reach the accelerating observer. This is closely relates to the idea of a horizon in General Relativity.</p>
+<p>These coordinates do not cover all of the Minkowski space but only the quadrant in the figure. This comes from the fact that not all signals from all regions of the space-time can be exchanged with the accelerating observer. This is closely relates to the idea of a horizon in General Relativity.</p>
 <p>Finally, we look at the metric experienced by the accelerating observer. We simply substitute the relation between coordinates <span class="math notranslate nohighlight">\((t,x)\)</span> and <span class="math notranslate nohighlight">\((\tau,\rho)\)</span> into the Minkowski space metric to find:</p>
 <div class="math notranslate nohighlight">
 \[
-ds^2=-c^2dt^2+dx^2+dy^2+dz^2=-\left(1+\frac{a\rho}{c^2}\right)^2c^2d\tau^2+d\rho^2+dy^2+dz^2
+ds^2=-c^2dt^2+dx^2+dy^2+dz^2=-\left(1+\frac{a\rho}{c^2}\right)^2c^2d\tau^2+d\rho^2+dy^2+dz^2\,.
 \]</div>
 <p>This coordinate system is known as <em>Kottler-Moeller coordinates</em> and they are closely related to a better-known <em>Rindler coordinates</em>.</p>
-<p>The temporal component of this metric <span class="math notranslate nohighlight">\(g_{00}\)</span> is</p>
+<p>Importantly, the temporal component of this metric <span class="math notranslate nohighlight">\(g_{00}\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[
-g_{00}=-\left(1+\frac{a\rho}{c^2}\right)^2=-\left(1+\frac{2a\rho}{c^2}+\frac{a^2\rho^2}{c^4}\right)\approx -\left(1+\frac{2a\rho}{c^2}+\ldots\right)
+g_{00}=-\left(1+\frac{a\rho}{c^2}\right)^2=-\left(1+\frac{2a\rho}{c^2}+\frac{a^2\rho^2}{c^4}\right)\approx -\left(1+\frac{2a\rho}{c^2}+\ldots\right),
 \]</div>
 <p>and we see that the accelerated observer feels an effective gravitational potential</p>
 <div class="math notranslate nohighlight">
 \[
-\phi(\rho)=a\rho
+\phi(\rho)=a\rho\,.
 \]</div>
 <p>This is another manifestation of the weak equivalence principle that we discussed above: the acceleration is indistinguishable from a linearly increasing gravitational field, corresponding to a constant gravitational force.</p>
 </div>
 <div class="section" id="local-inertial-frames">
 <h3><span class="section-number">2.2.2. </span>Local inertial frames<a class="headerlink" href="#local-inertial-frames" title="Permalink to this headline">¶</a></h3>
-<p>Let us discuss now the second case, where we have an observer in free fall in a gravitational field. If the observer is trapped in a (free-falling) rocket without windows, then they are not able to distinguish their situation from the one when they travel in empty space without any force acting on them. Now importantly, the results of all measurements done inside the rocket will be consistent with special relativity because all objects inside are experiencing exactly the same acceleration (provided that the rocket is small). Therefore, the observer inside the rocket is able to define an inertial frame. From the point of view of the external observer at infinity, this frame is clearly not inertial and it changes from one event to another. This leads us however to the definition of a local inertial frame and the strong version of the equivalence principle:</p>
+<p>Let us now discuss the second case, where we have an observer in free fall in a gravitational field. If the observer is trapped in a (free-falling) rocket without windows, then they are not able to distinguish their situation from the one when they travel in empty space without any force acting on them. Now importantly, the results of all measurements done inside the rocket will be consistent with special relativity because all objects inside are experiencing exactly the same acceleration (provided that the rocket is small). Therefore, the observer inside the rocket is able to define an inertial frame. From the point of view of the external observer at infinity, this frame is clearly not inertial and it changes from one event to another. This leads us however to the definition of a local inertial frame and the strong version of the equivalence principle:</p>
 <div class="tip admonition">
 <p class="admonition-title">Strong equivalence principle</p>
 <p>Freely-falling  (not-rotating) frames are <em>locally</em> inertial, i.e. all physical laws locally agree with Special Relativity. Such frames are called <strong>local inertial frames</strong>.</p>
 </div>
 <div class="section" id="curved-spacetime">
 <h4><span class="section-number">2.2.2.1. </span>Curved spacetime<a class="headerlink" href="#curved-spacetime" title="Permalink to this headline">¶</a></h4>
-<p>The notion of local inertial frame can be intuitively understood in the following example: imagine the curved surface of a sphere and a tangent plane to it at some point.</p>
+<p>The notion of local inertial frame can be intuitively understood in the following example: imagine the curved surface of a sphere and the tangent plane to it at some point.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week2_pictures/week2_picture6.png"><img alt="Week2_pictures/week2_picture6.png" class="bg-primary mb-1 align-center" src="Week2_pictures/week2_picture6.png" style="width: 300px;" /></a>
 <p>In a small neighbourhood of the point where the plane touches the sphere, the sphere <em>looks flat</em>. But as you move away from tha point, the effects of curvature become important. In General Relativity, a local inertial frame can be thought of as the tangent space (locally) to some curved spacetime.</p>
 </div>
@@ -487,16 +486,16 @@ g_{00}=-\left(1+\frac{a\rho}{c^2}\right)^2=-\left(1+\frac{2a\rho}{c^2}+\frac{a^2
 </div>
 <div class="section" id="tidal-forces">
 <h2><span class="section-number">2.3. </span>Tidal forces<a class="headerlink" href="#tidal-forces" title="Permalink to this headline">¶</a></h2>
-<p>In the previous section we said that constant gravitational force cannot be distinguished from a constant acceleration. However, if we have a changing, non-uniform gravitational field with potential <span class="math notranslate nohighlight">\(\phi(\underline{x})\)</span>, then there will be tidal forces and we will be able to distinguish the two scenarios if we perform a non-local experinment. The following discussion allows us to quantify what we mean by the word ‘local’ when we define local inertial frames.</p>
-<p>For example: consider the field due to a point mass (e.g. a planet) at two nearby points <span class="math notranslate nohighlight">\(\underline{x}_1\)</span> and <span class="math notranslate nohighlight">\(\underline{x}_2\)</span>:</p>
+<p>In the previous section we said that constant gravitational force cannot be distinguished from a constant acceleration. However, if we have a changing, non-uniform gravitational field with potential <span class="math notranslate nohighlight">\(\phi(\vec{x})\)</span>, then there will be tidal forces and we will be able to distinguish the two scenarios if we perform a <strong>non-local</strong> experinment. The following discussion allows us to quantify what we mean by the word ‘local’ when we define local inertial frames.</p>
+<p>Consider the field due to a mass (e.g. a planet) at two nearby points <span class="math notranslate nohighlight">\(\vec{x}_1\)</span> and <span class="math notranslate nohighlight">\(\vec{x}_2\)</span>:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week2_pictures/week2_picture1.png"><img alt="Week2_pictures/week2_picture1.png" class="bg-primary mb-1 align-center" src="Week2_pictures/week2_picture1.png" style="width: 300px;" /></a>
-<p>The  force vectors are not parallel and objects will have a relative acceleration (towards each other). In a freely falling frame, the free particles will seem to accelerate towards each other.</p>
-<p>More generally: if we have two nearby objects at <span class="math notranslate nohighlight">\(\underline{x}_1=\underline{x}(t)\)</span> and <span class="math notranslate nohighlight">\(\underline{x}_2=\underline{x}(t)+\underline{y}(t)\)</span>, then both satisfy <span class="math notranslate nohighlight">\(\ddot{\underline{x}}=-\underline{\nabla}\phi\)</span>, namely <span class="math notranslate nohighlight">\(\ddot{\underline{x}}_1=-\underline{\nabla}\phi\Big|_{\underline{x}_1}\)</span> and <span class="math notranslate nohighlight">\(\ddot{\underline{x}}_2=-\underline{\nabla}\phi\Big|_{\underline{x}_2}\)</span>. This implies that</p>
+<p>The  force vectors are not parallel and objects will have a relative acceleration (towards each other). Therefore, in a freely falling frame, the free particles will seem to accelerate towards each other.</p>
+<p>More generally: if we have two nearby objects at <span class="math notranslate nohighlight">\(\vec{x}_1=\vec{x}(t)\)</span> and <span class="math notranslate nohighlight">\(\vec{x}_2=\vec{x}(t)+\vec{y}(t)\)</span>, then both satisfy <span class="math notranslate nohighlight">\(\ddot{\vec{x}}=-\vec{\nabla}\phi\)</span>, namely <span class="math notranslate nohighlight">\(\ddot{\vec{x}}_1=-\vec{\nabla}\phi\Big|_{\vec{x}_1}\)</span> and <span class="math notranslate nohighlight">\(\ddot{\vec{x}}_2=-\vec{\nabla}\phi\Big|_{\vec{x}_2}\)</span>. This implies that</p>
 <div class="math notranslate nohighlight">
 \[
-\underline{y}=\underline{x}_2-\underline{x}_1 \Rightarrow \ddot{\underline{y}}=-\left(\underline{\nabla}\phi\Big|_{\underline{x}+\underline{y}}-\underline{\nabla}\phi\Big|_{\underline{x}}\right)\Rightarrow \ddot{y}_i=-\left(\partial_i\phi\Big|_{\underline{x}+\underline{y}}-\partial_i\phi\Big|_{\underline{x}}\right)\sim -\left(y^j\partial_j\partial_i\phi\Big|_{\underline{x}}+\mathcal{O}(y^2)\right)
+\boxed{\vec{y}=\vec{x}_2-\vec{x}_1}\quad \Rightarrow\quad  \boxed{\ddot{\vec{y}}=-\left(\vec{\nabla}\phi\Big|_{\vec{x}+\vec{y}}-\vec{\nabla}\phi\Big|_{\vec{x}}\right)}\quad\Rightarrow\quad \boxed{\ddot{y}_i=-\left(\partial_i\phi\Big|_{\vec{x}+\vec{y}}-\partial_i\phi\Big|_{\vec{x}}\right)\sim -\left(y^j\partial_j\partial_i\phi\Big|_{\vec{x}}+\mathcal{O}(y^2)\right)}
 \]</div>
-<p>This means that roughly <span class="math notranslate nohighlight">\(\ddot{y}_i=-(\partial_j\partial_i\phi)y^j\)</span>, so <span class="math notranslate nohighlight">\(\ddot{y}_i\)</span>, the relative acceleration, is small if <span class="math notranslate nohighlight">\(y\)</span> is small. But as the separation <span class="math notranslate nohighlight">\(\underline{y}\)</span> grows, the relative acceleration becomes more significant (if <span class="math notranslate nohighlight">\(\partial_i\partial_j\phi\neq 0\)</span>). In General Relativity, we think of gravity as beeing <em>locally</em> indistinguishable from accelerating frame:</p>
+<p>This means that roughly <span class="math notranslate nohighlight">\(\ddot{y}_i=-(\partial_j\partial_i\phi)y^j\)</span>, so <span class="math notranslate nohighlight">\(\ddot{y}_i\)</span>, the relative acceleration, is small if <span class="math notranslate nohighlight">\(y\)</span> is small. But as the separation <span class="math notranslate nohighlight">\(\vec{y}\)</span> grows, the relative acceleration becomes more significant (provided <span class="math notranslate nohighlight">\(\partial_i\partial_j\phi\neq 0\)</span>). In General Relativity, we think of gravity as beeing <em>locally</em> indistinguishable from accelerating frame:</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Locally = ignoring tidal forces</p>
@@ -506,15 +505,14 @@ g_{00}=-\left(1+\frac{a\rho}{c^2}\right)^2=-\left(1+\frac{2a\rho}{c^2}+\frac{a^2
 <h2><span class="section-number">2.4. </span>Consequences of the equivalence principle<a class="headerlink" href="#consequences-of-the-equivalence-principle" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="static-rigid-lattices">
 <h3><span class="section-number">2.4.1. </span>Static rigid lattices<a class="headerlink" href="#static-rigid-lattices" title="Permalink to this headline">¶</a></h3>
-<p>Let us first introduce a particular set of observers that will allow us to talk about events in presence of gravity.</p>
-<p>Let us imagine that we have a lattice of rods with clocks attached to them.</p>
+<p>Let us first introduce a particular set of observers that will allow us to talk about events in presence of gravity. Let us imagine that we have a lattice of rods with clocks attached to them.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week2_pictures/week2_picture7.png"><img alt="Week2_pictures/week2_picture7.png" class="bg-primary mb-1 align-center" src="Week2_pictures/week2_picture7.png" style="width: 300px;" /></a>
 <p>Say that clocks can send light signals back and forth between rods and record when they are sent and when they arrive. Consider a round trip where a signal is sent from clock A to clock B and then back to clock A.</p>
 <ul class="simple">
 <li><p>if round trip times do not depend on when the signals are sent then the spacetime is called <strong>stationary</strong>.</p></li>
 <li><p>if round trip times around closed loops also do not depend on the direction around the loop then the spacetime is <strong>static</strong> and the lattice of rods is called <strong>rigid</strong>.</p></li>
 </ul>
-<p>The rigid lattice in a static spacetime defines a non-inertial frame in which the lattice is not moving (for example, a set of chairs on the surface of the Earth forms a rigid lattice).</p>
+<p>A rigid lattice in a static spacetime defines a non-inertial frame in which the lattice is not moving (for example, a set of chairs on the surface of the Earth forms a rigid lattice).</p>
 <p>Spacetimes that are stationary but not static can arise around for example rotating objects. If say a planet is rotating with constant velocity then the round trip measurements will not depend on the initial time of our measurement, but it might depend on the direction in which we send the signal (aligned or anti-aligned with the rotation of the planet).</p>
 </div>
 <div class="section" id="light-is-deflected-by-gravity">
@@ -527,17 +525,17 @@ g_{00}=-\left(1+\frac{a\rho}{c^2}\right)^2=-\left(1+\frac{2a\rho}{c^2}+\frac{a^2
 <p>We have already observed that a weak gravitational field changes the temporal component of the metric to be:</p>
 <div class="math notranslate nohighlight">
 \[
-g_{00}(x)=1+\frac{2\phi(x)}{c^2}
+g_{00}(x)=1+\frac{2\phi(x)}{c^2}\,.
 \]</div>
-<p>Let us assume that <span class="math notranslate nohighlight">\(\phi(x)\)</span> is such that <span class="math notranslate nohighlight">\(\phi(x)=\phi(|\underline{x}|)=\phi(r)&lt;0\)</span> and <span class="math notranslate nohighlight">\(\phi(r)\to 0\)</span> when <span class="math notranslate nohighlight">\(r\to \infty\)</span>. This means that the observer sitting at a fixed distance <span class="math notranslate nohighlight">\(r\)</span> from the gravity source will measure a time intervals</p>
+<p>Let us assume that <span class="math notranslate nohighlight">\(\phi(x)\)</span> is such that <span class="math notranslate nohighlight">\(\phi(x)=\phi(|\vec{x}|)=\phi(r)&lt;0\)</span> and <span class="math notranslate nohighlight">\(\phi(r)\to 0\)</span> when <span class="math notranslate nohighlight">\(r\to \infty\)</span>. This means that the observer sitting at a fixed distance <span class="math notranslate nohighlight">\(r\)</span> from the gravity source will measure a time intervals</p>
 <div class="math notranslate nohighlight">
 \[
-d\tau^2=g_{00}dt^2=\left(1+\frac{2\phi(r)}{c^2}\right)
+d\tau^2=g_{00}dt^2=\left(1+\frac{2\phi(r)}{c^2}\right)dt^2\,.
 \]</div>
 <p>Therefore, if an asymptotic observer at <span class="math notranslate nohighlight">\(r\to \infty\)</span> measures time <span class="math notranslate nohighlight">\(t\)</span> then the observer at distance <span class="math notranslate nohighlight">\(r\)</span> will measure time</p>
 <div class="math notranslate nohighlight">
 \[
-T(r)=t\sqrt{1+\frac{2\phi(r)}{c^2}}
+T(r)=t\sqrt{1+\frac{2\phi(r)}{c^2}}&lt;t\,,
 \]</div>
 <p>which means that time goes slower in the presence of a massive, gravitational object.</p>
 </div>
@@ -550,7 +548,7 @@ T(r)=t\sqrt{1+\frac{2\phi(r)}{c^2}}
 <p>This event is also observed by an observer attached to the rigid lattice. At <span class="math notranslate nohighlight">\(t=0\)</span>, the cabin is at rest with respect to lattice, which implies that observer also sees photon frequency <span class="math notranslate nohighlight">\(\nu\)</span>. At event B, the cabin has velocity downwards:</p>
 <div class="math notranslate nohighlight">
 \[
-v\approx -gt\approx -\frac{g\Delta h}{c}
+v\approx -gt\approx -\frac{g\Delta h}{c}\,.
 \]</div>
 <p>In the local inertial frame, the lattice observer at B is moving upwards towards the photon with velocity <span class="math notranslate nohighlight">\(v\)</span>. Then the lattice observer sees a Doppler-shifted frequency:</p>
 <div class="math notranslate nohighlight">
@@ -570,7 +568,7 @@ v\approx -gt\approx -\frac{g\Delta h}{c}
 <p>As an example, let us take <span class="math notranslate nohighlight">\(\phi(r)=-\frac{GM}{r}\)</span>. Then</p>
 <div class="math notranslate nohighlight">
 \[
-\nu_{\textnormal{obs}}=\nu_0 \exp\left(\frac{GM}{c^2 r}-\frac{GM}{c^2 r_0}\right)\approx \nu_0\left(1+\frac{GM}{c^2 r}-\frac{GM}{c^2 r_0}\right)=\nu_0\left(1+\frac{GM}{c^2 r_0 r}\Delta h\right)
+\nu_{\textnormal{obs}}=\nu_0 \exp\left(\frac{GM}{c^2 r}-\frac{GM}{c^2 r_0}\right)\approx \nu_0\left(1+\frac{GM}{c^2 r}-\frac{GM}{c^2 r_0}\right)=\nu_0\left(1+\frac{GM}{c^2 r_0 r}\Delta h\right).
 \]</div>
 <p>This means that the observed frequency is higher than the frequency in the local inertial frame. If we reverted the situation and send a light ray upwards then the frequency observed by an observer far away from the gravity source would measure a lower frequency than the one sent. This is a red-shift associated to gravitational fields.</p>
 </div>

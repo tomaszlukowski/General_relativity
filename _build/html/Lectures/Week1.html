@@ -122,7 +122,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week5.html">
-   5. Week 5 (under construction)
+   5. Week 5
   </a>
  </li>
  <li class="toctree-l1">
@@ -255,7 +255,7 @@
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#lorentz-transformations">
-     1.3.1. Lorentz transformations.
+     1.3.1. Lorentz transformations
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -300,7 +300,7 @@
 <h1><span class="section-number">1. </span>Week 1<a class="headerlink" href="#week-1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2><span class="section-number">1.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>General Relativity is the theory developed by Albert Einstein in 1915 that describe properties of the spacetime in the presence of gravity. The essence of Einstein’s discovery can be summarised in a very simple statement</p>
+<p>General Relativity is the theory developed by Albert Einstein in 1915 that describes properties of the spacetime in the presence of gravity. The essence of Einstein’s discovery can be summarised in a very simple statement</p>
 <div class="middle admonition">
 <p class="admonition-title">General Relativity</p>
 <div class="math notranslate nohighlight">
@@ -309,7 +309,7 @@
 \text{Gravity = Geometry}
 \end{split}\]</div>
 </div>
-<p>In these series of lectures you will learn how to understand the effects that we usually attribute to gravity: falling object, planets orbiting around their stars, etc., are due to the fact that the spacetime is curved in the presence of massive objects. Before explaining how this curved spacetime can be described, we will start with revisiting flat spacetime that we are familiar with in Special Relativity.</p>
+<p>In these series of lectures you will learn how to understand the effects that we usually attribute to gravity: falling object, planets orbiting around their stars, etc., are due to the fact that the spacetime is curved in the presence of massive objects. Before explaining how this curved spacetime can be described, we will start by revisiting flat spacetime that we are familiar with from Special Relativity.</p>
 </div>
 <div class="section" id="newtonian-physics">
 <h2><span class="section-number">1.2. </span>Newtonian physics:<a class="headerlink" href="#newtonian-physics" title="Permalink to this headline">¶</a></h2>
@@ -320,34 +320,34 @@
 \[\begin{split}
 \begin{cases}
 x'=x-vt,\\
-t'=t.
+t'=t,
 \end{cases}
 \end{split}\]</div>
-<p>We call these transformations the Galilean transformations. Laws of Newtonian physics are invariant under these transformation. For example, for a particle moving freely, i.e. no acceleration, we have</p>
+<p>where <span class="math notranslate nohighlight">\(v\)</span> is the relative velocity between the observers. We call these transformations the Galilean transformations. Laws of Newtonian physics are invariant under these transformation. For example, for a particle moving freely, i.e. no acceleration, we have</p>
 <div class="math notranslate nohighlight">
 \[
  \boxed{\ddot{x}=0}\,\,\Rightarrow \,\,\boxed{\ddot{x}'=\ddot{x}-\frac{d^2}{dt^2}(vt)=\ddot{x}=0}
  \]</div>
 <p>In particular, this defines an absolute global time coordinate.</p>
 <p>Experiments show that this is <em>good</em> for velocities <span class="math notranslate nohighlight">\(|v|\ll c\)</span>. But for <span class="math notranslate nohighlight">\(v=\mathcal{O}(c)\)</span>, this breaks down and we need <strong>Special Relativity</strong> (SR).</p>
-<p>In SR we still have <em>inertial frames</em>, that is frames that are not undergoing accelerations, with coordinates <span class="math notranslate nohighlight">\((t,\underline{x})\)</span> in which free particles travel at constant velocity <span class="math notranslate nohighlight">\(\frac{d^2x}{dt^2}=0\)</span>.</p>
-<p>But, the transformation between them is different because the time is not absolute and it is perceived differently by two observers!</p>
+<p>In SR we still have <em>inertial frames</em>, that is frames that are not undergoing accelerations, with coordinates <span class="math notranslate nohighlight">\((t,\vec{x})\)</span> in which free particles travel at constant velocity <span class="math notranslate nohighlight">\(\frac{d^2\vec{x}}{dt^2}=0\)</span>.</p>
+<p>But, the transformation between them is different because the time is not absolute and it is perceived differently by different observers!</p>
 </div>
 <div class="section" id="special-relativity">
 <h2><span class="section-number">1.3. </span>Special relativity<a class="headerlink" href="#special-relativity" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="lorentz-transformations">
-<h3><span class="section-number">1.3.1. </span>Lorentz transformations.<a class="headerlink" href="#lorentz-transformations" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">1.3.1. </span>Lorentz transformations<a class="headerlink" href="#lorentz-transformations" title="Permalink to this headline">¶</a></h3>
 <p>In Special Relativity, the previous picture needs to be modified and it looks like this:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week1_pictures/week1_picture2.png"><img alt="Week1_pictures/week1_picture2.png" class="bg-primary mb-1 align-center" src="Week1_pictures/week1_picture2.png" style="width: 600px;" /></a>
 <p>The two inertial frames (in one spatial direction) are related to each other by Lorentz transformations:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{pmatrix}ct'\\x'\end{pmatrix}=\begin{pmatrix}\gamma&amp;-\frac{\gamma v}{c}\\ -\frac{\gamma v}{c}&amp;\gamma\end{pmatrix}\begin{pmatrix}ct\\x\end{pmatrix}
+\begin{pmatrix}ct'\\x'\end{pmatrix}=\begin{pmatrix}\gamma&amp;-\frac{\gamma v}{c}\\ -\frac{\gamma v}{c}&amp;\gamma\end{pmatrix}\begin{pmatrix}ct\\x\end{pmatrix},
 \end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\geq 1\)</span>. Importantly, as <span class="math notranslate nohighlight">\(c\to \infty\)</span>, this reduces to Newtonian rule. In other words, when <span class="math notranslate nohighlight">\(|v|\ll c\)</span> then <span class="math notranslate nohighlight">\(\gamma\sim1\)</span> and we have</p>
+<p>where <span class="math notranslate nohighlight">\(\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\geq 1\)</span>. Importantly, as <span class="math notranslate nohighlight">\(c\to \infty\)</span>, this reduces to the Newtonian transformation rule. In other words, when <span class="math notranslate nohighlight">\(|v|\ll c\)</span> then <span class="math notranslate nohighlight">\(\gamma\sim1\)</span> and we have</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{pmatrix}t'\\x'\end{pmatrix}=\begin{pmatrix}\gamma&amp;-\frac{\gamma v}{c^2}\\ -\gamma v&amp;\gamma\end{pmatrix}\begin{pmatrix}t\\x\end{pmatrix}\to \begin{pmatrix}1&amp;0\\ - v&amp;1\end{pmatrix}\begin{pmatrix}t\\x\end{pmatrix}=\begin{pmatrix}t\\x-vt\end{pmatrix}
+\begin{pmatrix}t'\\x'\end{pmatrix}=\begin{pmatrix}\gamma&amp;-\frac{\gamma v}{c^2}\\ -\gamma v&amp;\gamma\end{pmatrix}\begin{pmatrix}t\\x\end{pmatrix}\to \begin{pmatrix}1&amp;0\\ - v&amp;1\end{pmatrix}\begin{pmatrix}t\\x\end{pmatrix}=\begin{pmatrix}t\\x-vt\end{pmatrix}.
 \end{split}\]</div>
 <p>A very important consequence is that time measurements are <strong>not</strong> the same for all observers. In particular, the amount of time that passes according to a physical clock depends on how the clock moves:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week1_pictures/week1_picture3.png"><img alt="Week1_pictures/week1_picture3.png" class="bg-primary mb-1 align-center" src="Week1_pictures/week1_picture3.png" style="width: 300px;" /></a>
@@ -355,16 +355,16 @@ t'=t.
 </div>
 <div class="section" id="minkowski-space">
 <h3><span class="section-number">1.3.2. </span>Minkowski space<a class="headerlink" href="#minkowski-space" title="Permalink to this headline">¶</a></h3>
-<p>Let us establish some conventions for the Minkowski space that we will used in this lectire. We will write four-vectors as <span class="math notranslate nohighlight">\((x^0,x^1,x^2,x^3)=(ct,x,y,z)=(x^\mu)\)</span>. The Minkowski space metric will be</p>
+<p>Let us establish some conventions for the Minkowski space that we will used in this lecture. We will write four-vectors as <span class="math notranslate nohighlight">\((x^0,x^1,x^2,x^3)=(ct,x,y,z)=(x^\mu)\)</span>. The Minkowski space metric will be</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 (\eta_{\mu\nu})=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}
 \end{split}\]</div>
-<p>i.e. <span class="math notranslate nohighlight">\(\eta_{00}=-1\)</span> and <span class="math notranslate nohighlight">\(\eta_{ij}=\delta_{ij}\)</span> where <span class="math notranslate nohighlight">\(i,j=1,2,3\)</span>. This convention is different than the one that you used in the Field Theory lectures. This is because of the discussion below where we explain what we mean by space-like separation of events. In geometry it is natural to consider the metric for which the space-like separate events have their invariant interval <em>positive</em>.</p>
-<p>In this language the Lorentz transformations can be written as:</p>
+<p>i.e. <span class="math notranslate nohighlight">\(\eta_{00}=-1\)</span> and <span class="math notranslate nohighlight">\(\eta_{ij}=\delta_{ij}\)</span> where <span class="math notranslate nohighlight">\(i,j=1,2,3\)</span>. This convention is different than the one that one usually uses in the Field Theory lectures. This is because of the discussion below where we explain what we mean by space-like separation of events. In geometry it is natural to consider the metric for which the space-like separate events have their invariant interval <em>positive</em>.</p>
+<p>In this language, the Lorentz transformations can be written as:</p>
 <div class="math notranslate nohighlight">
 \[
- x^{'\mu}=\Lambda^{\mu}_{\,\,\nu} x^\nu \,\,\textnormal{  with  }\,\, \eta_{\mu\nu}\Lambda^{\mu}_{\,\,\mu'}\Lambda^{\nu}_{\,\,\nu'}=\eta_{\mu'\nu'}
+ x^{'\mu}=\Lambda^{\mu}_{\,\,\nu} x^\nu\,, \,\,\textnormal{  with  }\,\, \eta_{\mu\nu}\Lambda^{\mu}_{\,\,\mu'}\Lambda^{\nu}_{\,\,\nu'}=\eta_{\mu'\nu'}\,.
 \]</div>
 <p>Given two events with coordinates <span class="math notranslate nohighlight">\(x_1^\mu\)</span> and <span class="math notranslate nohighlight">\(x_2^\mu\)</span>, the separation between these events is the four-vector <span class="math notranslate nohighlight">\(\Delta x^\mu=x_2^\mu-x_1^\mu\)</span>. If we now define the quantity</p>
 <div class="math notranslate nohighlight">
@@ -374,16 +374,16 @@ t'=t.
 <p>then it is invariant under Lorentz transformations.</p>
 <p>We say that the separation between two events given by the four-vector <span class="math notranslate nohighlight">\(\Delta x^\mu\)</span>  is</p>
 <ul class="simple">
-<li><p><strong>spacelike</strong> if <span class="math notranslate nohighlight">\(\Delta s^2&gt;0\)</span></p></li>
-<li><p><strong>null</strong> if <span class="math notranslate nohighlight">\(\Delta s^2=0\)</span></p></li>
-<li><p><strong>timelike</strong> if <span class="math notranslate nohighlight">\(\Delta s^2&lt;0\)</span></p></li>
+<li><p><strong>spacelike</strong>, if <span class="math notranslate nohighlight">\(\Delta s^2&gt;0\)</span>,</p></li>
+<li><p><strong>null</strong>, if <span class="math notranslate nohighlight">\(\Delta s^2=0\)</span>,</p></li>
+<li><p><strong>timelike</strong>, if <span class="math notranslate nohighlight">\(\Delta s^2&lt;0\)</span>.</p></li>
 </ul>
 <p>This can be visualised by drawing the light-cone decomposition of the Minkowski space:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week1_pictures/week1_picture4.png"><img alt="Week1_pictures/week1_picture4.png" class="bg-primary mb-1 align-center" src="Week1_pictures/week1_picture4.png" style="width: 300px;" /></a>
 </div>
 <div class="section" id="proper-time">
 <h3><span class="section-number">1.3.3. </span>Proper time<a class="headerlink" href="#proper-time" title="Permalink to this headline">¶</a></h3>
-<p>In the previous part we find invariant interval between two events. In General Relativity we will need to often look at events that are very close to each other, and often at events that happen along <em>paths</em>. We need to be able to describe such events.</p>
+<p>In the previous part we found invariant interval between two events. In General Relativity we will need to often look at events that are very close to each other, and often at events that happen along <em>paths</em>. We need to be able to describe such events.</p>
 <p>Consider a path <span class="math notranslate nohighlight">\(\gamma\)</span> in spacetime parametrised by the parameter <span class="math notranslate nohighlight">\(\lambda\)</span>:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week1_pictures/week1_picture5.png"><img alt="Week1_pictures/week1_picture5.png" class="bg-primary mb-1 align-center" src="Week1_pictures/week1_picture5.png" style="width: 600px;" /></a>
 <p>Let</p>
@@ -395,21 +395,21 @@ t'=t.
 <div class="tip admonition">
 <p class="admonition-title">In Special/General Relativity:</p>
 <ul class="simple">
-<li><p><strong>massless</strong> particles (e.g. photons) follow null trajectories</p></li>
-<li><p><strong>massive</strong> particles (e.g. clocks) follow timelike trajectories</p></li>
-<li><p>(A spacelike trajectory corresponds to an extended object, e.g. a rod)</p></li>
+<li><p><strong>massless</strong> particles (e.g. photons) follow null trajectories,</p></li>
+<li><p><strong>massive</strong> particles (e.g. clocks) follow timelike trajectories,</p></li>
+<li><p>(A spacelike trajectory corresponds to an extended object, e.g. a rod.)</p></li>
 </ul>
 </div>
-<p>Now we want to define what we mean by time measurements for the observer moving along a certain path. The <strong>proper time</strong> recorded by a clock moving along a timelike trajectory:</p>
+<p>Now we want to define what we mean by time measurements for the observer moving along a certain path. The <strong>proper time</strong> recorded by a clock moving along a timelike trajectory is:</p>
 <div class="math notranslate nohighlight">
 \[
-c\Delta \tau=\int_{\textnormal{Start}}^{\textnormal{End}}\sqrt{-ds^2}=\int_{\lambda=\lambda_0}^{\lambda=\lambda_1}\sqrt{-\left(\frac{ds}{d\lambda}\right)^2}d\lambda
+c\Delta \tau=\int_{\textnormal{Start}}^{\textnormal{End}}\sqrt{-ds^2}=\int_{\lambda=\lambda_0}^{\lambda=\lambda_1}d\lambda\sqrt{-\left(\frac{ds}{d\lambda}\right)^2}\,,
 \]</div>
 <p>where the first integral is taken from the time at the start of the trajectory to the end of the trajectory.</p>
 <p>The same statement written in terms of infinitesimal quantities is</p>
 <div class="math notranslate nohighlight">
 \[
-c^2d\tau^2=-ds^2=-\eta_{\mu\nu}dx^\mu dx^\nu=-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}d\lambda^2
+c^2d\tau^2=-ds^2=-\eta_{\mu\nu}dx^\mu dx^\nu=-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}d\lambda^2\,.
 \]</div>
 <div class="warning admonition">
 <p class="admonition-title">Exercise</p>
@@ -418,11 +418,11 @@ c^2d\tau^2=-ds^2=-\eta_{\mu\nu}dx^\mu dx^\nu=-\eta_{\mu\nu}\frac{dx^\mu}{d\lambd
 <p>Equivalently, since for timelike trajectories we have <span class="math notranslate nohighlight">\(ds^2&lt;0\)</span> then <span class="math notranslate nohighlight">\(c\,d\tau=\sqrt{-ds^2}\)</span> and we can write</p>
 <div class="math notranslate nohighlight">
 \[
-c\Delta\tau=\int c\, d\tau=\int \sqrt{-ds^2}=\int\sqrt{-\left(\frac{ds}{d\lambda}\right)^2}d\lambda=\int \sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}d\lambda
+c\Delta\tau=\int c\, d\tau=\int \sqrt{-ds^2}=\int d\lambda\sqrt{-\left(\frac{ds}{d\lambda}\right)^2}=\int d\lambda \sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}\,.
 \]</div>
 <p>For example, the <span class="math notranslate nohighlight">\(t\)</span> coordinate of an inertial frame corresponds to the proper time as recorded by a clock which is stationary in that frame:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week1_pictures/week1_picture6.png"><img alt="Week1_pictures/week1_picture6.png" class="bg-primary mb-1 align-center" src="Week1_pictures/week1_picture6.png" style="width: 300px;" /></a>
-<p>In this case <span class="math notranslate nohighlight">\(\frac{dx^{\mu}}{d\lambda}=(\frac{d(c\lambda)}{d\lambda},\underline{0})=(c,\underline{0})\)</span> and <span class="math notranslate nohighlight">\(\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}=(-1)c^2=-c^2\)</span>.</p>
+<p>In this case <span class="math notranslate nohighlight">\(\frac{dx^{\mu}}{d\lambda}=(\frac{d(c\lambda)}{d\lambda},\vec{0})=(c,\vec{0})\)</span> and <span class="math notranslate nohighlight">\(\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}=(-1)c^2=-c^2\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
 c\Delta \tau=\int\sqrt{c^2}d\lambda=c\int d\lambda=c\Delta\lambda=c\Delta t.
@@ -438,83 +438,81 @@ c\Delta \tau=\int\sqrt{c^2}d\lambda=c\int d\lambda=c\Delta\lambda=c\Delta t.
 <p>We define the <strong>four-velocity</strong> of the particle as</p>
 <div class="math notranslate nohighlight">
 \[
-v^\mu=\frac{dx^\mu}{d\tau}=\left(\frac{d(ct)}{d\tau},\frac{d\underline{x}}{d\tau}\right)=\frac{dt}{d\tau}\left(c,\frac{d\underline{x}}{dt}\right)=\gamma(v)(c,\underline{v})
+\boxed{v^\mu=\frac{dx^\mu}{d\tau}}=\left(\frac{d(ct)}{d\tau},\frac{d\vec{x}}{d\tau}\right)=\frac{dt}{d\tau}\left(c,\frac{d\vec{x}}{dt}\right)=\gamma(v)(c,\vec{v})
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(\underline{v}=\frac{d\underline{x}}{dt}\)</span>. This will be the same in General Relativity.</p>
-<p>Recall also that the <strong>four-momentum</strong> is <span class="math notranslate nohighlight">\(p^\mu=mv^\mu\)</span>, where <span class="math notranslate nohighlight">\(m\)</span> is the rest mass. There is an important property</p>
+<p>where <span class="math notranslate nohighlight">\(\vec{v}=\frac{d\vec{x}}{dt}\)</span>. This will be the same in General Relativity.</p>
+<p>Recall also that the <strong>four-momentum</strong> is <span class="math notranslate nohighlight">\(p^\mu=mv^\mu\)</span>, where <span class="math notranslate nohighlight">\(m\)</span> is the rest mass. It satisfies an important property:</p>
 <div class="math notranslate nohighlight">
 \[
-p^2=\eta_{\mu\nu}p^{\mu}p^{\nu}=m^2\eta_{\mu\nu}v^{\mu}v^{\nu}=-m^2c^2
+p^2=\eta_{\mu\nu}p^{\mu}p^{\nu}=m^2\eta_{\mu\nu}v^{\mu}v^{\nu}=-m^2c^2\,.
 \]</div>
-<p>If we set <span class="math notranslate nohighlight">\(c=1\)</span> then the four-momentum has components <span class="math notranslate nohighlight">\(p^{\mu}=(E,\underline{p})\)</span>.</p>
+<p>If we set <span class="math notranslate nohighlight">\(c=1\)</span> then the four-momentum has components <span class="math notranslate nohighlight">\(p^{\mu}=(E,\vec{p})\)</span>.</p>
 <div class="warning admonition">
 <p class="admonition-title">Exercise</p>
 <p>Find an invariant expression for the energy of the particle as seen by an observer with 4-velocity <span class="math notranslate nohighlight">\(v^{\mu}\)</span>.</p>
 </div>
 <p>To answer this question we need to first ask what we mean by ‘seen by an observer’. This just means that we are looking for the first component of the four-momentum in the inertial frame where the observer is at rest at a given point.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week1_pictures/week1_picture7.png"><img alt="Week1_pictures/week1_picture7.png" class="bg-primary mb-1 align-center" src="Week1_pictures/week1_picture7.png" style="width: 600px;" /></a>
-<p>In the rest frame the four-velocity of the observer is <span class="math notranslate nohighlight">\(v'^{\mu}=(1,\underline{0})\)</span>. Then <span class="math notranslate nohighlight">\(p'^{\mu}=(E',\underline{p}')\)</span> and we have <span class="math notranslate nohighlight">\(\eta_{\mu\nu}v'^{\mu}p'^{\nu}=-E'\)</span>. Since this expression is invariant and therefore independent of the frame, we find that <span class="math notranslate nohighlight">\(E'=-\eta_{\mu\nu}v^{\mu}p^{\nu}\)</span>, where <span class="math notranslate nohighlight">\(p^\mu\)</span> is in the four-momentum in the original frame.</p>
+<p>In the rest frame the four-velocity of the observer is <span class="math notranslate nohighlight">\(v'^{\mu}=(1,\vec{0})\)</span>. Then <span class="math notranslate nohighlight">\(p'^{\mu}=(E',\vec{p}')\)</span> and we have <span class="math notranslate nohighlight">\(\eta_{\mu\nu}v'^{\mu}p'^{\nu}=-E'\)</span>. Since this expression is invariant and therefore independent of the frame, we find that <span class="math notranslate nohighlight">\(E'=-\eta_{\mu\nu}v^{\mu}p^{\nu}\)</span>, where <span class="math notranslate nohighlight">\(p^\mu\)</span> is in the four-momentum in the original frame.</p>
 <p>This approach to solving problems in relativity will be quite common in General Relativity, where we will often go to the frame where things simplify, for example the (instantenous) rest frame, and find the solution there, and then use the fact that invariant quantities (fully contracted) can be calculated in any frame.</p>
 </div>
 </div>
 <div class="section" id="action-for-relativistic-particles">
 <h2><span class="section-number">1.4. </span>Action for relativistic particles<a class="headerlink" href="#action-for-relativistic-particles" title="Permalink to this headline">¶</a></h2>
-<p>We want to recall basic facts about the action of relativistic particles.</p>
-<p>We have already defined the proper time for timelike-trajectories</p>
+<p>We want to recall basic facts about the action of relativistic particles. We have already defined the proper time for timelike-trajectories</p>
 <div class="math notranslate nohighlight">
 \[
-\Delta\tau=\int\sqrt{-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu}d\lambda=\int d\tau.
+\Delta\tau=\int d\lambda\sqrt{-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu}=\int d\tau.
 \]</div>
 <p>for the trajectory depicted below:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week1_pictures/week1_picture8.png"><img alt="Week1_pictures/week1_picture8.png" class="bg-primary mb-1 align-center" src="Week1_pictures/week1_picture8.png" style="width: 300px;" /></a>
-<p>Define the action for a relativistic free particle</p>
+<p>We define the action for a relativistic free particle</p>
 <div class="math notranslate nohighlight">
 \[
 S=-mc^2\int d\tau.
 \]</div>
-<p>We can use the Euler-Lagrange equations</p>
+<p>We can use the Euler-Lagrange equations to find equations of motion</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d}{d\lambda}\left(\frac{\partial L}{\partial \dot{x}^\mu}\right)=\frac{\partial L}{\partial x^\mu}
+\frac{d}{d\lambda}\left(\frac{\partial L}{\partial \dot{x}^\mu}\right)=\frac{\partial L}{\partial x^\mu}\,.
 \]</div>
-<p>The Lagrangian does not depend explicitly on <span class="math notranslate nohighlight">\(x^\mu\)</span> and therefore the right-habd side of this equation is vanishing. Then, by calculating the left-hand side:</p>
+<p>The Lagrangian does not depend explicitly on <span class="math notranslate nohighlight">\(x^\mu\)</span> and therefore the right-hand side of this equation vanishes. Then, by calculating the left-hand side:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
 \frac{\partial L}{\partial\dot{x}^\mu}&amp;=
-\frac{1}{2\sqrt{-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu}}\cdot\frac{\partial}{\partial\dot{x}^\mu}\left(-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu\right)=
-\frac{1}{2\sqrt{-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu}}(-\eta_{\rho\nu})\left(\frac{\partial \dot{x}^\rho}{\partial \dot{x}^\mu}\dot{x}^\nu+\dot{x}^\rho\frac{\partial \dot{x}^\nu}{\partial \dot{x}^\mu}\right)=\\
-&amp;=\frac{1}{2\sqrt{-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu}}(-\eta_{\rho\nu})\left(\delta_\mu^\rho\dot{x}^\nu+\dot{x}^\rho\delta_\mu^\nu\right)=
-\frac{1}{2\sqrt{-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu}}\left(-\eta_{\mu\nu}\dot{x}^\nu-\eta_{\rho\mu}\dot{x}^\rho\right)=\frac{-\eta_{\mu\nu}\dot{x}^\nu}{\sqrt{-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu}}
+\frac{1}{2\sqrt{-\eta_{\sigma\lambda} \dot{x}^\sigma \dot{x}^\lambda}}\cdot\frac{\partial}{\partial\dot{x}^\mu}\left(-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu\right)=
+\frac{1}{2\sqrt{-\eta_{\sigma\lambda} \dot{x}^\sigma \dot{x}^\lambda}}(-\eta_{\rho\nu})\left(\frac{\partial \dot{x}^\rho}{\partial \dot{x}^\mu}\dot{x}^\nu+\dot{x}^\rho\frac{\partial \dot{x}^\nu}{\partial \dot{x}^\mu}\right)=\\
+&amp;=\frac{1}{2\sqrt{-\eta_{\sigma\lambda} \dot{x}^\sigma \dot{x}^\lambda}}(-\eta_{\rho\nu})\left(\delta_\mu^\rho\dot{x}^\nu+\dot{x}^\rho\delta_\mu^\nu\right)=
+\frac{1}{2\sqrt{-\eta_{\sigma\lambda} \dot{x}^\sigma \dot{x}^\lambda}}\left(-\eta_{\mu\nu}\dot{x}^\nu-\eta_{\rho\mu}\dot{x}^\rho\right)=\frac{-\eta_{\mu\nu}\dot{x}^\nu}{\sqrt{-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu}}\,,
 \end{align*}
 \end{split}\]</div>
 <p>we get</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d}{d\lambda}\left[\frac{-\eta_{\mu\nu}\dot{x}^\nu}{\sqrt{-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu}}\right]=0
+\frac{d}{d\lambda}\left[\frac{-\eta_{\mu\nu}\dot{x}^\nu}{\sqrt{-\eta_{\sigma\lambda} \dot{x}^\sigma \dot{x}^\lambda}}\right]=0\,.
 \]</div>
 <p>Now, we can use the following trick: let us parametrise the trajectory <span class="math notranslate nohighlight">\(\gamma\)</span> with the proper time: <span class="math notranslate nohighlight">\(\lambda=\tau\)</span>, then <span class="math notranslate nohighlight">\(\sqrt{-\eta_{\mu\nu} \dot{x}^\mu \dot{x}^\nu}=1\)</span>. That implies</p>
 <div class="math notranslate nohighlight">
 \[
 \boxed{\frac{d}{d\tau}\left(-\eta_{\mu\nu}\dot{x}^\nu\right)=0}\,\,\Rightarrow\,\, \boxed{\ddot{x}^\mu=0}
 \]</div>
-<p>We can compare it to the non-relativistic case to make connection to your previous knowledge of non-relativistic actions. If we consider the non-relativistic case, namely <span class="math notranslate nohighlight">\(|\underline{v}|\ll c\)</span>, we have</p>
+<p>We can compare it to the non-relativistic case to make connection to your previous knowledge of non-relativistic actions. If we consider the non-relativistic case, namely <span class="math notranslate nohighlight">\(|\vec{v}|\ll c\)</span>, we have</p>
 <div class="math notranslate nohighlight">
 \[
-S=-mc^2\int d\tau=-mc^2\int \frac{d\tau}{dt}dt
+S=-mc^2\int d\tau=-mc^2\int dt \frac{d\tau}{dt}
 \]</div>
-<p>The four-velocity <span class="math notranslate nohighlight">\(v^\mu=(\frac{d(ct)}{d\tau},\frac{d\underline{x}}{d\tau})=\gamma(c,\underline{v})\)</span>, that implies <span class="math notranslate nohighlight">\(\frac{dt}{d\tau}=\gamma\)</span>.</p>
-<p>We have</p>
+<p>The four-velocity <span class="math notranslate nohighlight">\(v^\mu=(\frac{d(ct)}{d\tau},\frac{d\vec{x}}{d\tau})=\gamma(c,\vec{v})\)</span>, that implies <span class="math notranslate nohighlight">\(\frac{dt}{d\tau}=\gamma\)</span>. Finally, we have</p>
 <div class="math notranslate nohighlight">
 \[
-S=-mc^2\int \gamma^{-1}dt=-mc^2\int \sqrt{1-\frac{\underline{v}^2}{c^2}}dt\sim -mc^2\int \left(1-\frac{1}{2}\frac{\underline{v}^2}{c^2}\right)dt=\int \left(\frac{1}{2}m\underline{v}^2-mc^2\right)dt
+S=-mc^2\int \gamma^{-1}dt=-mc^2\int dt\sqrt{1-\frac{\vec{v}^2}{c^2}}\sim -mc^2\int dt\left(1-\frac{1}{2}\frac{\vec{v}^2}{c^2}\right)=\int dt \left(\frac{1}{2}m\vec{v}^2-mc^2\right)
 \]</div>
-<p>that is the action for a non-relativistic particle with the three-velocity <span class="math notranslate nohighlight">\(\underline{v}\)</span> in a constant potential <span class="math notranslate nohighlight">\(V(\underline{x})=mc^2\)</span>.</p>
+<p>that is the action for a non-relativistic particle with the three-velocity <span class="math notranslate nohighlight">\(\vec{v}\)</span> in a constant potential <span class="math notranslate nohighlight">\(V(\vec{x})=mc^2\)</span> (corresponding to the rest mass).</p>
 <p>It is important to emphasize that this calculation only works for <span class="math notranslate nohighlight">\(m\neq 0\)</span>.</p>
 <p>There exists an alternative action that gives the same equations of motion but can be used for massless particles as well.</p>
 <div class="math notranslate nohighlight">
 \[
-S=-\int \eta_{\mu\nu}\dot{x}^\mu\dot{x}^\nu d\lambda
+S=-\int d\lambda\, \eta_{\mu\nu}\dot{x}^\mu\dot{x}^\nu 
 \]</div>
 <p>The Euler-Lagrange equations imply:</p>
 <div class="math notranslate nohighlight">
@@ -529,8 +527,7 @@ S=-\int \eta_{\mu\nu}\dot{x}^\mu\dot{x}^\nu d\lambda
 </div>
 <div class="section" id="accelerating-frames-newtonian">
 <h2><span class="section-number">1.5. </span>Accelerating frames (Newtonian)<a class="headerlink" href="#accelerating-frames-newtonian" title="Permalink to this headline">¶</a></h2>
-<p>Before we close this part, we want to describe accelerating frames in Newtonian physics.</p>
-<p>Consider two reference frames:</p>
+<p>Before we close this part, we want to describe accelerating frames in Newtonian physics. Consider two reference frames:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week1_pictures/week1_picture9.png"><img alt="Week1_pictures/week1_picture9.png" class="bg-primary mb-1 align-center" src="Week1_pictures/week1_picture9.png" style="width: 600px;" /></a>
 <p>These frames are accelerating with respect to each other and they are related by <span class="math notranslate nohighlight">\(t'=t\)</span> and <span class="math notranslate nohighlight">\(x'=x-\frac{1}{2}at^2\)</span>.</p>
 <p>A free particle in the inertial frame has <span class="math notranslate nohighlight">\(x=x_0+vt\)</span>. In the second, non-inertial frame <span class="math notranslate nohighlight">\((x',t')\)</span> we find</p>
@@ -538,9 +535,9 @@ S=-\int \eta_{\mu\nu}\dot{x}^\mu\dot{x}^\nu d\lambda
 \[
 x'=x-\frac{1}{2}at^2=x_0+vt-\frac{1}{2}at^2=x_0+vt'-\frac{1}{2}at'^2
 \]</div>
-<p>This can be depicted as:</p>
+<p>This motion can be depicted as:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week1_pictures/week1_picture10.png"><img alt="Week1_pictures/week1_picture10.png" class="bg-primary mb-1 align-center" src="Week1_pictures/week1_picture10.png" style="width: 600px;" /></a>
-<p>The right-hand side frame is indistinguishable from a constant gravitational field strength of strength <span class="math notranslate nohighlight">\(g=a\)</span> in the negative <span class="math notranslate nohighlight">\(x\)</span>-direction. The equations of motion:</p>
+<p>The situation in the right figure is indistinguishable from a constant gravitational field strength of strength <span class="math notranslate nohighlight">\(g=a\)</span> in the negative <span class="math notranslate nohighlight">\(x\)</span>-direction. The equations of motion:</p>
 <div class="math notranslate nohighlight">
 \[
 \boxed{F=ma}\,\,\Rightarrow\,\,\boxed{ m\ddot{x}=-mg}\,\,\Rightarrow\,\, \boxed{\ddot{x}=-g}\,\,\Rightarrow\,\, \boxed{\ddot{x}=x_0+vt-\frac{1}{2}gt^2}
@@ -549,7 +546,7 @@ x'=x-\frac{1}{2}at^2=x_0+vt-\frac{1}{2}at^2=x_0+vt'-\frac{1}{2}at'^2
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>The mass cancelled in agreement with Galileo who noticed that the gravitational acceleration is independent of mass!. It can be phrased differently as the fact that the inertial mass is equal to the gravitational mass.</p></li>
+<li><p>The mass cancelled in agreement with Galileo who noticed that the gravitational acceleration is independent of mass! It can be phrased differently as the fact that the inertial mass is equal to the gravitational mass.</p></li>
 <li><p>If we think that the acceleration in the non-inertial frame is due to gravity, then the other frame is a freely-falling frame, i.e. <strong>freely-falling frames are inertial</strong>.</p></li>
 </ul>
 </div>

@@ -54,7 +54,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. Week 5 (under construction)" href="Week5.html" />
+    <link rel="next" title="5. Week 5" href="Week5.html" />
     <link rel="prev" title="3. Week 3" href="Week3.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -122,7 +122,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week5.html">
-   5. Week 5 (under construction)
+   5. Week 5
   </a>
  </li>
  <li class="toctree-l1">
@@ -283,7 +283,7 @@
 <p>Given a scalar field <span class="math notranslate nohighlight">\(\phi(x)\)</span>, we checked that <span class="math notranslate nohighlight">\(\partial_\mu\phi\)</span> gives the components of a covector field since:</p>
 <div class="math notranslate nohighlight">
 \[
-\left(\frac{\partial \phi}{\partial x'^\mu}\right)=\left(\frac{\partial \phi}{\partial x^\nu}\right) \frac{\partial x^\nu}{\partial x'^\mu}
+\left(\frac{\partial \phi}{\partial x'^\mu}\right)=\left(\frac{\partial \phi}{\partial x^\nu}\right) \frac{\partial x^\nu}{\partial x'^\mu}\,.
 \]</div>
 <p>Say we have a vector field <span class="math notranslate nohighlight">\(V^\mu(x)\)</span>, does <span class="math notranslate nohighlight">\(\partial_\mu V^\nu\)</span> give the components of a <span class="math notranslate nohighlight">\((1,1)\)</span>-tensor? By simple calculation:</p>
 <div class="math notranslate nohighlight">
@@ -292,7 +292,7 @@
 \partial'_\mu V'^\nu&amp;=\frac{\partial}{\partial x'^\mu}\left(\frac{\partial x'^\nu}{\partial x^\lambda}V^\lambda\right)=
 \frac{\partial x^\kappa}{\partial x'^\mu}\frac{\partial}{\partial x^\kappa}\left(\frac{\partial x'^\nu}{\partial x^\lambda}V^\lambda\right)=\\
 &amp;=\frac{\partial x^\kappa}{\partial x'^\mu}\left\{\left[\frac{\partial}{\partial x^\kappa}\left(\frac{\partial x'^\nu}{\partial x^\lambda}\right)\right]V^\lambda+\frac{\partial x'^\nu}{\partial x^\lambda}\left(\frac{\partial}{\partial x^\kappa}V^\lambda\right)\right\}=\\
-&amp;=\frac{\partial x^\kappa}{\partial x'^\mu}\left\{ \left(\frac{\partial^2 x'^\nu}{\partial x^\kappa \partial x^\lambda}\right)V^\lambda+\frac{\partial x'^\nu}{\partial x^\lambda}\partial_\kappa V^\lambda\right\}
+&amp;=\frac{\partial x^\kappa}{\partial x'^\mu}\left\{ \left(\frac{\partial^2 x'^\nu}{\partial x^\kappa \partial x^\lambda}\right)V^\lambda+\frac{\partial x'^\nu}{\partial x^\lambda}\partial_\kappa V^\lambda\right\}\,,
 \end{align*}
 \end{split}\]</div>
 <p>where we can see that the second term transforms as we would expect from a <span class="math notranslate nohighlight">\((1,1)\)</span>-tensor. However, the first term does not, and therefore the derivative <span class="math notranslate nohighlight">\(\partial_\mu V^\nu\)</span> in <strong>not</strong> a tensor.</p>
@@ -300,15 +300,15 @@
 <div class="math notranslate nohighlight">
 \[
 \begin{align*}
-\partial'_{\mu}\omega'_\nu=\left(\frac{\partial x^\kappa}{\partial x'^\mu}\frac{\partial}{\partial x^\kappa}\right)\left(\frac{\partial x^\lambda}{\partial x'^\nu} \omega_\lambda\right)=\frac{\partial x^\kappa}{\partial x'^\mu}\frac{\partial x^\lambda}{\partial x'^\nu}(\partial_\kappa \omega_\lambda)+\frac{\partial^2 x^\lambda}{\partial x'^\mu \partial x'^\nu}\omega_\lambda
+\partial'_{\mu}\omega'_\nu=\left(\frac{\partial x^\kappa}{\partial x'^\mu}\frac{\partial}{\partial x^\kappa}\right)\left(\frac{\partial x^\lambda}{\partial x'^\nu} \omega_\lambda\right)=\frac{\partial x^\kappa}{\partial x'^\mu}\frac{\partial x^\lambda}{\partial x'^\nu}(\partial_\kappa \omega_\lambda)+\frac{\partial^2 x^\lambda}{\partial x'^\mu \partial x'^\nu}\omega_\lambda\,.
 \end{align*}
 \]</div>
 <p>However, if we set <span class="math notranslate nohighlight">\(A_{\mu\nu}=\partial_\mu\omega_\nu-\partial_\nu\omega_\mu=2\partial_{[\mu}\omega_{\nu]}\)</span> then since the partial derivatives commute</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{\partial^2 x^\lambda}{\partial x'^{[\mu]}\partial x'^{\nu]}}=0
+\frac{\partial^2 x^\lambda}{\partial x'^{[\mu]}\partial x'^{\nu]}}=0\,,
 \]</div>
-<p>This means that the unwanted term cancels out and we conclude that <span class="math notranslate nohighlight">\(\partial_{[\mu}\omega_{\nu]}\)</span> defines a tensor.</p>
+<p>this means that the unwanted term cancels out and we conclude that <span class="math notranslate nohighlight">\(\partial_{[\mu}\omega_{\nu]}\)</span> defines a tensor.</p>
 </div>
 <div class="section" id="covariant-derivatives">
 <h2><span class="section-number">4.2. </span>Covariant derivatives<a class="headerlink" href="#covariant-derivatives" title="Permalink to this headline">¶</a></h2>
@@ -316,9 +316,9 @@
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-&amp;\nabla_\mu\phi=\partial_\mu \phi\\
-&amp;\nabla_\mu v^\nu=\partial_\mu v^\nu+\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}v^\lambda\\
-&amp;\nabla_\mu \omega_\nu=\partial_\mu \omega_\nu-\Gamma_{\mu\,\,\,\nu}^{\,\,\,\lambda}\omega_\lambda\\
+&amp;\nabla_\mu\phi=\partial_\mu \phi\,,\\
+&amp;\nabla_\mu v^\nu=\partial_\mu v^\nu+\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}v^\lambda\,,\\
+&amp;\nabla_\mu \omega_\nu=\partial_\mu \omega_\nu-\Gamma_{\mu\,\,\,\nu}^{\,\,\,\lambda}\omega_\lambda\,,
 \end{align*}
 \end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\Gamma^{\,\,\lambda}_{\mu\,\,\nu}\)</span> is defined in such a way that the covariant derivative acting on vectors or covectors transforms as tensors.</p>
@@ -326,21 +326,21 @@
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-&amp;\nabla_\mu T^{\nu}_{\,\,\,\lambda}=\partial_\mu  T^{\nu}_{\,\,\,\lambda}+\Gamma_{\mu\,\,\,\kappa}^{\,\,\,\nu}T^\kappa_{\,\,\,\lambda}-\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\kappa}T^\nu_{\,\,\,\kappa}\\
-&amp;\nabla_\mu S^{\nu\lambda}=\partial_\mu  S^{\nu\lambda}+\Gamma_{\mu\,\,\,\kappa}^{\,\,\,\nu}S^{\kappa\lambda}+\Gamma_{\mu\,\,\,\kappa}^{\,\,\,\lambda}S^{\nu\kappa}
+&amp;\nabla_\mu T^{\nu}_{\,\,\,\lambda}=\partial_\mu  T^{\nu}_{\,\,\,\lambda}+\Gamma_{\mu\,\,\,\kappa}^{\,\,\,\nu}T^\kappa_{\,\,\,\lambda}-\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\kappa}T^\nu_{\,\,\,\kappa}\,,\\
+&amp;\nabla_\mu S^{\nu\lambda}=\partial_\mu  S^{\nu\lambda}+\Gamma_{\mu\,\,\,\kappa}^{\,\,\,\nu}S^{\kappa\lambda}+\Gamma_{\mu\,\,\,\kappa}^{\,\,\,\lambda}S^{\nu\kappa}\,.
 \end{align*}
 \end{split}\]</div>
 <p>The covariant derivative have similar proporties to the ordinary derivative. In particular, it is a linear operation and satisfies the Leibnitz product rule:</p>
 <div class="math notranslate nohighlight">
 \[
-\nabla_{\mu}(T S)=(\nabla_{\mu}T) S+T \nabla_{\mu}S
+\nabla_{\mu}(T S)=(\nabla_{\mu}T) S+T \nabla_{\mu}S\,.
 \]</div>
-<p>It also satisfies <span class="math notranslate nohighlight">\(\nabla_{\mu} \delta^\nu_{\,\,\,\lambda}=0\)</span> which means that it commutes wiith contraction of indices. For example:</p>
+<p>It also satisfies <span class="math notranslate nohighlight">\(\nabla_{\mu} \delta^\nu_{\,\,\,\lambda}=0\)</span> which means that it commutes with contraction of indices. For example:</p>
 <div class="math notranslate nohighlight">
 \[
-\nabla_{\mu}(v^\nu\omega_\nu)=\left(\nabla_\mu v^\nu\right)\omega_{\nu}+v^\nu \left(\nabla_\mu \omega_\nu\right)
+\nabla_{\mu}(v^\nu\omega_\nu)=\left(\nabla_\mu v^\nu\right)\omega_{\nu}+v^\nu \left(\nabla_\mu \omega_\nu\right)\,.
 \]</div>
-<p>In all these expression, <span class="math notranslate nohighlight">\(\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}\)</span> is a <strong>connection</strong>, i.e. define the transformation of <span class="math notranslate nohighlight">\(\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}\)</span> to be such that <span class="math notranslate nohighlight">\(\nabla_\mu v^\nu\)</span>, <span class="math notranslate nohighlight">\(\nabla_\mu \omega_\nu\)</span>, etc. are tensors.</p>
+<p>In all these expression, <span class="math notranslate nohighlight">\(\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}\)</span> is a <strong>connection</strong>, i.e. we define the transformation of <span class="math notranslate nohighlight">\(\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}\)</span> to be such that <span class="math notranslate nohighlight">\(\nabla_\mu v^\nu\)</span>, <span class="math notranslate nohighlight">\(\nabla_\mu \omega_\nu\)</span>, etc. are tensors.</p>
 <div class="tip admonition">
 <p class="admonition-title">Exercise</p>
 <p>Check that <span class="math notranslate nohighlight">\(\nabla_{\mu} \delta^\nu_{\,\,\,\lambda}=0\)</span>.</p>
@@ -352,154 +352,154 @@
 <p>In this course, we will take <span class="math notranslate nohighlight">\(\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}\)</span> to be a special choice of connection: the <strong>Christoffel symbols</strong>:</p>
 <div class="math notranslate nohighlight">
 \[
-\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}=\frac{1}{2}g^{\nu\kappa}\left(\partial_\mu g_{\lambda\kappa}+\partial_\nu g_{\mu\kappa}-\partial_\kappa g_{\mu\nu}\right)
+\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}=\frac{1}{2}g^{\nu\kappa}\left(\partial_\mu g_{\lambda\kappa}+\partial_\lambda g_{\mu\kappa}-\partial_\kappa g_{\mu\lambda}\right)
 \]</div>
 <p>We will later see why this is geometrically a natural choice.</p>
-<p>Consider an arbitrary connection <span class="math notranslate nohighlight">\(\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}\)</span>. We can check a few properties of it. For example by demanding that <span class="math notranslate nohighlight">\(A_{\mu\nu}=\partial_\mu\omega_\nu-\partial_\nu\omega_\mu\)</span> is a tensor, as we checked above, we would to have that <span class="math notranslate nohighlight">\(A_{\mu\nu}=\nabla_\mu\omega_\nu-\nabla_\nu\omega_\mu\)</span>.</p>
+<p>Consider an arbitrary connection <span class="math notranslate nohighlight">\(\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}\)</span>. We can check a few properties of it. For example by demanding that <span class="math notranslate nohighlight">\(A_{\mu\nu}=\partial_\mu\omega_\nu-\partial_\nu\omega_\mu\)</span> is a tensor, as we checked above, we would like to have that <span class="math notranslate nohighlight">\(A_{\mu\nu}=\nabla_\mu\omega_\nu-\nabla_\nu\omega_\mu\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
-\nabla_\mu\omega_\nu-\nabla_\nu\omega_\mu=\left(\partial_\mu\omega_\nu-\Gamma_{\mu\,\,\,\nu}^{\,\,\,\lambda}\omega_\lambda\right)-\left(\partial_\nu\omega_\mu-\Gamma_{\nu\,\,\,\mu}^{\,\,\,\lambda}\omega_\lambda\right)=\left(\partial_\mu\omega_\nu-\partial_\nu\omega_\mu\right)-\left(\Gamma_{\nu\,\,\,\mu}^{\,\,\,\lambda}\omega_\lambda-\Gamma_{\mu\,\,\,\nu}^{\,\,\,\lambda}\omega_\lambda\right)
+\nabla_\mu\omega_\nu-\nabla_\nu\omega_\mu=\left(\partial_\mu\omega_\nu-\Gamma_{\mu\,\,\,\nu}^{\,\,\,\lambda}\omega_\lambda\right)-\left(\partial_\nu\omega_\mu-\Gamma_{\nu\,\,\,\mu}^{\,\,\,\lambda}\omega_\lambda\right)=\left(\partial_\mu\omega_\nu-\partial_\nu\omega_\mu\right)-\left(\Gamma_{\nu\,\,\,\mu}^{\,\,\,\lambda}\omega_\lambda-\Gamma_{\mu\,\,\,\nu}^{\,\,\,\lambda}\omega_\lambda\right)\,.
 \]</div>
 <p>So to get <span class="math notranslate nohighlight">\((\nabla_\mu\omega_\nu-\nabla_\nu\omega_\mu)=\left(\partial_\mu\omega_\nu-\partial_\nu\omega_\mu\right)\)</span> we need to have that the connection elements are symmetric:</p>
 <div class="math notranslate nohighlight">
 \[
-\Gamma_{\mu\,\,\,\nu}^{\,\,\,\lambda}=\Gamma_{\nu\,\,\,\mu}^{\,\,\,\lambda}
+\Gamma_{\mu\,\,\,\nu}^{\,\,\,\lambda}=\Gamma_{\nu\,\,\,\mu}^{\,\,\,\lambda}\,.
 \]</div>
 <p>We would also like <span class="math notranslate nohighlight">\(\nabla_\mu\)</span> to commute with the raising and lowering indices using the metric tensor <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> and <span class="math notranslate nohighlight">\(g^{\mu\nu}\)</span>. For example</p>
 <div class="math notranslate nohighlight">
 \[
-\nabla_\mu v_\nu=\nabla_\mu(g_{\nu\lambda}v^\lambda)=(\nabla_\mu g_{\nu\lambda})v^\lambda+g_{\nu\lambda}(\nabla_\mu v^\nu)
+\nabla_\mu v_\nu=\nabla_\mu(g_{\nu\lambda}v^\lambda)=(\nabla_\mu g_{\nu\lambda})v^\lambda+g_{\nu\lambda}(\nabla_\mu v^\nu)\,.
 \]</div>
 <p>This implies that <span class="math notranslate nohighlight">\(\nabla_\mu g_{\nu\lambda}=0\)</span>.</p>
 <div class="tip admonition">
 <p class="admonition-title">Properties of connection</p>
-<p>We require that any connection possesses the following Properties</p>
+<p>We require that any connection possesses the following properties</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\Gamma_{\mu\,\,\,\nu}^{\,\,\,\lambda}=\Gamma_{\nu\,\,\,\mu}^{\,\,\,\lambda}\)</span>  (symmetric)</p></li>
-<li><p><span class="math notranslate nohighlight">\(\nabla_\mu g_{\nu\lambda}=0\)</span> (metric compatibility)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Gamma_{\mu\,\,\,\nu}^{\,\,\,\lambda}=\Gamma_{\nu\,\,\,\mu}^{\,\,\,\lambda}\)</span>  (symmetry),</p></li>
+<li><p><span class="math notranslate nohighlight">\(\nabla_\mu g_{\nu\lambda}=0\)</span> (metric compatibility).</p></li>
 </ul>
 </div>
 <p>One can show that the Christoffel symbols satisfy both requirements.</p>
 <div class="warning admonition">
 <p class="admonition-title">Exercise</p>
-<p>Show that <span class="math notranslate nohighlight">\(\nabla_\mu g_{\nu\lambda}=0\)</span> implies that also <span class="math notranslate nohighlight">\(\nabla_\mu g^{\nu\lambda}=0\)</span></p>
+<p>Show that <span class="math notranslate nohighlight">\(\nabla_\mu g_{\nu\lambda}=0\)</span> implies that also <span class="math notranslate nohighlight">\(\nabla_\mu g^{\nu\lambda}=0\)</span>.</p>
 </div>
 <p>Sometimes <span class="math notranslate nohighlight">\(\nabla_\mu\)</span> is also called <em>connection</em>. If we take <span class="math notranslate nohighlight">\(\Gamma_{\mu\,\,\,\nu}^{\,\,\,\lambda}\)</span> to be the Christoffel symbols then it is called the <strong>Levi-Civita connection</strong>.</p>
 </div>
 <div class="section" id="riemann-tensor">
 <h2><span class="section-number">4.4. </span>Riemann tensor<a class="headerlink" href="#riemann-tensor" title="Permalink to this headline">¶</a></h2>
-<p>We we take a sufficiently nice function <span class="math notranslate nohighlight">\(f(x)\)</span> then we know that partial derivatives with respect to the coordinates commute:</p>
+<p>If we take a sufficiently nice function <span class="math notranslate nohighlight">\(f(x)\)</span> then we know that partial derivatives with respect to the coordinates commute:</p>
 <div class="math notranslate nohighlight">
 \[
-\left(\frac{\partial}{\partial x^\mu}\frac{\partial}{\partial x^\nu}-\frac{\partial}{\partial x^\nu}\frac{\partial}{\partial x^\mu}\right)f(x)=\left[\frac{\partial}{\partial x^\mu},\frac{\partial}{\partial x^\nu}\right]f(x)=0
+\left(\frac{\partial}{\partial x^\mu}\frac{\partial}{\partial x^\nu}-\frac{\partial}{\partial x^\nu}\frac{\partial}{\partial x^\mu}\right)f(x)=\left[\frac{\partial}{\partial x^\mu},\frac{\partial}{\partial x^\nu}\right]f(x)=0\,.
 \]</div>
-<p>Therefore, we can ask a very natural question: what is the commutator of two covariant derivatives <span class="math notranslate nohighlight">\([\nabla_\mu,\nabla_\nu]=?\)</span>, when acting on sufficiently nice (smooth) function.</p>
+<p>Therefore, we can ask a very natural question: what is the commutator of two covariant derivatives <span class="math notranslate nohighlight">\([\nabla_\mu,\nabla_\nu]=?\)</span>, when acting on sufficiently nice (smooth) tensor.</p>
 <p>Let us first assume that we act with this commutator on a vector <span class="math notranslate nohighlight">\(v^\mu\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-[\nabla_\mu,\nabla_\nu] v^\lambda=R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda} v^\kappa
+[\nabla_\mu,\nabla_\nu] v^\lambda=R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda} v^\kappa\,,
 \]</div>
-<p>where where we introduced a new symbol <span class="math notranslate nohighlight">\(R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda}\)</span> to encode the coefficients of the commutator when expanded in terms of coordinates of vector <span class="math notranslate nohighlight">\(v\)</span>. By the quotient theorem, we have that <span class="math notranslate nohighlight">\(R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda}\)</span> are elements of a tensor. This tensor is called the <strong>Riemann tensor</strong> or the <strong>curvature tensor</strong>.</p>
+<p>where we introduced a new symbol <span class="math notranslate nohighlight">\(R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda}\)</span> to encode the coefficients of the commutator when expanded in terms of coordinates of vector <span class="math notranslate nohighlight">\(v\)</span>. By the quotient theorem, we have that <span class="math notranslate nohighlight">\(R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda}\)</span> are elements of a tensor. This tensor is called the <strong>Riemann tensor</strong> or the <strong>curvature tensor</strong>.</p>
 <p>When acting with a commutator of covariant derivatives on other tensors we get a very similar behaviour. For example, for covectors:</p>
 <div class="math notranslate nohighlight">
 \[
-[\nabla_\mu,\nabla_\nu] \omega_\lambda=-R_{\mu\nu\,\,\,\lambda}^{\,\,\,\,\,\,\kappa} \omega_\kappa
+[\nabla_\mu,\nabla_\nu] \omega_\lambda=-R_{\mu\nu\,\,\,\lambda}^{\,\,\,\,\,\,\kappa} \omega_\kappa\,.
 \]</div>
 <p>For tensors with more indices, we get a sum of terms where each summand corresponds to an index of the tensor. For example:</p>
 <div class="math notranslate nohighlight">
 \[
-[\nabla_\mu,\nabla_\nu] T^\lambda_{\,\,\,\kappa}=R_{\mu\nu\,\,\,\rho}^{\,\,\,\,\,\,\lambda} T^\rho_{\,\,\,\kappa}-R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\rho} T^\kappa_{\,\,\,\rho}\,.
+[\nabla_\mu,\nabla_\nu] T^\lambda_{\,\,\,\kappa}=R_{\mu\nu\,\,\,\rho}^{\,\,\,\,\,\,\lambda} T^\rho_{\,\,\,\kappa}-R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\rho} T^\lambda_{\,\,\,\rho}\,.
 \]</div>
 <p>This means that it is sufficient to find a single tensor <span class="math notranslate nohighlight">\(R\)</span> to know what is the action of the commutator of covariant derivatives on any tensor.</p>
 <p>We claim that for the Levi-Civita tensor, the Riemann tensor takes the following form:</p>
 <div class="math notranslate nohighlight">
 \[
-R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda}=\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\lambda}-\partial_\nu \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\lambda}+ \Gamma_{\mu\,\,\,\rho}^{\,\,\,\lambda}\Gamma_{\nu\,\,\,\kappa}^{\,\,\,\rho}-\Gamma_{\nu\,\,\,\rho}^{\,\,\,\lambda}\Gamma_{\mu\,\,\,\kappa}^{\,\,\,\rho}
+R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda}=\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\lambda}-\partial_\nu \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\lambda}+ \Gamma_{\mu\,\,\,\rho}^{\,\,\,\lambda}\Gamma_{\nu\,\,\,\kappa}^{\,\,\,\rho}-\Gamma_{\nu\,\,\,\rho}^{\,\,\,\lambda}\Gamma_{\mu\,\,\,\kappa}^{\,\,\,\rho}\,,
 \]</div>
 <p>that can be checked by direct calculation.</p>
-<p>For the future use we will need to define two more tensors:</p>
+<p>For future use we will need to define two more tensors:</p>
 <ul class="simple">
-<li><p><strong>Ricci tensor</strong>: <span class="math notranslate nohighlight">\(R_{\mu\nu}=R_{\lambda\mu\,\,\,\nu}^{\,\,\,\,\,\,\lambda}\)</span></p></li>
-<li><p><strong>Ricci scalar</strong>: <span class="math notranslate nohighlight">\(R=g^{\mu\nu}R_{\mu\nu}\)</span></p></li>
+<li><p><strong>Ricci tensor</strong>: <span class="math notranslate nohighlight">\(R_{\mu\nu}=R_{\lambda\mu\,\,\,\nu}^{\,\,\,\,\,\,\lambda}\)</span>,</p></li>
+<li><p><strong>Ricci scalar</strong>: <span class="math notranslate nohighlight">\(R=g^{\mu\nu}R_{\mu\nu}\)</span>.</p></li>
 </ul>
 <div class="section" id="riemann-tensor-for-the-two-sphere">
 <h3><span class="section-number">4.4.1. </span>Riemann tensor for the two-sphere<a class="headerlink" href="#riemann-tensor-for-the-two-sphere" title="Permalink to this headline">¶</a></h3>
-<p>We conclude this section with an explicit calculation of these tensors for the simple case of the two-sphere. The line element is</p>
+<p>We conclude this section with an explicit calculation of these tensors for the simple case of the two-sphere. The line element of the two-sphere with radius <span class="math notranslate nohighlight">\(R_0\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[
-ds^2=R_0^2 (d\theta^2+\sin^2\theta d\phi^2)=g_{\theta\theta}d\theta^2+g_{\phi\phi}d\phi^2+2g_{\theta\phi}d\theta d\phi=g_{ij} dx^i dx^j
+ds^2=R_0^2 (d\theta^2+\sin^2\theta d\phi^2)=g_{\theta\theta}d\theta^2+g_{\phi\phi}d\phi^2+2g_{\theta\phi}d\theta d\phi=g_{ij} dx^i dx^j\,,
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(x^1=\theta\)</span> and <span class="math notranslate nohighlight">\(x^2=\phi\)</span>. We can read off the elements of the metric tensor from this line element: <span class="math notranslate nohighlight">\(g_{\theta\theta}=R_0^2\)</span> and <span class="math notranslate nohighlight">\(g_{\phi\phi}=R_0^2\sin^2\theta\)</span>. In a matrix form</p>
+<p>where <span class="math notranslate nohighlight">\(x^1=\theta\)</span> and <span class="math notranslate nohighlight">\(x^2=\phi\)</span>. We can read off the elements of the metric tensor from this line element: <span class="math notranslate nohighlight">\(g_{\theta\theta}=R_0^2\)</span> and <span class="math notranslate nohighlight">\(g_{\phi\phi}=R_0^2\sin^2\theta\)</span>. In matrix form</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-g=\begin{pmatrix} R_0^2&amp;0\\0&amp;R_0^2\sin^2\theta\end{pmatrix},\qquad\qquad g^{-1}=\begin{pmatrix} R_0^{-2}&amp;0\\0&amp;R_0^{-2}\sin^{-2}\theta\end{pmatrix}
+g=\begin{pmatrix} R_0^2&amp;0\\0&amp;R_0^2\sin^2\theta\end{pmatrix},\qquad\qquad g^{-1}=\begin{pmatrix} R_0^{-2}&amp;0\\0&amp;R_0^{-2}\sin^{-2}\theta\end{pmatrix}.
 \end{split}\]</div>
-<p>First, we find all Christoffel symbols <span class="math notranslate nohighlight">\(\Gamma_{i\,\,j}^{\,\,k}\)</span> for this metric everywhere</p>
+<p>First, we find all Christoffel symbols <span class="math notranslate nohighlight">\(\Gamma_{i\,\,j}^{\,\,k}\)</span> for this metric where</p>
 <div class="math notranslate nohighlight">
 \[
-\Gamma_{i\,\,j}^{\,\,k}=\frac{1}{2}g^{kl}(\partial_i g_{jl}+\partial_j g_{il}-\partial_l g_{ij})=\Gamma_{j\,\,i}^{\,\,k}
+\Gamma_{i\,\,j}^{\,\,k}=\frac{1}{2}g^{kl}(\partial_i g_{jl}+\partial_j g_{il}-\partial_l g_{ij})=\Gamma_{j\,\,i}^{\,\,k}\,,
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(i,j,k=1,2\)</span>. We calculate</p>
+<p>and <span class="math notranslate nohighlight">\(i,j,k=1,2\)</span>. We calculate</p>
 <div class="math notranslate nohighlight">
 \[
-\Gamma_{\theta\,\,\theta}^{\,\,\,\theta}=\frac{1}{2}g^{\theta k}(\partial_\theta g_{\theta k}+\partial_{\theta}g_{k\theta}-\partial_{k}g_{\theta\theta})=\frac{1}{2}g^{\theta \theta}(\partial_\theta g_{\theta \theta}+\partial_{\theta}g_{\theta\theta}-\partial_{\theta}g_{\theta\theta})=0
+\Gamma_{\theta\,\,\theta}^{\,\,\,\theta}=\frac{1}{2}g^{\theta k}(\partial_\theta g_{\theta k}+\partial_{\theta}g_{k\theta}-\partial_{k}g_{\theta\theta})=\frac{1}{2}g^{\theta \theta}(\partial_\theta g_{\theta \theta}+\partial_{\theta}g_{\theta\theta}-\partial_{\theta}g_{\theta\theta})=0\,,
 \]</div>
 <p>where we used the fact that <span class="math notranslate nohighlight">\(g^{\theta\phi}=0\)</span> and the fact that <span class="math notranslate nohighlight">\(g_{\theta\theta}\)</span> does not depend on <span class="math notranslate nohighlight">\(\theta\)</span> and therefore <span class="math notranslate nohighlight">\(\partial_{\theta}g_{\theta\theta}=0\)</span>.</p>
 <p>Following similar calculations:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-\Gamma_{\theta\,\,\,\phi}^{\,\,\,\theta}&amp;=\frac{1}{2}g^{\theta k}(\partial_\theta g_{\phi k}+\partial_{\phi}g_{\theta k}-\partial_k g_{\theta\phi})=\frac{1}{2}g^{\theta \theta}(\partial_\theta g_{\phi \theta}+\partial_{\phi}g_{\theta \theta}-\partial_\theta g_{\theta\phi})=0=\Gamma_{\phi\,\,\,\theta}^{\,\,\,\theta}\\
+\Gamma_{\theta\,\,\,\phi}^{\,\,\,\theta}&amp;=\frac{1}{2}g^{\theta k}(\partial_\theta g_{\phi k}+\partial_{\phi}g_{\theta k}-\partial_k g_{\theta\phi})=\frac{1}{2}g^{\theta \theta}(\partial_\theta g_{\phi \theta}+\partial_{\phi}g_{\theta \theta}-\partial_\theta g_{\theta\phi})=0=\Gamma_{\phi\,\,\,\theta}^{\,\,\,\theta}\,.\\
 \Gamma_{\phi\,\,\,\phi}^{\,\,\,\theta}&amp;=\frac{1}{2}g^{\theta k}(\partial_\phi g_{\phi k}+\partial_{\phi}g_{\phi k}-\partial_k g_{\phi\phi})=\frac{1}{2}g^{\theta \theta}(\partial_\phi g_{\phi \theta}+\partial_{\phi}g_{\phi \theta}-\partial_\theta g_{\phi\phi})=\\
-&amp;=\frac{1}{2}R^{-2}R^2 (-\partial_\theta \sin^2\theta)=-\frac{1}{2}2\sin\theta\cos\theta=-\sin\theta\cos\theta\\
-\Gamma_{\theta\,\,\,\theta}^{\,\,\,\phi}&amp;=\frac{1}{2}g^{\phi k}(\partial_\theta g_{\theta k}+\partial_{\theta}g_{\theta k}-\partial_k g_{\theta\theta})=\frac{1}{2}g^{\phi \phi}(\partial_\theta g_{\theta \phi}+\partial_{\theta}g_{\theta \phi}-\partial_\phi g_{\theta\theta})=0\\
-\Gamma_{\theta\,\,\,\phi}^{\,\,\,\theta}&amp;=\frac{1}{2}g^{\phi \phi}(\partial_\theta g_{\phi \phi}+\partial_{\theta}g_{\theta \phi}-\partial_\phi g_{\theta\phi})=\frac{1}{2}\left(\frac{1}{\sin^2\theta}\right)\left(\partial_\theta \sin^2\theta\right)=\frac{2\sin\theta\cos\theta}{2\sin^2\theta}=\frac{\cos\theta}{\sin\theta}=\Gamma_{\phi\,\,\,\theta}^{\,\,\,\theta}\\
-\Gamma_{\phi\,\,\,\phi}^{\,\,\,\phi}&amp;=\frac{1}{2}g^{\phi\phi}(\partial_\phi g_{\phi\phi}+\partial_\phi g_{\phi\phi}-\partial_\phi g_{\phi\phi})=0
+&amp;=\frac{1}{2}R_0^{-2}R_0^2 (-\partial_\theta \sin^2\theta)=-\frac{1}{2}2\sin\theta\cos\theta=-\sin\theta\cos\theta\,.\\
+\Gamma_{\theta\,\,\,\theta}^{\,\,\,\phi}&amp;=\frac{1}{2}g^{\phi k}(\partial_\theta g_{\theta k}+\partial_{\theta}g_{\theta k}-\partial_k g_{\theta\theta})=\frac{1}{2}g^{\phi \phi}(\partial_\theta g_{\theta \phi}+\partial_{\theta}g_{\theta \phi}-\partial_\phi g_{\theta\theta})=0\,.\\
+\Gamma_{\theta\,\,\,\phi}^{\,\,\,\phi}&amp;=\frac{1}{2}g^{\phi \phi}(\partial_\theta g_{\phi \phi}+\partial_{\phi}g_{\theta \phi}-\partial_\phi g_{\theta\phi})=\frac{1}{2}\left(\frac{1}{\sin^2\theta}\right)\left(\partial_\theta \sin^2\theta\right)=\frac{2\sin\theta\cos\theta}{2\sin^2\theta}=\frac{\cos\theta}{\sin\theta}=\Gamma_{\phi\,\,\,\theta}^{\,\,\,\phi}\,.\\
+\Gamma_{\phi\,\,\,\phi}^{\,\,\,\phi}&amp;=\frac{1}{2}g^{\phi\phi}(\partial_\phi g_{\phi\phi}+\partial_\phi g_{\phi\phi}-\partial_\phi g_{\phi\phi})=0\,.
 \end{align*}
 \end{split}\]</div>
 <p>We conclude that the only non-zero Christoffel symbols are</p>
 <div class="math notranslate nohighlight">
 \[
-\Gamma_{\phi\,\,\,\phi}^{\,\,\,\theta}=-\sin\theta\cos\theta\,,\qquad\qquad \Gamma_{\theta\,\,\,\phi}^{\,\,\,\theta}=\Gamma_{\phi\,\,\,\theta}^{\,\,\,\theta}=\frac{\cos\theta}{\sin\theta}\,.
+\Gamma_{\phi\,\,\,\phi}^{\,\,\,\theta}=-\sin\theta\cos\theta\,,\qquad\qquad \Gamma_{\theta\,\,\,\phi}^{\,\,\,\phi}=\Gamma_{\phi\,\,\,\theta}^{\,\,\,\phi}=\frac{\cos\theta}{\sin\theta}\,.
 \]</div>
 <p>Now we can find the Riemann tensor coefficients where</p>
 <div class="math notranslate nohighlight">
 \[
-R_{ij\,\,\,l}^{\,\,\,\,\,k}=\partial_i \Gamma_{j\,\,\, l}^{\,\,k}-\partial_j \Gamma_{i\,\,\, l}^{\,\,k}+\Gamma_{i\,\,\, m}^{\,\,k}\Gamma_{j\,\,\, l}^{\,\,m}-\Gamma_{j\,\,\, m}^{\,\,k}\Gamma_{i\,\,\, l}^{\,\,m}
+R_{ij\,\,\,l}^{\,\,\,\,\,k}=\partial_i \Gamma_{j\,\,\, l}^{\,\,k}-\partial_j \Gamma_{i\,\,\, l}^{\,\,k}+\Gamma_{i\,\,\, m}^{\,\,k}\Gamma_{j\,\,\, l}^{\,\,m}-\Gamma_{j\,\,\, m}^{\,\,k}\Gamma_{i\,\,\, l}^{\,\,m}\,.
 \]</div>
-<p>Since <span class="math notranslate nohighlight">\(R_{ij\,\,\,l}^{\,\,\,\,\,k}\)</span> is antisymmetric with respect to the first two indices, then we need to take <span class="math notranslate nohighlight">\(i\neq j\)</span> to get a non-zero result. Next week we also see the the tensor <span class="math notranslate nohighlight">\(R_{ijkl}\)</span> is antisymmetric with respect to the last two indices. Since the metric of the two sphere, it means that we need to take <span class="math notranslate nohighlight">\(k\neq l\)</span> as well. Therefore the only non-trivial element of the Riemann tensor is <span class="math notranslate nohighlight">\(R_{\theta\phi\,\,\,\phi}^{\,\,\,\,\,\,\theta}\)</span>:</p>
+<p>Since <span class="math notranslate nohighlight">\(R_{ij\,\,\,l}^{\,\,\,\,\,k}\)</span> is antisymmetric with respect to the first two indices, then we need to take <span class="math notranslate nohighlight">\(i\neq j\)</span> to get a non-zero result. Next week we also see the the tensor <span class="math notranslate nohighlight">\(R_{ijkl}\)</span> is antisymmetric with respect to the last two indices. Since the metric of the two sphere is diagonal, it means that we need to take <span class="math notranslate nohighlight">\(k\neq l\)</span> as well. Therefore the only non-trivial element of the Riemann tensor is <span class="math notranslate nohighlight">\(R_{\theta\phi\,\,\,\phi}^{\,\,\,\,\,\,\theta}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
 R_{\theta\phi\,\,\,\phi}^{\,\,\,\,\,\,\theta}&amp;=\partial_{\theta}\Gamma_{\phi\,\,\,\phi}^{\,\,\,\theta}-\partial_{\phi}\Gamma_{\theta\,\,\,\phi}^{\,\,\,\theta}+\Gamma_{\theta\,\,\,m}^{\,\,\,\theta}\Gamma_{\phi\,\,\,\phi}^{\,\,\,m}-\Gamma_{\phi\,\,\,m}^{\,\,\,\theta}\Gamma_{\theta\,\,\,\phi}^{\,\,\,m}\\
 &amp;=\partial_\theta(-\sin\theta\cos\theta)+\Gamma_{\theta\,\,\,\theta}^{\,\,\,\theta}\Gamma_{\phi\,\,\,\phi}^{\,\,\,\theta}+\Gamma_{\theta\,\,\,\phi}^{\,\,\,\theta}\Gamma_{\phi\,\,\,\phi}^{\,\,\,\phi}-\Gamma_{\phi\,\,\,\theta}^{\,\,\,\theta}\Gamma_{\theta\,\,\,\phi}^{\,\,\,\theta}-\Gamma_{\phi\,\,\,\phi}^{\,\,\,\theta}\Gamma_{\theta\,\,\,\phi}^{\,\,\,\phi}\\
 &amp;=-\partial_\theta(\sin\theta\cos\theta)-(-\sin\theta\cos\theta)\left(\frac{\cos\theta}{\sin\theta}\right)\\
-&amp;=-(\cos^2\theta-\sin^2\theta)+\cos^2\theta=\sin^2\theta
+&amp;=-(\cos^2\theta-\sin^2\theta)+\cos^2\theta=\sin^2\theta\,.
 \end{align*}
 \end{split}\]</div>
 <p>By antisymmetry we can find:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-R_{\phi\theta\,\,\,\phi}^{\,\,\,\,\,\,\theta}&amp;=-R_{\theta\phi\,\,\,\phi}^{\,\,\,\,\,\,\theta}=-\sin^2\theta\\
-R_{\theta\phi\,\,\,\theta}^{\,\,\,\,\,\,\phi}&amp;=g^{\phi\phi}R_{\theta\phi\phi\theta}=-g^{\phi\phi}R_{\theta\phi\theta\phi}=-g_{\theta\theta}g^{\phi\phi}R_{\theta\phi\,\,\,\phi}^{\,\,\,\,\,\,\theta}=-R_0^2R_0^{-2}\sin^{-2}\theta \sin^2\theta =-1\\
-R_{\phi\theta\,\,\,\theta}^{\,\,\,\,\,\,\phi}&amp;=-R_{\theta\phi\,\,\,\theta}^{\,\,\,\,\,\,\phi}=1
+R_{\phi\theta\,\,\,\phi}^{\,\,\,\,\,\,\theta}&amp;=-R_{\theta\phi\,\,\,\phi}^{\,\,\,\,\,\,\theta}=-\sin^2\theta\,,\\
+R_{\theta\phi\,\,\,\theta}^{\,\,\,\,\,\,\phi}&amp;=g^{\phi\phi}R_{\theta\phi\phi\theta}=-g^{\phi\phi}R_{\theta\phi\theta\phi}=-g_{\theta\theta}g^{\phi\phi}R_{\theta\phi\,\,\,\phi}^{\,\,\,\,\,\,\theta}=-R_0^2R_0^{-2}\sin^{-2}\theta \sin^2\theta =-1\,,\\
+R_{\phi\theta\,\,\,\theta}^{\,\,\,\,\,\,\phi}&amp;=-R_{\theta\phi\,\,\,\theta}^{\,\,\,\,\,\,\phi}=1\,.
 \end{align*}
 \end{split}\]</div>
 <p>The Ricci tensor</p>
 <div class="math notranslate nohighlight">
 \[
-R_{ij}=R_{ki\,\,j}^{\,\,\,\,k}
+R_{ij}=R_{ki\,\,j}^{\,\,\,\,k}\,,
 \]</div>
 <p>can be calculated to get:</p>
 <div class="math notranslate nohighlight">
 \[
-R_{\phi\phi}=R_{\phi\phi\,\,\,\phi}^{\,\,\,\,\,\,\,\phi}+R_{\theta\phi\,\,\,\phi}^{\,\,\,\,\,\,\,\theta}=0+\sin^2\theta=\sin^2\theta
+R_{\phi\phi}=R_{\phi\phi\,\,\,\phi}^{\,\,\,\,\,\,\,\phi}+R_{\theta\phi\,\,\,\phi}^{\,\,\,\,\,\,\,\theta}=0+\sin^2\theta=\sin^2\theta\,,
 \]</div>
 <p>and</p>
 <div class="math notranslate nohighlight">
 \[
-R_{\theta\theta}=R_{\phi\theta\,\,\,\theta}^{\,\,\,\,\,\,\,\phi}+R_{\theta\theta\,\,\,\theta}^{\,\,\,\,\,\,\,\theta}=1+0=1
+R_{\theta\theta}=R_{\phi\theta\,\,\,\theta}^{\,\,\,\,\,\,\phi}+R_{\theta\theta\,\,\,\theta}^{\,\,\,\,\,\,\theta}=1+0=1\,,
 \]</div>
 <p>with the off-diagonal terms vanishing <span class="math notranslate nohighlight">\(R_{\theta\phi}=R_{\phi\theta}=0\)</span>.</p>
 <p>Finally the Ricci scalar is:</p>
@@ -510,7 +510,7 @@ R=R_{i}^{\,\,i}=g^{ij}R_{ij}
 <p>and for the two-sphere we get:</p>
 <div class="math notranslate nohighlight">
 \[
-R=g^{\theta\theta}R_{\theta\theta}+g^{\phi\phi}R_{\phi\phi}=R_0^{-2}\sin^{-2}\theta \cdot \sin^2\theta+R_0^{-2}\cdot 1=\frac{2}{R_0^2}
+R=g^{\theta\theta}R_{\theta\theta}+g^{\phi\phi}R_{\phi\phi}=R_0^{-2}\sin^{-2}\theta \cdot \sin^2\theta+R_0^{-2}\cdot 1=\frac{2}{R_0^2}\,.
 \]</div>
 <p>We get that the curvature (Ricci scalar) for the two-sphere is inverse-proportional to the radius of the sphere which is an expected result: the larger the radius, the smaller the curvature, and vice versa.</p>
 </div>
@@ -552,7 +552,7 @@ R=g^{\theta\theta}R_{\theta\theta}+g^{\phi\phi}R_{\phi\phi}=R_0^{-2}\sin^{-2}\th
     <a class='right-next' id="next-link" href="Week5.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>Week 5 (under construction)</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Week 5</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
