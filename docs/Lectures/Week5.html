@@ -244,8 +244,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#construction-of-lattice">
-     5.1.1. Construction of lattice
+    <a class="reference internal nav-link" href="#construction-of-lic">
+     5.1.1. Construction of LIC
     </a>
    </li>
   </ul>
@@ -284,8 +284,8 @@
 <h2><span class="section-number">5.1. </span>Local inertial coordinates<a class="headerlink" href="#local-inertial-coordinates" title="Permalink to this headline">¶</a></h2>
 <p>At any point <span class="math notranslate nohighlight">\(p\)</span> in spacetime, it is possible to choose coordinates such that:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(g_{\mu\nu}\Big|_p=\eta_{\mu\nu}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\partial_\mu g_{\nu\rho}\Big|_p=0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(g_{\mu\nu}\Big|_p=\eta_{\mu\nu}\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\partial_\mu g_{\nu\rho}\Big|_p=0\)</span>.</p></li>
 </ul>
 <p>Such coordinates are called <strong>local inertial coordinates (LIC)</strong> at <span class="math notranslate nohighlight">\(p\)</span>.</p>
 <div class="admonition note">
@@ -297,8 +297,8 @@
 <p>In a local inertial coordinates at <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(\partial_\mu\partial_\nu g_{\lambda\kappa}\)</span> and <span class="math notranslate nohighlight">\(\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\lambda}\)</span> might not vanish.</p>
 </div>
 <p>If we can establish that the components of two tensors are equal in LIC at <span class="math notranslate nohighlight">\(p\)</span> (usually taken to be <span class="math notranslate nohighlight">\(x^\mu=0\)</span>) then this implies that they are equal in all coordinate systems (because they are tensors) and the point <span class="math notranslate nohighlight">\(p\)</span> was generic so this implies that it is true at all points in spacetime.</p>
-<div class="section" id="construction-of-lattice">
-<h3><span class="section-number">5.1.1. </span>Construction of lattice<a class="headerlink" href="#construction-of-lattice" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="construction-of-lic">
+<h3><span class="section-number">5.1.1. </span>Construction of LIC<a class="headerlink" href="#construction-of-lic" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Setting <span class="math notranslate nohighlight">\(x'^\mu=x^\mu+a^\mu\)</span> for some constant <span class="math notranslate nohighlight">\(a^\mu\)</span>, we can choose <span class="math notranslate nohighlight">\(a^\mu\)</span> such that <span class="math notranslate nohighlight">\(x'^\mu=0\)</span> at our chosen point <span class="math notranslate nohighlight">\(p\)</span>.</p></li>
 <li><p>By the previous point, and without loss of generality, we have that <span class="math notranslate nohighlight">\(x^\mu=0\)</span>  at <span class="math notranslate nohighlight">\(p\)</span>. Now set <span class="math notranslate nohighlight">\(x^\mu=U^\mu_{\,\,\nu}x'^\nu\)</span> for some constant <span class="math notranslate nohighlight">\(U^\mu_{\,\,\nu}\)</span>. Then <span class="math notranslate nohighlight">\(\frac{\partial x^\lambda}{\partial x'^\mu}=U^\lambda_{\,\,\mu}\)</span> so:</p></li>
@@ -315,20 +315,20 @@ g'=U^T g \,U\,,
 <p>as matrices. As <span class="math notranslate nohighlight">\(g\)</span> is a symmetric matrix, it is then a standard result in linear algebra that there exists an invertible matrix <span class="math notranslate nohighlight">\(W\)</span> such that</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-W^T g \, W =\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}=\eta
+W^T g \, W =\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}=\eta\,,
 \end{split}\]</div>
 <p>which means that there exists a coordinate system for which the metric is equal to <span class="math notranslate nohighlight">\(\eta\)</span> at point <span class="math notranslate nohighlight">\(p\)</span>.</p>
 <ul class="simple">
-<li><p>By the previous two points, we may assume that without loss of generality we can start with <span class="math notranslate nohighlight">\(x^\mu\)</span> at <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(g_{\mu\nu}=\eta_{\mu\nu}\)</span> at <span class="math notranslate nohighlight">\(p\)</span>. Then set</p></li>
+<li><p>By the previous two points, we may assume that without loss of generality we can start with <span class="math notranslate nohighlight">\(x^\mu=0\)</span> at <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(g_{\mu\nu}=\eta_{\mu\nu}\)</span> at <span class="math notranslate nohighlight">\(p\)</span>. Then set</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[
-x^\mu=x'^\mu+\frac{1}{2}\gamma^\mu_{\,\,\nu\lambda} x'^\nu x'^\lambda
+x^\mu=x'^\mu+\frac{1}{2}\gamma^\mu_{\,\,\nu\lambda} x'^\nu x'^\lambda\,,
 \]</div>
 <p>with a constant <span class="math notranslate nohighlight">\(\gamma\)</span>. This implies that</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{\partial x^\mu}{\partial x'^\lambda}=\delta^\mu_{\,\,\lambda}+\gamma^\mu_{\,\,\lambda\rho}x'^\rho
+\frac{\partial x^\mu}{\partial x'^\lambda}=\delta^\mu_{\,\,\lambda}+\gamma^\mu_{\,\,\lambda\rho}x'^\rho\,.
 \]</div>
 <p>Then</p>
 <div class="math notranslate nohighlight">
@@ -337,12 +337,12 @@ x^\mu=x'^\mu+\frac{1}{2}\gamma^\mu_{\,\,\nu\lambda} x'^\nu x'^\lambda
 g'_{\mu\nu}&amp;=g_{\lambda\kappa}(\delta^\lambda_{\,\,\mu}+\gamma^\lambda_{\,\,\mu\rho}x'^\rho)(\delta^\kappa_{\,\,\nu}+\gamma^\kappa_{\,\,\nu\sigma}x'^\sigma)\\
 &amp;=g_{\lambda\kappa}\delta^\lambda_{\,\,\mu}\delta^\kappa_{\,\,\nu}+(g_{\lambda\kappa}\delta^\kappa_{\,\,\nu}\gamma^\lambda_{\,\,\mu\rho}+g_{\lambda\kappa \delta^\lambda_{\,\,\mu}\gamma^\kappa_{\,\,\nu\rho}})x'^\rho+\mathcal{O}(x'^2)\\
 &amp;=g_{\mu\nu}+(\gamma_{\nu\mu\rho+\gamma_{\mu\nu\rho}})x'^\rho+\mathcal{O}(x'^2)
-\end{align*}
+\,.\end{align*}
 \end{split}\]</div>
-<p>Then for the derivative</p>
+<p>Therefore, for the derivative</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{\partial}{\partial x'^\lambda}g'_{\mu\nu}=\frac{\partial}{\partial x'^\lambda}g_{\mu\nu}+2\gamma_{(\mu\nu)\lambda}+\mathcal{O}(x')
+\frac{\partial}{\partial x'^\lambda}g'_{\mu\nu}=\frac{\partial}{\partial x'^\lambda}g_{\mu\nu}+2\gamma_{(\mu\nu)\lambda}+\mathcal{O}(x')\,.
 \]</div>
 <p>If we choose <span class="math notranslate nohighlight">\(2\gamma_{(\mu\nu)\lambda}=-\frac{\partial}{\partial x'^\lambda}g_{\mu\nu}\Big|_{x=0}\)</span>, then <span class="math notranslate nohighlight">\(\frac{\partial}{\partial x'^\lambda}g'_{\mu\nu}\Big|_{x'=0}=0\)</span>. Then the coordinates <span class="math notranslate nohighlight">\(x'^\mu\)</span> have all the properties of LIC.</p>
 </div>
@@ -352,30 +352,30 @@ g'_{\mu\nu}&amp;=g_{\lambda\kappa}(\delta^\lambda_{\,\,\mu}+\gamma^\lambda_{\,\,
 <p>Working in LIC, we will use the symbol <span class="math notranslate nohighlight">\(\stackrel{\star}{=}\)</span> to mean ‘true in LIC at <span class="math notranslate nohighlight">\(x=0\)</span>’, where <span class="math notranslate nohighlight">\(x=0\)</span> at point <span class="math notranslate nohighlight">\(p\)</span>. For example <span class="math notranslate nohighlight">\(g_{\mu\nu}\stackrel{\star}{=}\eta_{\mu\nu}\)</span>, <span class="math notranslate nohighlight">\(\partial_\lambda g_{\mu\nu}\stackrel{\star}{=}0\)</span>, <span class="math notranslate nohighlight">\(\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}\stackrel{\star}{=}0\)</span>, but <span class="math notranslate nohighlight">\(\partial_\mu\partial_\nu g_{\lambda\kappa}\not\stackrel{\star}{=}0\)</span> in general. We then have</p>
 <div class="math notranslate nohighlight">
 \[
-R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda}=\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\lambda}-\partial_\nu \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\lambda}+ \Gamma_{\mu\,\,\,\rho}^{\,\,\,\lambda} \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\rho}-\Gamma_{\nu\,\,\,\rho}^{\,\,\,\lambda} \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\rho}\stackrel{\star}{=}\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\lambda}-\partial_\nu \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\lambda}
+R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda}=\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\lambda}-\partial_\nu \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\lambda}+ \Gamma_{\mu\,\,\,\rho}^{\,\,\,\lambda} \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\rho}-\Gamma_{\nu\,\,\,\rho}^{\,\,\,\lambda} \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\rho}\stackrel{\star}{=}\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\lambda}-\partial_\nu \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\lambda}\,.
 \]</div>
 <p>We will be more interested actually in <span class="math notranslate nohighlight">\(R_{\mu\nu\lambda\kappa}\)</span> here. Since <span class="math notranslate nohighlight">\(\partial_{\lambda}g_{\mu\nu}\stackrel{\star}{=}0\)</span> then</p>
 <div class="math notranslate nohighlight">
 \[
-R_{\mu\nu\lambda\kappa}=g_{\lambda\rho}R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\rho}\stackrel{\star}{=}\eta_{\lambda\rho}R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\rho}\stackrel{\star}{=}\eta_{\lambda\rho}(\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\rho}-\partial_\nu \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\rho})\stackrel{\star}{=}\partial_\mu( \eta_{\lambda\rho}\Gamma_{\nu\,\,\,\kappa}^{\,\,\,\rho})-\partial_\nu( \eta_{\lambda\rho}\Gamma_{\mu\,\,\,\kappa}^{\,\,\,\rho})
+R_{\mu\nu\lambda\kappa}=g_{\lambda\rho}R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\rho}\stackrel{\star}{=}\eta_{\lambda\rho}R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\rho}\stackrel{\star}{=}\eta_{\lambda\rho}(\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\rho}-\partial_\nu \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\rho})\stackrel{\star}{=}\partial_\mu( \eta_{\lambda\rho}\Gamma_{\nu\,\,\,\kappa}^{\,\,\,\rho})-\partial_\nu( \eta_{\lambda\rho}\Gamma_{\mu\,\,\,\kappa}^{\,\,\,\rho})\,.
 \]</div>
 <p>Now, since</p>
 <div class="math notranslate nohighlight">
 \[
-g_{\lambda\rho}\Gamma_{\mu\,\,\,\nu}^{\,\,\,\rho}=\frac{1}{2}(\partial_\mu g_{\nu\lambda}+\partial_\nu g_{\mu\lambda}-\partial_\lambda g_{\mu\nu})
+g_{\lambda\rho}\Gamma_{\mu\,\,\,\nu}^{\,\,\,\rho}=\frac{1}{2}(\partial_\mu g_{\nu\lambda}+\partial_\nu g_{\mu\lambda}-\partial_\lambda g_{\mu\nu})\,,
 \]</div>
 <p>we find</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
 R_{\mu\nu\lambda\kappa}&amp;\stackrel{\star}{=}\frac{1}{2}(\partial_\mu\partial_\nu g_{\kappa\lambda}+\partial_\mu\partial_\kappa g_{\nu\lambda}-\partial_{\mu}\partial_\lambda g_{\nu\kappa})-\frac{1}{2}(\partial_\nu\partial_\mu g_{\kappa\lambda}+\partial_\nu\partial_\kappa g_{\mu\lambda}-\partial_\nu\partial_\lambda g_{\mu\kappa})\\
-&amp;\stackrel{\star}{=}-(\partial_\lambda\partial_{[\mu}g_{\nu]\kappa}-\partial_\kappa\partial_{[\mu}g_{\nu]\lambda})=-2\partial_{[\lambda|}\partial_{[\mu}g_{\nu]|\kappa]}
+&amp;\stackrel{\star}{=}-(\partial_\lambda\partial_{[\mu}g_{\nu]\kappa}-\partial_\kappa\partial_{[\mu}g_{\nu]\lambda})=-2\partial_{[\lambda|}\partial_{[\mu}g_{\nu]|\kappa]}\,,
 \end{align*}
 \end{split}\]</div>
 <p>where the last result is antisymmetrised in <span class="math notranslate nohighlight">\(\mu\leftrightarrow \nu\)</span> and <span class="math notranslate nohighlight">\(\lambda\leftrightarrow \kappa\)</span>. For example</p>
 <div class="math notranslate nohighlight">
 \[
-R_{\mu\nu\lambda\kappa}\stackrel{\star}{=}-R_{\nu\mu\lambda\kappa}\stackrel{\star}{=}-R_{\mu\nu\kappa\lambda}
+R_{\mu\nu\lambda\kappa}\stackrel{\star}{=}-R_{\nu\mu\lambda\kappa}\stackrel{\star}{=}-R_{\mu\nu\kappa\lambda}\,.
 \]</div>
 <p>We can also check that <span class="math notranslate nohighlight">\(R_{\mu\nu\lambda\kappa}\stackrel{\star}{=}R_{\lambda\kappa\mu\nu}\)</span>.</p>
 <p>All these quantities are tensors and therefore the equations above are true in general!</p>
@@ -386,11 +386,11 @@ R_{\mu\nu\lambda\kappa}\stackrel{\star}{=}-R_{\nu\mu\lambda\kappa}\stackrel{\sta
 </ul>
 <div class="math notranslate nohighlight">
 \[
-R_{[\mu\nu\lambda]\kappa}=R_{\mu\nu\lambda\kappa}+R_{\lambda\mu\nu\kappa}+R_{\nu\lambda\mu\kappa}
+R_{[\mu\nu\lambda]\kappa}=R_{\mu\nu\lambda\kappa}+R_{\lambda\mu\nu\kappa}+R_{\nu\lambda\mu\kappa}\,.
 \]</div>
 <ul class="simple">
-<li><p>Using LIC check that <span class="math notranslate nohighlight">\(R_{[\mu\nu\lambda]\kappa}=0\)</span></p></li>
-<li><p>Check that <span class="math notranslate nohighlight">\(\nabla_{[\mu}R_{\nu\lambda]\rho\sigma}=0\)</span> using lattice</p></li>
+<li><p>Using LIC check that <span class="math notranslate nohighlight">\(R_{[\mu\nu\lambda]\kappa}=0\)</span>.</p></li>
+<li><p>Check that <span class="math notranslate nohighlight">\(\nabla_{[\mu}R_{\nu\lambda]\rho\sigma}=0\)</span> using LIC.</p></li>
 <li><p>Check that <span class="math notranslate nohighlight">\(\nabla_{[\mu}R_{\nu\lambda]}^{\,\,\,\,\,\,\nu\lambda}=0\)</span> and therefore <span class="math notranslate nohighlight">\(\nabla_\mu G^{\mu\nu}=0\)</span>, where <span class="math notranslate nohighlight">\(G^{\mu\nu}=R^{\mu\nu}-\frac{1}{2}g^{\mu\nu}R\)</span>.</p></li>
 </ul>
 </div>
@@ -403,30 +403,30 @@ R_{\mu\nu\lambda\kappa}=g_{\lambda\rho}R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\rho}
 \]</div>
 <p>Symmetries:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(R_{\mu\nu\lambda\kappa}=R_{[\mu\nu]\lambda\kappa}=R_{\mu\nu[\lambda\kappa]}=R_{[\mu\nu][\lambda\kappa]}\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(R_{\mu\nu\lambda\kappa}=R_{\lambda\kappa\mu\nu}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(R_{[\mu\nu\lambda]\kappa}=0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(R_{\mu\nu\lambda\kappa}=R_{[\mu\nu]\lambda\kappa}=R_{\mu\nu[\lambda\kappa]}=R_{[\mu\nu][\lambda\kappa]}\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(R_{\mu\nu\lambda\kappa}=R_{\lambda\kappa\mu\nu}\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(R_{[\mu\nu\lambda]\kappa}=0\)</span>.</p></li>
 </ul>
 <p>Using the second relation from above we have</p>
 <div class="math notranslate nohighlight">
 \[
-g^{\mu\nu}R_{\mu\nu\lambda\kappa}=g^{\mu\lambda}R_{\lambda\kappa\mu\nu}=R_{\nu\kappa}=R_{\kappa\lambda}
+g^{\mu\nu}R_{\mu\nu\lambda\kappa}=g^{\mu\lambda}R_{\lambda\kappa\mu\nu}=R_{\nu\kappa}=R_{\kappa\lambda}\,,
 \]</div>
 <p>and therefore the Ricci tensor is symmetric.</p>
 <p>Bianchi identity:</p>
 <div class="math notranslate nohighlight">
 \[
-\nabla_{[\mu}R_{\nu\lambda]\kappa\rho}=0
+\nabla_{[\mu}R_{\nu\lambda]\kappa\rho}=0\,.
 \]</div>
-<p>Contracting this, we will also Find</p>
+<p>Contracting this, we will also find</p>
 <div class="math notranslate nohighlight">
 \[
-\nabla_\mu G^{\mu\nu}=0
+\nabla_\mu G^{\mu\nu}=0\,,
 \]</div>
 <p>where</p>
 <div class="math notranslate nohighlight">
 \[
-G_{\mu\nu}=R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R
+G_{\mu\nu}=R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R\,,
 \]</div>
 <p>is the <strong>Einstein tensor</strong>.</p>
 </div>
@@ -436,7 +436,7 @@ G_{\mu\nu}=R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R
 <p>For an arbitrary trajectory/path <span class="math notranslate nohighlight">\(x^\mu(\lambda)\)</span>, as in the Special Relativity we have</p>
 <div class="math notranslate nohighlight">
 \[
-ds^2=g_{\mu\nu}(x)dx^\mu dx^\nu
+ds^2=g_{\mu\nu}(x)dx^\mu dx^\nu\,,
 \]</div>
 <p>and we have that the trajectory is</p>
 <div class="math notranslate nohighlight">
@@ -447,17 +447,17 @@ ds^2=g_{\mu\nu}(x)dx^\mu dx^\nu
 <p>For timelike trajectories, we define the proper time by</p>
 <div class="math notranslate nohighlight">
 \[
-d\tau^2=-ds^2=-g_{\mu\nu}(x)dx^\mu dx^\nu
+d\tau^2=-ds^2=-g_{\mu\nu}(x)dx^\mu dx^\nu\,,
 \]</div>
 <p>and the four-velocity</p>
 <div class="math notranslate nohighlight">
 \[
-v^\mu=\frac{dx^\mu}{d\tau}
+v^\mu=\frac{dx^\mu}{d\tau}\,.
 \]</div>
 <p>This immediately gives</p>
 <div class="math notranslate nohighlight">
 \[
-g_{\mu\nu}v^\mu v^\nu=g_{\mu\nu}\frac{dx^\mu}{d\tau}\frac{dx^\nu}{d\tau}=-1
+g_{\mu\nu}v^\mu v^\nu=g_{\mu\nu}\frac{dx^\mu}{d\tau}\frac{dx^\nu}{d\tau}=-1\,,
 \]</div>
 <p>along the path.</p>
 <div class="warning admonition">
@@ -467,59 +467,59 @@ g_{\mu\nu}v^\mu v^\nu=g_{\mu\nu}\frac{dx^\mu}{d\tau}\frac{dx^\nu}{d\tau}=-1
 <p>Answer: if <span class="math notranslate nohighlight">\(x'^\mu=x'^\mu(x)\)</span> then</p>
 <div class="math notranslate nohighlight">
 \[
-v'^\mu=\frac{dx'^\mu}{d\tau}=\left(\frac{\partial x'^\mu}{\partial x^nu}\right)\frac{dx^\nu}{d\tau}=\left(\frac{\partial x'^\mu}{\partial x^\nu}\right)v^\nu
+v'^\mu=\frac{dx'^\mu}{d\tau}=\left(\frac{\partial x'^\mu}{\partial x^\nu}\right)\frac{dx^\nu}{d\tau}=\left(\frac{\partial x'^\mu}{\partial x^\nu}\right)v^\nu\,.
 \]</div>
 <p>In Special Relativity, free massive particles move along trajectories which extremise the proper time <span class="math notranslate nohighlight">\(\int\tau\)</span> and thus the action:</p>
 <div class="math notranslate nohighlight">
 \[
-S=-m\int d\tau=-m\int \sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}d\lambda
+S=-m\int d\tau=-m\int d\lambda\sqrt{-\eta_{\mu\nu}\frac{dx^\mu}{d\lambda}\frac{dx^\nu}{d\lambda}}\,.
 \]</div>
 <p>In General Relativity, free massive particles move along timelike trajectories which extremise</p>
 <div class="math notranslate nohighlight">
 \[
-S=-m\int d\tau=-m \int\sqrt{-g_{\mu\nu}(x)\dot{x}^\mu \dot{x}^\nu}d\lambda
+S=-m\int d\tau=-m \int d\lambda\sqrt{-g_{\mu\nu}(x)\dot{x}^\mu \dot{x}^\nu}\,.
 \]</div>
 <p>Trajectories which extremise the interval/distance in this way are called <strong>geodesics</strong>.</p>
 <p>We can apply the Euler-Lagrange equations to this action and use <span class="math notranslate nohighlight">\(\lambda=\tau\)</span> as the parameter so that <span class="math notranslate nohighlight">\(\sqrt{-g_{\mu\nu} \dot{x}^\mu\dot{x}^\nu}=1\)</span> along the trajectory.</p>
 <p>If we do this then the geodesic equation is</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d^2 x^\mu}{d\tau^2}+\Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu}\dot{x}^\nu \dot{x}^\lambda=0
+\frac{d^2 x^\mu}{d\tau^2}+\Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu}\dot{x}^\nu \dot{x}^\lambda=0\,.
 \]</div>
 <p>By choosing <span class="math notranslate nohighlight">\(\lambda=\tau\)</span>, we have <span class="math notranslate nohighlight">\(\sqrt{-g_{\mu\nu} \dot{x}^\mu\dot{x}^\nu}=const\)</span> in which case the geodesic is called <strong>affinely parametrised</strong>.</p>
-<p>But there is a simpler way  to derive this equation: use the simpler action which also works for null Geodesics</p>
+<p>But there is a simpler way  to derive this equation: use the simpler action which also works for null geodesics</p>
 <div class="math notranslate nohighlight">
 \[
-S=\frac{1}{2}\int g_{\mu\nu}\dot{x}^\mu \dot{x}^\nu d\lambda
+S=\frac{1}{2}\int d\lambda g_{\mu\nu}\dot{x}^\mu \dot{x}^\nu \,.
 \]</div>
 <p>The Euler-Lagrange equation <span class="math notranslate nohighlight">\(\frac{d}{d\lambda}\left(\frac{\partial L}{\partial \dot{x}^\mu}\right)=\frac{\partial L}{\partial x^\mu}\)</span> implies</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
 \frac{d}{d\lambda}\left(g_{\mu\nu}\dot{x}^\nu\right) &amp;=g_{\mu\nu}\ddot{x}^\nu+\dot{x}^\nu \frac{d}{d\lambda}\left(g_{\mu\nu}(x(\lambda))\right)=g_{\mu\nu} \ddot{x}^\nu+(\partial_\rho g_{\mu\nu})\dot{x}^\rho \dot{x}^\nu=\\
-&amp;= \frac{\partial L}{\partial x^\mu}=\frac{\partial}{\partial x^\mu}\left(\frac{1}{2}g_{\rho \nu}(x)\dot{x}^\rho \dot{x}^\nu\right)=\frac{1}{2}(\partial_\mu g_{\rho\nu})\dot{x}^\rho \dot{x}^\nu
+&amp;= \frac{\partial L}{\partial x^\mu}=\frac{\partial}{\partial x^\mu}\left(\frac{1}{2}g_{\rho \nu}(x)\dot{x}^\rho \dot{x}^\nu\right)=\frac{1}{2}(\partial_\mu g_{\rho\nu})\dot{x}^\rho \dot{x}^\nu\,.
 \end{align*}
 \end{split}\]</div>
 <p>This in turn implies that</p>
 <div class="math notranslate nohighlight">
 \[
-\ddot{x}^\sigma +\frac{1}{2}g^{\sigma\mu}(2\partial_{\rho}g_{\nu\mu}-\partial_\mu g_{\rho\nu})\dot{x}^\rho \dot{x}^\nu=0
+\ddot{x}^\sigma +\frac{1}{2}g^{\sigma\mu}(2\partial_{\rho}g_{\nu\mu}-\partial_\mu g_{\rho\nu})\dot{x}^\rho \dot{x}^\nu=0\,,
 \]</div>
 <p>and finally</p>
 <div class="math notranslate nohighlight">
 \[
-\ddot{x}^\sigma+\Gamma_{\rho\,\,\,\nu}^{\,\,\,\sigma}\dot{x}^\rho \dot{x}^\nu=0
+\ddot{x}^\sigma+\Gamma_{\rho\,\,\,\nu}^{\,\,\,\sigma}\dot{x}^\rho \dot{x}^\nu=0\,.
 \]</div>
 <p>This is the geodesic equation, but where does the constraint <span class="math notranslate nohighlight">\(g_{\mu\nu} \dot{x}^\mu \dot{x}^\nu=const\)</span> come from?</p>
 <p>If a Lagrangian <span class="math notranslate nohighlight">\(L(x,\dot{x},\lambda)\)</span> does not explicitly depent on <span class="math notranslate nohighlight">\(\lambda\)</span>, then the Hamiltonian <span class="math notranslate nohighlight">\(H=\dot{x}^\mu\frac{\partial L}{\partial\dot{x}^\mu}-L\)</span> has <span class="math notranslate nohighlight">\(\frac{dH}{d\lambda}=0\)</span> is constant along the trajectory. Here</p>
 <div class="math notranslate nohighlight">
 \[
-H=\dot{x}^\mu(g_{\mu\nu}\dot{x}^\nu)-\left(\frac{1}{2}g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu\right)=\frac{1}{2}g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu=const
+H=\dot{x}^\mu(g_{\mu\nu}\dot{x}^\nu)-\left(\frac{1}{2}g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu\right)=\frac{1}{2}g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu=const\,.
 \]</div>
 <p>We again find affinely parametrised geodesics, but this time we can have any value for the constant. By a constant rescaling <span class="math notranslate nohighlight">\(\lambda\to\tilde\lambda=\alpha\lambda\)</span> we have <span class="math notranslate nohighlight">\(H\to\frac{1}{\alpha^2}H\)</span> so we can fix</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu=\begin{cases}-1&amp;\textnormal{timelike}\\0&amp;\textnormal{null}\\1&amp;\textnormal{spacelike}\end{cases}
+g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu=\begin{cases}-1&amp;\textnormal{timelike,}\\0&amp;\textnormal{null,}\\1&amp;\textnormal{spacelike.}\end{cases}
 \end{split}\]</div>
 <p>In practice, we will rarely use the geodesic equations. We will actually use Euler-Lagrange equations (having put in the explicit form of the metric) together with the conditions for <span class="math notranslate nohighlight">\(g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu\)</span> above.</p>
 </div>
