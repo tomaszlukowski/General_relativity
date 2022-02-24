@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>11. Week 11 (missing) &#8212; General relativity</title>
+    <title>11. Week 11 (under construction) &#8212; General relativity</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -43,6 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -53,7 +55,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Change log" href="../Changelog.html" />
-    <link rel="prev" title="10. Week 10 (missing)" href="Week10.html" />
+    <link rel="prev" title="10. Week 10 (under construction)" href="Week10.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -130,27 +132,27 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week7.html">
-   7. Week 7 (missing)
+   7. Week 7 (under construction)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week8.html">
-   8. Week 8 (missing)
+   8. Week 8 (under construction)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week9.html">
-   9. Week 9 (missing)
+   9. Week 9 (under construction)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week10.html">
-   10. Week 10 (missing)
+   10. Week 10 (under construction)
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   11. Week 11 (missing)
+   11. Week 11 (under construction)
   </a>
  </li>
 </ul>
@@ -231,6 +233,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-energy-momentum-tensor">
+   11.1. The energy-momentum tensor
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -239,8 +254,41 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="week-11-missing">
-<h1><span class="section-number">11. </span>Week 11 (missing)<a class="headerlink" href="#week-11-missing" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="week-11-under-construction">
+<h1><span class="section-number">11. </span>Week 11 (under construction)<a class="headerlink" href="#week-11-under-construction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-energy-momentum-tensor">
+<h2><span class="section-number">11.1. </span>The energy-momentum tensor<a class="headerlink" href="#the-energy-momentum-tensor" title="Permalink to this headline">¶</a></h2>
+<p>Einstein’s equations are schematically:</p>
+<div class="math notranslate nohighlight">
+\[
+\textnormal{&quot;Curvature tensor&quot;=&quot;matter tensor&quot;}
+\]</div>
+<p>The right-hand side is given by the energy-momentum tensor <span class="math notranslate nohighlight">\(T_{\mu\nu}\)</span>. In vacuum we have <span class="math notranslate nohighlight">\(T_{\mu\nu}=0\)</span>.</p>
+<p>The energy-momentum tensor has two important properties:</p>
+<ul class="simple">
+<li><p>it is conserved <span class="math notranslate nohighlight">\(\nabla_\mu T^{\mu\nu}=0\)</span></p></li>
+<li><p>it is symmetric <span class="math notranslate nohighlight">\(T_{\mu\nu}=T_{\nu\mu}\)</span></p></li>
+</ul>
+<p>The energy-momentum tensor is schematically:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T^{\mu\nu}=\begin{pmatrix}\textnormal{Energy density }\rho&amp;\textnormal{Energy flux }\epsilon^i\\\textnormal{Momentum density }\pi^i&amp;\textnormal{Stress tensor }T^{ij}\end{pmatrix}
+\end{split}\]</div>
+<p>For example, consider a box full of particles, which are at rest with respect to the box, in Special Relativity in an inertial frame where the box has three-velocity <span class="math notranslate nohighlight">\(\vec{v}\)</span>.</p>
+<blockquote>
+<div><p>pictures</p>
+</div></blockquote>
+<p>Say there are <span class="math notranslate nohighlight">\(\mathcal{N}\)</span> particles in the box and in its rest frame it is a cube of side <span class="math notranslate nohighlight">\(L\)</span>. Let us assume that the box is moving along <span class="math notranslate nohighlight">\(x\)</span>-axis with velocity <span class="math notranslate nohighlight">\(v\)</span>. The length of the box in the <span class="math notranslate nohighlight">\(x\)</span>-direction is Lorentz contracted to <span class="math notranslate nohighlight">\(\frac{L}{\gamma}\)</span>, so its volume is <span class="math notranslate nohighlight">\(V=\frac{L}{\gamma}L^2=\frac{L^3}{\gamma}=\frac{V_\star}{\gamma}\)</span>, where <span class="math notranslate nohighlight">\(V_\star=L^3\)</span> is the volume in the rest frame. The number density (particles/unit volume) is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}n_\star=\frac{\mathcal{N}}{V_\star}&amp; \textnormal{rest frame}\\n=\frac{\mathcal{N}}{V}=\gamma n_\star&amp; \textnormal{lab frame}\end{cases}
+\end{split}\]</div>
+<p>Note that its four-velocity is <span class="math notranslate nohighlight">\(V^\mu=(\gamma,\gamma \vec{v})\)</span> so we can write <span class="math notranslate nohighlight">\(n=n_\star V^t\)</span>. If the particles have rest mass <span class="math notranslate nohighlight">\(m\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}\textnormal{Energy of each particle}=m\gamma=m V^t\\\textnormal{Three-momentum of each particle}=m\gamma v^i=m V^i\end{cases}
+\end{split}\]</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -272,7 +320,7 @@
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">10. </span>Week 10 (missing)</p>
+            <p class="prev-next-title"><span class="section-number">10. </span>Week 10 (under construction)</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../Changelog.html" title="next page">

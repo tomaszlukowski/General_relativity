@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>9. Week 9 (missing) &#8212; General relativity</title>
+    <title>9. Week 9 (under construction) &#8212; General relativity</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -43,6 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -52,8 +54,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="10. Week 10 (missing)" href="Week10.html" />
-    <link rel="prev" title="8. Week 8 (missing)" href="Week8.html" />
+    <link rel="next" title="10. Week 10 (under construction)" href="Week10.html" />
+    <link rel="prev" title="8. Week 8 (under construction)" href="Week8.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -130,27 +132,27 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week7.html">
-   7. Week 7 (missing)
+   7. Week 7 (under construction)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week8.html">
-   8. Week 8 (missing)
+   8. Week 8 (under construction)
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   9. Week 9 (missing)
+   9. Week 9 (under construction)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week10.html">
-   10. Week 10 (missing)
+   10. Week 10 (under construction)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week11.html">
-   11. Week 11 (missing)
+   11. Week 11 (under construction)
   </a>
  </li>
 </ul>
@@ -231,6 +233,38 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cosmological-spacetimes">
+   9.1. Cosmological spacetimes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geodesics">
+     9.1.1. Geodesics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conformal-time">
+   9.2. Conformal time
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cosmological-redshift">
+     9.2.1. Cosmological redshift
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -239,8 +273,192 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="week-9-missing">
-<h1><span class="section-number">9. </span>Week 9 (missing)<a class="headerlink" href="#week-9-missing" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="week-9-under-construction">
+<h1><span class="section-number">9. </span>Week 9 (under construction)<a class="headerlink" href="#week-9-under-construction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="cosmological-spacetimes">
+<h2><span class="section-number">9.1. </span>Cosmological spacetimes<a class="headerlink" href="#cosmological-spacetimes" title="Permalink to this headline">¶</a></h2>
+<p>We want to think about the Universe as a whole. The Universe is build out of start and galaxies, but if we zoom out then they appear as a smooth fluid (like molecules in a glass of water). At large scales the Universe has two remarkable properties:</p>
+<ul class="simple">
+<li><p>isotropic (looks the same independent of the direction we look)</p></li>
+<li><p>homogeneous (looks the same wherever we go)</p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Theorem</p>
+<p>These two properties imply that</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2=-dt^2+a(t)^2(h_{ij}(\vec{x})dxîdx^j)
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(a(t)\)</span> is a function of time, and <span class="math notranslate nohighlight">\(h_{ij}(x)\)</span> is a particular spatial metric out of three possible cases:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+h_{ij}dx^idx^j=\begin{cases}\textnormal{Euclidean flat }h_{ij=\delta_{ij}}\\ \textnormal{three-sphere }S^3\\
+\textnormal{hyperbolic space }\mathbb{H}^3\end{cases}
+\end{split}\]</div>
+</div>
+<p>From observations we find that <span class="math notranslate nohighlight">\(h_{ij}\approx \delta_{ij}\)</span> (i.e. roughly flat). Therefore, we will focus on the flat case:</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2=-dt^2+a(t)^2(dx^2+dy^2+dz^2)=-dt^2+a(t)^2(\delta_{ij}dx^idx^j)
+\]</div>
+<p>The function <span class="math notranslate nohighlight">\(a(t)\)</span> is called the <strong>scale factor</strong>. The physical distance between the two events is:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta s=\int_{\textnormal{spacelike geodesic}}ds
+\]</div>
+<p>On <span class="math notranslate nohighlight">\(t=const\)</span> spacelike surface <span class="math notranslate nohighlight">\(ds^2=a(t)^2(\delta_{ij}dx^idx^j)\)</span> we have <span class="math notranslate nohighlight">\(ds^2=a(t)^2 ds^2_{\textnormal{Euclidean}}\)</span> that implies</p>
+<div class="math notranslate nohighlight">
+\[
+ds=a(t)ds_{\textnormal{Euclidean}}
+\]</div>
+<p>Then integrating alond a spacelike geodesic:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta s=\int a(t)ds_{\textnormal{Euxlidean}}=a(t)\int ds_{\textnormal{Euclidean}}=a(t)|\vec{x}_2-\vec{x}_1|
+\]</div>
+<div class="section" id="geodesics">
+<h3><span class="section-number">9.1.1. </span>Geodesics<a class="headerlink" href="#geodesics" title="Permalink to this headline">¶</a></h3>
+<p>Now we want to find geodesics in this geometry: we find the Lagrangian</p>
+<div class="math notranslate nohighlight">
+\[
+L=\frac{ds^2}{d\lambda^2}=-\left(\frac{dt}{d\lambda}\right)^2+a^2 \delta_{ij} \frac{dx^i}{d\lambda}\frac{dx^j}{d\lambda}=-\dot{t}^2+a^2\delta_{ij}\dot{x}^i\dot{x}^j
+\]</div>
+<ul class="simple">
+<li><p>temporal equation</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{d}{d\lambda}(2\dot{t})=2a\dot{a}(\delta_{ij}\dot{x}^i\dot{x}^j)
+\]</div>
+<ul class="simple">
+<li><p>spatial equation</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{d}{d\lambda}\left(\frac{\partial L}{\partial\dot{x}^i}\right)=\frac{\partial L}{\partial x^i}=0
+\]</div>
+<p>To calculate the left-hand side we find</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial L}{\partial \dot{x}^i}=\frac{\partial}{\partial \dot{x}^i}(-\dot{t}^2+a^2 \delta_{kj}\dot{x}^k\dot{x}^j)=a^2\delta_{kj}\frac{\partial}{\partial \dot{x}^i}(\dot{x}^k\dot{x}^j)=a^2\delta_{kj}(\delta^k_i \dot{x}^j+\dot{x}^k\delta^j_i)=2a^2\delta_{ij}\dot{x}^j
+\]</div>
+<p>This leads to the equation</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{\frac{d}{d\lambda}(2a^2\delta_{ij}\dot{x}^j)=0}\quad\Rightarrow\quad\boxed{2\delta_{ij}\frac{d}{d\lambda}(a^2\dot{x}^j)=0}\quad\Rightarrow\quad\boxed{\frac{d}{d\lambda}(a^2\dot{x}^i)=0}
+\]</div>
+<p>This is a conservation law that come from the spatial translation symmetry of the Lagrangian: <span class="math notranslate nohighlight">\(x^i\to x^i+c^i\)</span>.</p>
+<p>We define the momentum <span class="math notranslate nohighlight">\(p^i=a^2\dot{x}^i\)</span>, and the above equation states that <span class="math notranslate nohighlight">\(p^i=const\)</span>.</p>
+<p>For timelike geodesic <span class="math notranslate nohighlight">\(L=-1\)</span> that implies</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{-\dot{t}^2+a^2\delta_{ij}\dot{x}^i\dot{x}^j=-1}\quad \Rightarrow \quad \boxed{-\dot{t}^2+a^2\left(\frac{|\vec{p}|^2}{a^4}\right)=-1}\quad\Rightarrow\quad \boxed{\dot{t}^2=1-\frac{|\vec{p}|^2}{a^2}}
+\]</div>
+<p>that is a function of <span class="math notranslate nohighlight">\(t\)</span> only.</p>
+<p>We can find a class of solutions to this equation: let us take <span class="math notranslate nohighlight">\(\dot{\vec{x}}=\vec{0}\)</span> that implies that <span class="math notranslate nohighlight">\(\vec{x}=const\)</span>. Therefore <span class="math notranslate nohighlight">\(\dot{t}^2=1\)</span> and <span class="math notranslate nohighlight">\(t=\tau\)</span>.</p>
+<p>The physical distances between observers at fixed <span class="math notranslate nohighlight">\(\vec{x}\)</span> is changing with time because <span class="math notranslate nohighlight">\(a(t)\)</span> changes with time.</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>We call these motion the <strong>Hubble flow</strong>. Anything at constant <span class="math notranslate nohighlight">\(\vec{x}\)</span> is said to be comoving with the Hubble flow.</p>
+<p>Physical distances between points are <span class="math notranslate nohighlight">\(s=a(t)x_0\)</span> and therefore</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{ds}{dt}=x_0 \frac{da}{dt}
+\]</div>
+<p>where the right-hand side tells us the rate of increase of physical distance at <span class="math notranslate nohighlight">\(x_0\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that actually measuring the physical distance <span class="math notranslate nohighlight">\(s\)</span> is difficult because the spacetime is neither stationary nor static.</p>
+</div>
+</div>
+</div>
+<div class="section" id="conformal-time">
+<h2><span class="section-number">9.2. </span>Conformal time<a class="headerlink" href="#conformal-time" title="Permalink to this headline">¶</a></h2>
+<p>Introduce a new time coordinate <span class="math notranslate nohighlight">\(\sigma\)</span> - <strong>conformal time</strong> such that</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2=a^2(-d\sigma^2+\delta_{ij}dx^idx^j)
+\]</div>
+<p>which is just a rescaled Minkowski metric.</p>
+<p>To be more precise:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{-dt^2=-a^2d\sigma^2}\quad\Rightarrow\quad\boxed{\int d\sigma=\int \frac{dt}{a(t)}}\quad\Rightarrow\quad \boxed{\sigma=\int \frac{dt}{a(t)}}
+\]</div>
+<p>Null geodesics: <span class="math notranslate nohighlight">\(L=a^2(-\dot{\sigma}^2+\delta_{ij}\dot{x}^i\dot{x^j})\)</span>. Since <span class="math notranslate nohighlight">\(\frac{\partial L}{\partial x^i}=0\)</span> then <span class="math notranslate nohighlight">\(p^i=a^2 \dot{x}^i=const\)</span>. For null geodesics we have <span class="math notranslate nohighlight">\(L=0\)</span> that implies</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{a^2(-\dot{\sigma}^2+\dot{\vec{x}}^2)=0}\quad\Rightarrow\quad\boxed{\dot{\sigma}^2=\dot{\vec{x}}^2}
+\]</div>
+<p>Without loss of generality, we can rotate coordinates <span class="math notranslate nohighlight">\(\vec{x}\)</span> such that <span class="math notranslate nohighlight">\(\vec{p}=(p,0,0)\)</span>. Then</p>
+<div class="math notranslate nohighlight">
+\[
+\dot{x}=\frac{p}{a^2}\,,\quad \dot{y}=0\,,\quad \dot{z}=0
+\]</div>
+<p>and from the null geodesic condition we have</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{\dot{\sigma}^2=\dot{x}^2}\quad\Rightarrow\quad \boxed{\left(\frac{\dot{\sigma}}{\dot{x}}\right)^2=1}\quad\Rightarrow\quad \boxed{\frac{d\sigma}{dx}=\pm 1}\quad\Rightarrow\quad\boxed{x=x_0\pm \sigma}
+\]</div>
+<p>This implies that <span class="math notranslate nohighlight">\(\vec{x}=(x_0\pm \sigma,y_0,z_0)=\vec{x}_0\pm \sigma \hat{p}\)</span>, where <span class="math notranslate nohighlight">\(\hat{p}\)</span> is the unit vector in direction of <span class="math notranslate nohighlight">\(\vec{p}\)</span>. Using conformal time, light rays follow <span class="math notranslate nohighlight">\(45^\circ\)</span> lines like in the Minkowski space.</p>
+<div class="section" id="cosmological-redshift">
+<h3><span class="section-number">9.2.1. </span>Cosmological redshift<a class="headerlink" href="#cosmological-redshift" title="Permalink to this headline">¶</a></h3>
+<p>What happens to the frequency of light rays as they propagate through an expanding spacetime?</p>
+<p>Consider that a galaxy at <span class="math notranslate nohighlight">\(x=x_g\)</span> sends light signals back to observer at <span class="math notranslate nohighlight">\(x=0\)</span>, as in the figure.</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>Say the proper time interval between the sending of two light signals according to the galaxy is <span class="math notranslate nohighlight">\(\Delta\tau_g\)</span>. Then we want to find the proper time interval <span class="math notranslate nohighlight">\(\Delta\tau_0\)</span> between reception of the signals (according to the observer).</p>
+<p>Proper time from observer at constant <span class="math notranslate nohighlight">\(\vec{x}\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[
+d\tau^2=-ds^2=-a(\sigma)^2(-d\sigma^2+d\vec{x}^2)=a(\sigma)^2 d\sigma^2
+\]</div>
+<p>for constant <span class="math notranslate nohighlight">\(\vec{x}\)</span>. We find <span class="math notranslate nohighlight">\(d\tau=a(\sigma d\sigma)\)</span> and therefore <span class="math notranslate nohighlight">\(\Delta \tau_g=a(\sigma_g)\Delta\sigma_g\)</span> and <span class="math notranslate nohighlight">\(\Delta \tau_0=a(\tau_0)\Delta\sigma_g\)</span>. This implies</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta\tau_0=\frac{a(\sigma_0)}{a(\sigma_g)}\Delta\tau_g
+\]</div>
+<p>if the two null rays are two crests of a wave, so <span class="math notranslate nohighlight">\(\Delta\tau_g\)</span> is the period of the wave, then frequency (as seen by galaxy) is <span class="math notranslate nohighlight">\(\nu_g=\frac{1}{\Delta\tau_g}\)</span>. This implies</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\nu_0}{\nu_g}=\frac{a(\sigma_g)}{a(\sigma_0)}
+\]</div>
+<p>In expending universe, <span class="math notranslate nohighlight">\(a(\sigma_0)&gt;a(\sigma_g)\)</span> so <span class="math notranslate nohighlight">\(\nu_0&lt;\nu_g\)</span> and we get red shift.</p>
+<p>If we define <span class="math notranslate nohighlight">\(z=\frac{\nu_g}{\nu_0}-1=\frac{a(\sigma_0)}{a(\sigma_g)}-1=\frac{a(\sigma_0)-a(\sigma_g)}{a(\sigma_g)}\)</span> and we suppose that <span class="math notranslate nohighlight">\(\sigma_0-\sigma_g\)</span> is small. Let us introduce</p>
+<div class="math notranslate nohighlight">
+\[
+H=\frac{1}{a}\frac{da}{dt}
+\]</div>
+<p>where the derivative is with respect to the coordinate time and not conformal time. We can write</p>
+<div class="math notranslate nohighlight">
+\[
+H=\frac{1}{a}\frac{da}{ad\sigma}=\frac{1}{a^2}\frac{da}{d\sigma}
+\]</div>
+<p>If <span class="math notranslate nohighlight">\(a(\sigma_0)\approx a(\sigma_g)\)</span> then</p>
+<div class="math notranslate nohighlight">
+\[
+a(\sigma_0)=a(\sigma_g)+(\sigma_0-\sigma_g)\frac{da}{d\sigma}\Big|_{\sigma_g}+\ldots
+\]</div>
+<p>Then we have</p>
+<div class="math notranslate nohighlight">
+\[
+a(\sigma_0)-a(\sigma_g)\approx (\sigma_0-\sigma_g)\frac{da}{d\sigma}\Big|_{\sigma_g}\approx (\sigma_0-\sigma_g)a^2(\sigma_g)H(\sigma_g)
+\]</div>
+<p>and finally</p>
+<div class="math notranslate nohighlight">
+\[
+z=\frac{a(\sigma_0)-a(\sigma_g)}{a(\sigma_g)}\approx (\sigma_0-\sigma_g)a(\sigma_g)H(\sigma_g)=D_g H(\sigma_g)
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(D_g\)</span> is the physical distance to the galaxy.</p>
+<p>We arrive at the <strong>Hubble’s law</strong></p>
+<div class="math notranslate nohighlight">
+\[
+z\approx D_g H(\sigma_g)
+\]</div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -272,13 +490,13 @@
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">8. </span>Week 8 (missing)</p>
+            <p class="prev-next-title"><span class="section-number">8. </span>Week 8 (under construction)</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Week10.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">10. </span>Week 10 (missing)</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Week 10 (under construction)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -1,5 +1,9 @@
 # Change log
 
+## 24.02.2022
+
+- Weeks 7-10 first draft
+
 ## 20.02.2022
 
 - Lecture weeks 1-4 - fixed typos
