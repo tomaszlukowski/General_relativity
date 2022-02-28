@@ -59,8 +59,8 @@ Then
 $$
 \begin{align*}
 g'_{\mu\nu}&=g_{\lambda\kappa}(\delta^\lambda_{\,\,\mu}+\gamma^\lambda_{\,\,\mu\rho}x'^\rho)(\delta^\kappa_{\,\,\nu}+\gamma^\kappa_{\,\,\nu\sigma}x'^\sigma)\\
-&=g_{\lambda\kappa}\delta^\lambda_{\,\,\mu}\delta^\kappa_{\,\,\nu}+(g_{\lambda\kappa}\delta^\kappa_{\,\,\nu}\gamma^\lambda_{\,\,\mu\rho}+g_{\lambda\kappa \delta^\lambda_{\,\,\mu}\gamma^\kappa_{\,\,\nu\rho}})x'^\rho+\mathcal{O}(x'^2)\\
-&=g_{\mu\nu}+(\gamma_{\nu\mu\rho+\gamma_{\mu\nu\rho}})x'^\rho+\mathcal{O}(x'^2)
+&=g_{\lambda\kappa}\delta^\lambda_{\,\,\mu}\delta^\kappa_{\,\,\nu}+(g_{\lambda\kappa}\delta^\kappa_{\,\,\nu}\gamma^\lambda_{\,\,\mu\rho}+g_{\lambda\kappa} \delta^\lambda_{\,\,\mu}\gamma^\kappa_{\,\,\nu\rho})x'^\rho+\mathcal{O}(x'^2)\\
+&=g_{\mu\nu}+(\gamma_{\nu\mu\rho}+\gamma_{\mu\nu\rho})x'^\rho+\mathcal{O}(x'^2)
 \,.\end{align*}
 $$
 
@@ -119,7 +119,7 @@ All these quantities are tensors and therefore the equations above are true in g
   - Check that since $R_{\mu\nu\lambda\kappa}=R_{[\mu\nu]\lambda\kappa}$ then
 
 $$
-R_{[\mu\nu\lambda]\kappa}=R_{\mu\nu\lambda\kappa}+R_{\lambda\mu\nu\kappa}+R_{\nu\lambda\mu\kappa}\,.
+3R_{[\mu\nu\lambda]\kappa}=R_{\mu\nu\lambda\kappa}+R_{\lambda\mu\nu\kappa}+R_{\nu\lambda\mu\kappa}\,.
 $$
 
 - Using LIC check that $R_{[\mu\nu\lambda]\kappa}=0$.
