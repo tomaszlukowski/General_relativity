@@ -273,33 +273,33 @@
 <h1><span class="section-number">6. </span>Week 6<a class="headerlink" href="#week-6" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="acceleration">
 <h2><span class="section-number">6.1. </span>Acceleration<a class="headerlink" href="#acceleration" title="Permalink to this headline">¶</a></h2>
-<p>Define covariant derivative of a vector <span class="math notranslate nohighlight">\(W^\mu\)</span> with respect to <span class="math notranslate nohighlight">\(\lambda\)</span> by</p>
+<p>In this section we want to understand the tidal forces, that we have discussed already in the context of Newtonian mechanics, from the point of view of General Relativity. We start by defining the covariant derivative of a vector <span class="math notranslate nohighlight">\(W^\mu\)</span> with respect to <span class="math notranslate nohighlight">\(\lambda\)</span> by</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{DW^\mu}{D\lambda}=\frac{d W^\mu}{d\lambda}+\dot{x}^\rho \,\Gamma_{\rho\,\,\,\nu}^{\,\,\,\mu}W^\nu
+\frac{DW^\mu}{D\lambda}=\frac{d W^\mu}{d\lambda}+\dot{x}^\rho \,\Gamma_{\rho\,\,\,\nu}^{\,\,\,\mu}W^\nu\,.
 \]</div>
-<p>We can connect this definition to the definition of a covariant derivative that we introduced before: if <span class="math notranslate nohighlight">\(V^\mu\)</span> were a vector field <span class="math notranslate nohighlight">\(V^\mu(x)\)</span> and we define <span class="math notranslate nohighlight">\(V^\mu(\lambda)=V^\mu(x(\lambda))\)</span> to be its value at the point <span class="math notranslate nohighlight">\(x(\lambda)\)</span> then</p>
+<p>We can connect this definition to the definition of a covariant derivative that we introduced before: if <span class="math notranslate nohighlight">\(W^\mu\)</span> was a vector field <span class="math notranslate nohighlight">\(W^\mu(x)\)</span> and we define <span class="math notranslate nohighlight">\(W^\mu(\lambda)=W^\mu(x(\lambda))\)</span> to be its value at the point <span class="math notranslate nohighlight">\(x(\lambda)\)</span> then</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{DV^\mu}{D\lambda}=\frac{dV^\mu}{d\lambda}+\dot{x}^\rho \Gamma_{\rho\,\,\,\nu}^{\,\,\,\mu}V^\nu=\frac{dx^\rho}{d\lambda}\left(\frac{\partial V^\mu}{\partial x^\rho}+\Gamma_{\rho\,\,\,\nu}^{\,\,\,\mu} V^\nu\right)=\frac{dx^\rho}{d\lambda}(\nabla_\rho V^\mu)
+\frac{DW^\mu}{D\lambda}=\frac{dW^\mu}{d\lambda}+\dot{x}^\rho \Gamma_{\rho\,\,\,\nu}^{\,\,\,\mu}W^\nu=\frac{dx^\rho}{d\lambda}\left(\frac{\partial W^\mu}{\partial x^\rho}+\Gamma_{\rho\,\,\,\nu}^{\,\,\,\mu} W^\nu\right)=\frac{dx^\rho}{d\lambda}(\nabla_\rho W^\mu)
 \]</div>
 <p>where in the last expression we recognise the covariant derivative of a vector field from before.</p>
 <p>We established that <span class="math notranslate nohighlight">\(\frac{d x^\rho}{d\lambda}\)</span> is a vector and <span class="math notranslate nohighlight">\(\nabla_\rho W^\mu\)</span> is a tensor and therefore <span class="math notranslate nohighlight">\(\frac{DW^\mu}{D\lambda}\)</span> is a tensor. Since it has one upper index then it is a vector.</p>
-<p>Definition: let <span class="math notranslate nohighlight">\(v^\mu(\tau)=\frac{dx^\mu}{d\tau}\)</span>, the four-velocity of a massive particle along a timelike path. We define</p>
+<p><strong>Definition:</strong> let <span class="math notranslate nohighlight">\(v^\mu(\tau)=\frac{dx^\mu}{d\tau}\)</span> be the four-velocity of a massive particle along a timelike path. We define</p>
 <div class="math notranslate nohighlight">
 \[
-A^\mu:=\frac{D v^\mu}{D\tau}
+A^\mu:=\frac{D v^\mu}{D\tau}\,,
 \]</div>
 <p>the four-acceleration along a timelike path. This is a reasonable definition because</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(A^\mu\)</span> reduces to <span class="math notranslate nohighlight">\(\frac{d^2 x^\mu}{d\tau^2}\)</span> in flat space (SR limit).</p></li>
+<li><p><span class="math notranslate nohighlight">\(A^\mu\)</span> reduces to <span class="math notranslate nohighlight">\(\frac{d^2 x^\mu}{d\tau^2}\)</span> in the flat space (SR limit).</p></li>
 <li><p><span class="math notranslate nohighlight">\(A^\mu=\frac{Dv^\mu}{D\tau}\)</span> is a vector.</p></li>
 <li><p>We have <span class="math notranslate nohighlight">\(A^\mu=\ddot{x}^\mu+\Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu}\dot{x}^\nu \dot{x}^\lambda=0\)</span> along a geodesic, so the four-acceleration of a free particle is zero.</p></li>
 </ul>
 </div>
 <div class="section" id="geodesic-deviation">
 <h2><span class="section-number">6.2. </span>Geodesic deviation<a class="headerlink" href="#geodesic-deviation" title="Permalink to this headline">¶</a></h2>
-<p>Before, we saw that in Newtonien gravity, the relative acceleration of two nearby freely-falling particles at <span class="math notranslate nohighlight">\(\vec{x}(t)\)</span> and <span class="math notranslate nohighlight">\(\vec{x}(t)+\vec{y}(t)\)</span> was given by</p>
+<p>Before, we argued that in Newtonian gravity the relative acceleration of two nearby freely-falling particles at <span class="math notranslate nohighlight">\(\vec{x}(t)\)</span> and <span class="math notranslate nohighlight">\(\vec{x}(t)+\vec{y}(t)\)</span> is given by</p>
 <div class="math notranslate nohighlight">
 \[
 \ddot{y}_i=-y^j(\partial_i \partial_j \phi)+\mathcal{O}(y^2).
@@ -309,32 +309,32 @@ A^\mu:=\frac{D v^\mu}{D\tau}
 <p>Nearby geodesics then correspond to values of <span class="math notranslate nohighlight">\(s\)</span> which are close. The separation between geodesics at <span class="math notranslate nohighlight">\(s\)</span> and <span class="math notranslate nohighlight">\(s+\delta s\)</span> at ‘time’ <span class="math notranslate nohighlight">\(\tau\)</span> is then described by the derivative <span class="math notranslate nohighlight">\(\frac{\partial x^\mu}{\partial s}\)</span> as</p>
 <div class="math notranslate nohighlight">
 \[
-x^\mu(\tau,s+\delta s)-x^\mu(\tau,s)\approx \frac{\partial x^\mu}{\partial s}\delta s
+x^\mu(\tau,s+\delta s)-x^\mu(\tau,s)\approx \frac{\partial x^\mu}{\partial s}\delta s\,.
 \]</div>
 <p>To examine the relative acceleration, we look at <span class="math notranslate nohighlight">\(\frac{D^2\xi}{D\tau^2}\)</span> where</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{cases} \xi^\mu=\frac{\partial x^\mu}{\partial s}&amp; \textnormal{separation}\\v^\mu=\frac{\partial x^\mu}{\partial \tau}&amp; \textnormal{four-velocity}\end{cases}
 \end{split}\]</div>
-<p>We have</p>
+<p>First, we observe that</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{\partial V^\mu}{\partial s}=\frac{\partial^2 x^\mu}{\partial s \partial \tau}=\frac{\partial \xi^\mu}{\partial \tau}
+\frac{\partial v^\mu}{\partial s}=\frac{\partial^2 x^\mu}{\partial s \partial \tau}=\frac{\partial \xi^\mu}{\partial \tau}\,.
 \]</div>
-<p>The relative acceleration is the second proper-time derivative of the separation (we drop the <span class="math notranslate nohighlight">\(\delta s\)</span> factor). Then we need to examine the following quantity:</p>
+<p>Now, the relative acceleration is the second proper-time derivative of the separation (we drop the <span class="math notranslate nohighlight">\(\delta s\)</span> factor). Then we need to examine the following quantity:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{D^2\xi^\mu}{D \tau^2}=\frac{D}{D\tau}\left(\frac{D}{D\tau} \xi^\mu\right)
+\frac{D^2\xi^\mu}{D \tau^2}=\frac{D}{D\tau}\left(\frac{D}{D\tau} \xi^\mu\right).
 \]</div>
 <p>We claim that</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{D\xi^\mu}{D\tau}=\frac{Dv^\mu}{Ds}
+\frac{D\xi^\mu}{D\tau}=\frac{Dv^\mu}{Ds}\,.
 \]</div>
 <p>To show this we first observe that</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{\partial\xi^\mu}{\partial \tau}=\frac{\partial^2 x^\mu}{\partial\tau\partial s}=\frac{\partial^2 x^\mu}{\partial s\partial \tau}=\frac{\partial V^\mu}{\partial s}
+\frac{\partial\xi^\mu}{\partial \tau}=\frac{\partial^2 x^\mu}{\partial\tau\partial s}=\frac{\partial^2 x^\mu}{\partial s\partial \tau}=\frac{\partial v^\mu}{\partial s}\,.
 \]</div>
 <p>But in LIC <span class="math notranslate nohighlight">\(\frac{D\xi^\mu}{D\tau}\stackrel{\star}{=}\frac{\partial \xi^\mu}{\partial \tau}\)</span> and <span class="math notranslate nohighlight">\(\frac{Dv^\mu}{Ds}\stackrel{\star}{=}\frac{\partial v^\mu}{\partial s}\)</span> and therefore this equality is true in any coordinate system.</p>
 <p>Let us now work in LIC. We have</p>
@@ -342,29 +342,30 @@ x^\mu(\tau,s+\delta s)-x^\mu(\tau,s)\approx \frac{\partial x^\mu}{\partial s}\de
 \[\begin{split}
 \begin{align*}
 \frac{D^2\xi^\mu}{D\tau^2}&amp;=\frac{D}{D\tau}\left(\frac{D\xi^\mu}{D\tau}\right)=\frac{\partial}{\partial \tau}\left(\frac{D\xi^\mu}{D\tau}\right)+v^\lambda \Gamma_{\lambda\,\,\,\nu}^{\,\,\,\mu}\left(\frac{D\xi^\nu}{D\tau}\right)\\
-&amp;\stackrel{\star}{=}\frac{\partial}{\partial \tau}\left(\frac{\partial \xi^\mu}{\partial \tau}+v^\lambda \Gamma_{\lambda\,\,\,\nu}^{\,\,\,\mu}\xi^\nu\right)\stackrel{\star}{=}\frac{\partial^2\xi^\mu}{\partial\tau^2}+v^\lambda \partial_\tau(\Gamma_{\lambda\,\,\,\nu}^{\,\,\,\mu})\xi^\nu\stackrel{\star}{=}\frac{\partial^2\xi^\mu}{\partial\tau^2}+v^\lambda v^\kappa (\partial_\tau\Gamma_{\lambda\,\,\,\nu}^{\,\,\,\mu})\xi^\nu
+&amp;\stackrel{\star}{=}\frac{\partial}{\partial \tau}\left(\frac{\partial \xi^\mu}{\partial \tau}+v^\lambda \Gamma_{\lambda\,\,\,\nu}^{\,\,\,\mu}\xi^\nu\right)\stackrel{\star}{=}\frac{\partial^2\xi^\mu}{\partial\tau^2}+v^\lambda \partial_\tau(\Gamma_{\lambda\,\,\,\nu}^{\,\,\,\mu})\xi^\nu\stackrel{\star}{=}\frac{\partial^2\xi^\mu}{\partial\tau^2}+v^\lambda v^\kappa (\partial_\kappa\Gamma_{\lambda\,\,\,\nu}^{\,\,\,\mu})\xi^\nu
 \end{align*}
 \end{split}\]</div>
-<p>Now, we can use the geodesic equation</p>
+<p>We can use the geodesic equation</p>
 <div class="math notranslate nohighlight">
-\[\frac{\partial^2 x^\mu}{\partial \tau^2}+\Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu}\frac{\partial x^\nu}{\partial\tau}\frac{\partial x^\lambda}{\partial \tau}=0\]</div>
+\[\frac{\partial^2 x^\mu}{\partial \tau^2}+\Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu}\frac{\partial x^\nu}{\partial\tau}\frac{\partial x^\lambda}{\partial \tau}=0\,,
+\]</div>
 <p>to find that</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
 &amp;\frac{\partial}{\partial s}\left(\frac{\partial^2 x^\mu}{\partial \tau^2}\right)=\frac{\partial}{\partial \tau}\left(\frac{\partial v^\mu}{\partial s}\right)=\frac{\partial^2 \xi^\mu}{\partial\tau^2}\\
-&amp;=-\frac{\partial}{\partial s}\left[\Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu}v^\nu v^\lambda\right]\stackrel{\star}{=}-\left(\frac{\partial}{\partial s}\Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu}\right)v^\nu v^\lambda\stackrel{\star}{=}-\xi^\kappa\left(\partial_\kappa\Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu}\right)v^\nu v^\lambda
+&amp;=-\frac{\partial}{\partial s}\left[\Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu}v^\nu v^\lambda\right]\stackrel{\star}{=}-\left(\frac{\partial}{\partial s}\Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu}\right)v^\nu v^\lambda\stackrel{\star}{=}-\xi^\kappa\left(\partial_\kappa\Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu}\right)v^\nu v^\lambda\,.
 \end{align*}
 \end{split}\]</div>
-<p>We can substitute this in our previous calculation to get</p>
+<p>We can substitute this in our previous calculation</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{D^2 \xi^\mu}{D\tau^2}\stackrel{\star}{=}-\xi^\kappa (\partial_\kappa \Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu})v^\nu v^\lambda+v^\lambda v^\kappa (\partial_\kappa \Gamma_{\lambda\,\,\,\nu}^{\,\,\,\mu})\xi^\nu\stackrel{\star}{=}v^\lambda v^\kappa \xi^\nu \left(\partial_\kappa \Gamma_{\lambda\,\,\,\nu}^{\,\,\,\mu}-\partial_\nu \Gamma_{\kappa\,\,\,\lambda}^{\,\,\,\mu}\right)
+\frac{D^2 \xi^\mu}{D\tau^2}\stackrel{\star}{=}-\xi^\kappa (\partial_\kappa \Gamma_{\nu\,\,\,\lambda}^{\,\,\,\mu})v^\nu v^\lambda+v^\lambda v^\kappa (\partial_\kappa \Gamma_{\lambda\,\,\,\nu}^{\,\,\,\mu})\xi^\nu\stackrel{\star}{=}v^\lambda v^\kappa \xi^\nu \left(\partial_\kappa \Gamma_{\lambda\,\,\,\nu}^{\,\,\,\mu}-\partial_\nu \Gamma_{\kappa\,\,\,\lambda}^{\,\,\,\mu}\right).
 \]</div>
 <p>The final bracket is nothing else than the Riemann tensor in LIC and we end up with:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{D^2\xi^\mu}{D\tau^2}\stackrel{\star}{=}R_{\kappa\nu\,\,\,\lambda}^{\,\,\,\,\,\mu}v^\lambda v^\kappa \xi^\nu
+\frac{D^2\xi^\mu}{D\tau^2}\stackrel{\star}{=}R_{\kappa\nu\,\,\,\lambda}^{\,\,\,\,\,\mu}v^\lambda v^\kappa \xi^\nu\,.
 \]</div>
 <p>Since all ingredients in the equation above are tensors then this equation is true in any coordinate system.</p>
 <p>We can now compare this result to the one we derived for tidal forces in the non-relativistic limit:</p>
@@ -383,19 +384,19 @@ x^\mu(\tau,s+\delta s)-x^\mu(\tau,s)\approx \frac{\partial x^\mu}{\partial s}\de
 </ul>
 <div class="math notranslate nohighlight">
 \[
-\partialî\partial_i \phi=\delta^{ij}(\partial_i\partial_j\phi)=0
+\partial^i\partial_i \phi=\delta^{ij}(\partial_i\partial_j\phi)=0\,.
 \]</div>
 <p>This suggests the vacuum equation for GR should be</p>
 <div class="math notranslate nohighlight">
 \[
-v^\kappa v^\lambda R_{\lambda \rho\,\,\,\kappa}^{\,\,\,\,\,\,\rho}=v^\kappa v^\lambda R_{\lambda\kappa}=0
+v^\kappa v^\lambda R_{\lambda \rho\,\,\,\kappa}^{\,\,\,\,\,\,\rho}=v^\kappa v^\lambda R_{\lambda\kappa}=0\,.
 \]</div>
 <p>This should be true for all timelike vectors <span class="math notranslate nohighlight">\(v^\mu\)</span> and therefore we conslude that</p>
 <div class="math notranslate nohighlight">
 \[
-R_{\mu\nu}=0
+R_{\mu\nu}=0\,.
 \]</div>
-<p>This is the vacuum Einstein equation.</p>
+<p>This is the <strong>vacuum Einstein equation</strong>!</p>
 </div>
 </div>
 <div class="section" id="symmetries">
@@ -403,31 +404,28 @@ R_{\mu\nu}=0
 <p>Consider a vector field <span class="math notranslate nohighlight">\(\chi^\mu(x)\)</span> satisfying</p>
 <div class="math notranslate nohighlight">
 \[
-\nabla_{(\mu}\chi_{\nu)}=0
+\nabla_{(\mu}\chi_{\nu)}=\nabla_{\mu}\chi_{\nu}+\nabla_{\nu}\chi_{\mu}=0
 \]</div>
 <p>Such a vector field is called a <strong>Killing vector field</strong>.</p>
-<p>Consider an affinely parametrised geodesic <span class="math notranslate nohighlight">\(x^\mu(\lambda)\)</span> and the quantity <span class="math notranslate nohighlight">\(k=\chi_\mu V^\mu\)</span>. <span class="math notranslate nohighlight">\(k\)</span> is a scalar quantity, independent of the coordinate choice and the choice of the parameter <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
+<p>Consider an affinely parametrised geodesic <span class="math notranslate nohighlight">\(x^\mu(\lambda)\)</span> and the quantity <span class="math notranslate nohighlight">\(k=\chi_\mu V^\mu\)</span>, where <span class="math notranslate nohighlight">\(V^\mu=\frac{dx^\mu}{d\lambda}\)</span>. Clearly, <span class="math notranslate nohighlight">\(k\)</span> is a scalar quantity, independent of the coordinate choice and the choice of the parameter <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
 <div class="warning admonition">
 <p class="admonition-title">Exercise</p>
 <p>If <span class="math notranslate nohighlight">\(\chi\)</span> is Killing vector then <span class="math notranslate nohighlight">\(k\)</span> is <em>constant</em> along the geodesic. Thus <span class="math notranslate nohighlight">\(k\)</span> is a <strong>conserved quantity</strong> of the motion.</p>
-<p>Hint: <span class="math notranslate nohighlight">\(\frac{d k}{d\lambda}=\frac{D k}{D\lambda}=\frac{D}{D\lambda}(\chi_\mu v^\mu)\)</span></p>
+<p>Hint: <span class="math notranslate nohighlight">\(\frac{d k}{d\tau}=\frac{D k}{D\tau}=\frac{D}{D\tau}(\chi_\mu v^\mu)\)</span></p>
 </div>
-<p>Facts:</p>
-<ul class="simple">
-<li><p>If <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> does not depend on say <span class="math notranslate nohighlight">\(x^0\)</span>: <span class="math notranslate nohighlight">\(\frac{\partial}{\partial x^0}g_{\mu\nu}=0\)</span>, then <span class="math notranslate nohighlight">\(\chi^\mu=(1,0,0,0)\)</span> is a Killing vector</p></li>
-</ul>
+<p>If a metric <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> does not depend on one of the coordinates, then we can find a Killing vector that corresponds to this symmetry. For instance, if <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> does not depend on say <span class="math notranslate nohighlight">\(x^0\)</span>, that is <span class="math notranslate nohighlight">\(\frac{\partial}{\partial x^0}g_{\mu\nu}=0\)</span>, then <span class="math notranslate nohighlight">\(\chi^\mu=(1,0,0,0)\)</span> is a Killing vector.</p>
 <div class="warning admonition">
 <p class="admonition-title">Exercise</p>
 <p>Show that <span class="math notranslate nohighlight">\(\nabla_{(\mu}\chi_{\nu)}=0\)</span> is equivalent to</p>
 <div class="math notranslate nohighlight">
 \[
-\chi^\lambda \partial_{\lambda} g_{\mu\nu}+(\partial_mu \chi^\lambda)g_{\lambda\nu}+(\partial_{\nu}\chi^\lambda)g_{\mu\lambda}=0
+\chi^\lambda \partial_{\lambda} g_{\mu\nu}+(\partial_\mu \chi^\lambda)g_{\lambda\nu}+(\partial_{\nu}\chi^\lambda)g_{\mu\lambda}=0\,.
 \]</div>
 </div>
 <p>The overall message is that</p>
 <div class="math notranslate nohighlight">
 \[
-\textnormal{Killing vectors} \longleftrightarrow \textnormal{symmetries of $g_{\mu\nu}$} \longleftrightarrow \textnormal{conserved quantities}
+\textnormal{Killing vectors} \longleftrightarrow \textnormal{symmetries of $g_{\mu\nu}$} \longleftrightarrow \textnormal{conserved quantities.}
 \]</div>
 <p>This is the Noether’s theorem in General Relativity.</p>
 </div>
@@ -435,36 +433,36 @@ R_{\mu\nu}=0
 <h2><span class="section-number">6.4. </span>Geodesic congruences and parallel transport<a class="headerlink" href="#geodesic-congruences-and-parallel-transport" title="Permalink to this headline">¶</a></h2>
 <p>Given a path <span class="math notranslate nohighlight">\(x^\mu(\lambda)\)</span> we say that a vector <span class="math notranslate nohighlight">\(W^\mu\)</span> is parallel transported along the path if <span class="math notranslate nohighlight">\(\frac{D W^\mu}{D\lambda}=0\)</span>.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week6_pictures/week6_picture2.png"><img alt="Week6_pictures/week6_picture2.png" class="bg-primary mb-1 align-center" src="Week6_pictures/week6_picture2.png" style="width: 300px;" /></a>
-<p>For example if <span class="math notranslate nohighlight">\(x^\mu(\lambda)\)</span> is affinely parametrised geodesic then the tangent vector <span class="math notranslate nohighlight">\(v^\mu=\frac{dx^\mu}{d\lambda}\)</span> has <span class="math notranslate nohighlight">\(\frac{Dv^\mu}{D\lambda}=0\)</span>.</p>
+<p>For example if <span class="math notranslate nohighlight">\(x^\mu(\lambda)\)</span> is affinely parametrised geodesic then the tangent vector <span class="math notranslate nohighlight">\(V^\mu=\frac{dx^\mu}{d\lambda}\)</span> has <span class="math notranslate nohighlight">\(\frac{DV^\mu}{D\lambda}=0\)</span>.</p>
 <p>Given a vector <span class="math notranslate nohighlight">\(W_0^\mu\)</span> at <span class="math notranslate nohighlight">\(\lambda=0\)</span>, we can solve the equation <span class="math notranslate nohighlight">\(\frac{DW^\mu}{D\lambda}=0\)</span>, that is a first order ordinary differential equation, to find <span class="math notranslate nohighlight">\(W^\mu(\lambda)\)</span> such that <span class="math notranslate nohighlight">\(W^\mu(0)=W_0^\mu\)</span> and it is parallel transported along a given path <span class="math notranslate nohighlight">\(x^\mu(\lambda)\)</span>.</p>
 <p>The value of <span class="math notranslate nohighlight">\(W^\mu\)</span> at the end of the path depends on which path was taken.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week6_pictures/week6_picture3.png"><img alt="Week6_pictures/week6_picture3.png" class="bg-primary mb-1 align-center" src="Week6_pictures/week6_picture3.png" style="width: 300px;" /></a>
-<p>If a vector <span class="math notranslate nohighlight">\(W^\mu\)</span> is parallel transported along a geodesic with tangent vector <span class="math notranslate nohighlight">\(v^\mu=\frac{dx^\mu}{d\lambda}\)</span> then <span class="math notranslate nohighlight">\(W^\mu V_\mu\)</span> is constant.</p>
+<p>If a vector <span class="math notranslate nohighlight">\(W^\mu\)</span> is parallel transported along a geodesic with tangent vector <span class="math notranslate nohighlight">\(V^\mu=\frac{dx^\mu}{d\lambda}\)</span> then <span class="math notranslate nohighlight">\(W^\mu V_\mu\)</span> is constant.</p>
 <p>For example, on <span class="math notranslate nohighlight">\(S^2\)</span>, the <span class="math notranslate nohighlight">\(W^i V_i\)</span> is dot product of vectors:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week6_pictures/week6_picture4.png"><img alt="Week6_pictures/week6_picture4.png" class="bg-primary mb-1 align-center" src="Week6_pictures/week6_picture4.png" style="width: 300px;" /></a>
 <p>We can extend the notion of parallel transport to vector fields: a congruence of curves is a smooth family of curves such that each point in spacetime lies on exactly one of the curves. In four-dimensional spacetime the curves are labelled by 3 parameters + the parameter <span class="math notranslate nohighlight">\(\lambda\)</span>, i.e. the parameter <span class="math notranslate nohighlight">\(\lambda\)</span> along the curves becomes one of the coordinates on spacetime.</p>
 <p>The tangent vector <span class="math notranslate nohighlight">\(X^\mu=\frac{\partial x^\mu}{\partial \lambda}\)</span> then becomes a vector field over all of the patch of space covered by the curves.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week6_pictures/week6_picture5.png"><img alt="Week6_pictures/week6_picture5.png" class="bg-primary mb-1 align-center" src="Week6_pictures/week6_picture5.png" style="width: 300px;" /></a>
-<p>We then have for any vector field <span class="math notranslate nohighlight">\(W^\mu(x)\)</span> on spacetime</p>
+<p>We have for any vector field <span class="math notranslate nohighlight">\(W^\mu(x)\)</span> on spacetime</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{DW^\mu}{D\lambda}=\frac{dW^\mu}{d\lambda}+\frac{dx^\rho}{d\lambda}\Gamma_{\rho\,\,\,\nu}^{\,\,\,\mu}W^\nu=\frac{dx^\rho}{d\lambda}\left(\frac{\partial W^\mu}{\partial x^\rho}+\Gamma_{\rho\,\,\,\nu}^{\,\,\,\mu}W^\nu\right)
+\frac{DW^\mu}{D\lambda}=\frac{dW^\mu}{d\lambda}+\frac{dx^\rho}{d\lambda}\Gamma_{\rho\,\,\,\nu}^{\,\,\,\mu}W^\nu=\frac{dx^\rho}{d\lambda}\left(\frac{\partial W^\mu}{\partial x^\rho}+\Gamma_{\rho\,\,\,\nu}^{\,\,\,\mu}W^\nu\right),
 \]</div>
 <p>and therefore</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{DW^\mu}{D\lambda}=X^\rho \nabla_\rho W^\mu
+\frac{DW^\mu}{D\lambda}=X^\rho \nabla_\rho W^\mu\,.
 \]</div>
-<p>If the curves in the congruance are affinely parametrised geodesics, then it is called an affinely parametrised geodesic congruences and <span class="math notranslate nohighlight">\(X^\mu=\frac{\partial x^\mu}{\partial\lambda}\)</span> is an auto-parallel vector field</p>
+<p>If the curves in the congruence are affinely parametrised geodesics, then it is called an affinely parametrised geodesic congruences and <span class="math notranslate nohighlight">\(X^\mu=\frac{\partial x^\mu}{\partial\lambda}\)</span> is an auto-parallel vector field</p>
 <div class="math notranslate nohighlight">
 \[
-X^\nu \nabla_\nu X^\mu==\frac{DX^\mu}{D\lambda}=0
+X^\nu \nabla_\nu X^\mu=\frac{DX^\mu}{D\lambda}=0\,.
 \]</div>
-<p>The Riemann tensor can be understood as follows</p>
+<p>The Riemann tensor can be understood as follows:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week6_pictures/week6_picture6.png"><img alt="Week6_pictures/week6_picture6.png" class="bg-primary mb-1 align-center" src="Week6_pictures/week6_picture6.png" style="width: 300px;" /></a>
 <div class="math notranslate nohighlight">
 \[
-\frac{z_1^\mu-z_2^\mu}{\textnormal{Area}}=R_{\lambda\kappa\,\,\,\nu}^{\,\,\,\,\,\,\mu}X^\lambda Y^\kappa Z^\nu
+\frac{Z_1^\mu-Z_2^\mu}{\textnormal{Area}}=R_{\lambda\kappa\,\,\,\nu}^{\,\,\,\,\,\,\mu}X^\lambda Y^\kappa Z^\nu\,.
 \]</div>
 </div>
 </div>
