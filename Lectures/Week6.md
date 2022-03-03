@@ -159,7 +159,7 @@ This is the **vacuum Einstein equation**!
 Consider a vector field $\chi^\mu(x)$ satisfying
 
 $$
-\nabla_{(\mu}\chi_{\nu)}=\nabla_{\mu}\chi_{\nu}+\nabla_{\nu}\chi_{\mu}=0
+\nabla_{(\mu}\chi_{\nu)}=\nabla_{\mu}\chi_{\nu}+\nabla_{\nu}\chi_{\mu}=0\,.
 $$
 
 Such a vector field is called a **Killing vector field**.
@@ -171,7 +171,7 @@ Consider an affinely parametrised geodesic $x^\mu(\lambda)$ and the quantity $k=
 
 If $\chi$ is Killing vector then $k$ is *constant* along the geodesic. Thus $k$ is a **conserved quantity** of the motion.
 
-Hint: $\frac{d k}{d\tau}=\frac{D k}{D\tau}=\frac{D}{D\tau}(\chi_\mu v^\mu)$
+Hint: $\frac{d k}{d\tau}=\frac{D k}{D\tau}=\frac{D}{D\tau}(\chi_\mu V^\mu)$
 ```
 
 If a metric $g_{\mu\nu}$ does not depend on one of the coordinates, then we can find a Killing vector that corresponds to this symmetry. For instance, if $g_{\mu\nu}$ does not depend on say $x^0$, that is $\frac{\partial}{\partial x^0}g_{\mu\nu}=0$, then $\chi^\mu=(1,0,0,0)$ is a Killing vector.
