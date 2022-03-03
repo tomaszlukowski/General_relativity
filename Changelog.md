@@ -1,5 +1,10 @@
 # Change log
 
+## 03.03.2022
+
+- Week 6 lectures - typos fixed
+- Week 7 lectures completed
+
 ## 28.02.2022
 
 - Week 6 lectures completed
