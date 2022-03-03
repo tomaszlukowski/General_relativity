@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>8. Week 8 (under construction) &#8212; General relativity</title>
+    <title>8. Week 8 &#8212; General relativity</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -137,7 +137,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   8. Week 8 (under construction)
+   8. Week 8
   </a>
  </li>
  <li class="toctree-l1">
@@ -264,40 +264,38 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="week-8-under-construction">
-<h1><span class="section-number">8. </span>Week 8 (under construction)<a class="headerlink" href="#week-8-under-construction" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="week-8">
+<h1><span class="section-number">8. </span>Week 8<a class="headerlink" href="#week-8" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="non-radial-schwarzschild-geodesics">
 <h2><span class="section-number">8.1. </span>Non-radial Schwarzschild geodesics<a class="headerlink" href="#non-radial-schwarzschild-geodesics" title="Permalink to this headline">¶</a></h2>
-<p>We will take a closer look at geodesics for the Schwarzschild solution. We recall that the Lagrangian is</p>
+<p>We will take a closer look at geodesics for the Schwarzschild solution. We recall that the Lagrangian for this metric is</p>
 <div class="math notranslate nohighlight">
 \[
-L=-\left(1-\frac{2M}{r}\right)\dot{t}^2+\frac{\dot{r}^2}{1-\frac{2M}{r}}+r^2(\dot{\theta}^2+\sin^2\theta \dot{\phi}^2)
+L=-\left(1-\frac{2M}{r}\right)\dot{t}^2+\frac{\dot{r}^2}{1-\frac{2M}{r}}+r^2(\dot{\theta}^2+\sin^2\theta \dot{\phi}^2)\,.
 \]</div>
-<p>To simplify our analysis, we will restrict our focus to the equatorial plane geodesics</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
-<p>This is because</p>
+<p>To simplify our analysis, we will restrict our focus to the equatorial plane geodesics:</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week8_pictures/week8_picture1.png"><img alt="Week8_pictures/week8_picture1.png" class="bg-primary mb-1 align-center" src="Week8_pictures/week8_picture1.png" style="width: 400px;" /></a>
+<p>This is possible because:</p>
 <ul class="simple">
-<li><p>we can rotate the coordinate system such that initially we have <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{2}\)</span> and <span class="math notranslate nohighlight">\(\dot{\theta}=0\)</span></p></li>
-<li><p>Lagrangian and initial conditions are symmetric under <span class="math notranslate nohighlight">\(\theta\to\pi-\theta\)</span> which means that the orbit remains on the <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{2}\)</span> plane. In this case the Lagrangian reduces to</p></li>
+<li><p>we can rotate the coordinate system such that our initial conditions turn into <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{2}\)</span> and <span class="math notranslate nohighlight">\(\dot{\theta}=0\)</span>.</p></li>
+<li><p>in such a case, the Lagrangian and the initial conditions are symmetric under <span class="math notranslate nohighlight">\(\theta\to\pi-\theta\)</span>, which means that the orbit remains on the <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{2}\)</span> plane. In this case the Lagrangian reduces to</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[
-L=-\left(1-\frac{2M}{r}\right)\dot{t}^2+\frac{\dot{r}^2}{1-\frac{2M}{r}}+r^2\dot{\phi}^2
+L=-\left(1-\frac{2M}{r}\right)\dot{t}^2+\frac{\dot{r}^2}{1-\frac{2M}{r}}+r^2\dot{\phi}^2\,.
 \]</div>
 <p>Our strategy is:</p>
 <ul class="simple">
 <li><p>Use Euler-Lagrange equations for <span class="math notranslate nohighlight">\(t\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span> to find conservation laws</p></li>
 <li><p>Use <span class="math notranslate nohighlight">\(L=\begin{cases}-1&amp;\textnormal{for }\lambda=\tau\textnormal{ timelike}\\0&amp;\textnormal{for null}\end{cases}\)</span></p></li>
 </ul>
-<p>Euler-Lagrange equations:</p>
+<p>We start with the Euler-Lagrange equations:</p>
 <ul class="simple">
 <li><p>for <span class="math notranslate nohighlight">\(t\)</span> we get the same equation as before</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[
-\left(1-\frac{2M}{r}\right)\dot{t}=E
+\left(1-\frac{2M}{r}\right)\dot{t}=E\,,
 \]</div>
 <ul class="simple">
 <li><p>for <span class="math notranslate nohighlight">\(\phi\)</span></p></li>
@@ -306,23 +304,23 @@ L=-\left(1-\frac{2M}{r}\right)\dot{t}^2+\frac{\dot{r}^2}{1-\frac{2M}{r}}+r^2\dot
 \[
 \boxed{\frac{d}{d\lambda}\left(\frac{\partial L}{\partial \dot\phi}\right)=\frac{\partial L}{\partial \phi}}\quad \Rightarrow\quad \boxed{\frac{d}{d\lambda}(2r^2\dot\phi)=0}\quad\Rightarrow\quad\boxed{r^2 \dot\phi=J=const}
 \]</div>
-<p>Note that the metric has no dependence on <span class="math notranslate nohighlight">\(t\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span>. Therefore there are symmetries</p>
+<p>Note that the metric has no dependence on <span class="math notranslate nohighlight">\(t\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span>. Therefore we have the associated symmetries</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{cases}t\to t+const\\\phi\to\phi+const\end{cases}
+\begin{cases}t\to t+const\,,\\\phi\to\phi+const\,,\end{cases}
 \end{split}\]</div>
-<p>and we expect to find two more conserved quantities. These are the <strong>energy</strong> <span class="math notranslate nohighlight">\(E\)</span> and the <strong>angular momentum</strong> <span class="math notranslate nohighlight">\(J\)</span>.</p>
+<p>and we expect to find two conserved quantities. These are the <strong>energy</strong> <span class="math notranslate nohighlight">\(E\)</span> and the <strong>angular momentum</strong> <span class="math notranslate nohighlight">\(J\)</span>.</p>
 <p>Now we substitute this into <span class="math notranslate nohighlight">\(L=-k\)</span>, where <span class="math notranslate nohighlight">\(k=1\)</span> for timelike geodesics and <span class="math notranslate nohighlight">\(k=0\)</span> for null geodesics. We find</p>
 <div class="math notranslate nohighlight">
 \[
-\left(1-\frac{2M}{r}\right)^{-1}\left[-E^2+\dot{r}^2\right]+\frac{J^2}{r^2}=-k
+\left(1-\frac{2M}{r}\right)^{-1}\left(-E^2+\dot{r}^2\right)+\frac{J^2}{r^2}=-k\,,
 \]</div>
 <p>and finally</p>
 <div class="math notranslate nohighlight">
 \[
-\dot{r}^2=E^2-\left(k+\frac{J^2}{r^2}\right)\left(1-\frac{2M}{r}\right)
+\dot{r}^2=E^2-\left(k+\frac{J^2}{r^2}\right)\left(1-\frac{2M}{r}\right)\,.
 \]</div>
-<p>The equation for <span class="math notranslate nohighlight">\(\dot{r}\)</span> is tricky to solve. Our strategy will be to set <span class="math notranslate nohighlight">\(u=\frac{1}{u}\)</span> and look at <span class="math notranslate nohighlight">\(\frac{du}{d\phi}=\frac{\dot{u}}{\dot{\phi}}\)</span>. Then</p>
+<p>The equation for <span class="math notranslate nohighlight">\(\dot{r}\)</span> is tricky to solve. Our strategy will be to set <span class="math notranslate nohighlight">\(u=\frac{1}{r}\)</span> and look at <span class="math notranslate nohighlight">\(\frac{du}{d\phi}=\frac{\dot{u}}{\dot{\phi}}\)</span>. Then</p>
 <div class="math notranslate nohighlight">
 \[
 \boxed{\frac{du}{d\phi}=\frac{\dot{u}}{\dot\phi}=\frac{-\frac{1}{r^2}\dot{r}}{\frac{J}{r^2}}=-\frac{\dot{r}}{J}}\quad\Rightarrow\quad \boxed{\dot{r}=-J\frac{du}{d\phi}}
@@ -330,51 +328,54 @@ L=-\left(1-\frac{2M}{r}\right)\dot{t}^2+\frac{\dot{r}^2}{1-\frac{2M}{r}}+r^2\dot
 <p>Substituting this into the equation above we get</p>
 <div class="math notranslate nohighlight">
 \[
-\boxed{J^2\left(\frac{du}{d\phi}\right)^2+J^2 u^2=E^2-k+\frac{2Mk}{r}+\frac{2MJ^2}{r^3}}\quad\Rightarrow\quad \boxed{\left(\frac{du}{d\phi}\right)^2+u^2=\frac{E^2}{J^2}-\frac{k}{J^2}+\frac{2Mku}{J^2}+2Mu^3}
+J^2\left(\frac{du}{d\phi}\right)^2+J^2 u^2=E^2-k+\frac{2Mk}{r}+\frac{2MJ^2}{r^3}\,,
+\]</div>
+<p>and therefore</p>
+<div class="math notranslate nohighlight">
+\[
+\left(\frac{du}{d\phi}\right)^2+u^2=\frac{E^2}{J^2}-\frac{k}{J^2}+\frac{2Mku}{J^2}+2Mu^3\,.
 \]</div>
 <p>Now we take the derivative <span class="math notranslate nohighlight">\(\frac{d}{d\phi}\)</span> of this equation and use</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d}{d\phi}\left(\frac{du}{d\phi}\right)^2=2\frac{du}{d\phi}\frac{d^2 u}{d\phi^2}\qquad\qquad \frac{d}{d\phi}u^2=2u\frac{du}{d\phi}
+\frac{d}{d\phi}\left(\frac{du}{d\phi}\right)^2=2\frac{du}{d\phi}\frac{d^2 u}{d\phi^2}\,,\qquad\qquad \frac{d}{d\phi}u^2=2u\frac{du}{d\phi}\,,
 \]</div>
-<p>we get</p>
+<p>tp get</p>
 <div class="math notranslate nohighlight">
 \[
-2\frac{du}{d\phi}\left(\frac{d^2u}{d\phi^2}+u\right)=\frac{2Mk}{J^2}\frac{du}{d\phi}+6Mu^2\frac{du}{d\phi}
+2\frac{du}{d\phi}\left(\frac{d^2u}{d\phi^2}+u\right)=\frac{2Mk}{J^2}\frac{du}{d\phi}+6Mu^2\frac{du}{d\phi}\,,
 \]</div>
 <p>that implies</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d^2u}{d\phi^2}+u=\frac{Mk}{J^2}+3Mu^2
+\frac{d^2u}{d\phi^2}+u=\frac{Mk}{J^2}+3Mu^2\,.
 \]</div>
-<p>The last term on the right-hand side is coming from General Relativity and was not present there in the solution to this problem in Newtonian physics. We will look at some solutions of this to study how GR makes predictions about solar system physics.</p>
+<p>The last term on the right-hand side is coming from General Relativity and was not present there in the solution to this problem in Newtonian physics. We will look at some solutions to this equation to study how GR makes revised predictions about solar system physics.</p>
 </div>
 <div class="section" id="deflection-of-light">
 <h2><span class="section-number">8.2. </span>Deflection of light<a class="headerlink" href="#deflection-of-light" title="Permalink to this headline">¶</a></h2>
 <p>We set <span class="math notranslate nohighlight">\(k=0\)</span> in our previous equation so that we get a null geodesic</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d^2u}{d\phi^2}+u=3Mu^2
+\frac{d^2u}{d\phi^2}+u=3Mu^2\,.
 \]</div>
 <p>This is a non-linear equation as it has <span class="math notranslate nohighlight">\(u^2\)</span> on the right-hand side, and therefore it is hard to solve. We study approximate solutions at large distance from the star, i.e. <span class="math notranslate nohighlight">\(Mu\ll 1\)</span>. This implies that <span class="math notranslate nohighlight">\(Mu^2=(Mu)u\ll u\)</span>, so to first approximation we can ignore the non-linear term to get:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d^2 u}{d\phi^2}+u=0
+\frac{d^2 u}{d\phi^2}+u=0\,.
 \]</div>
-<p>A solution of this equation is</p>
+<p>The solution of this equation is</p>
 <div class="math notranslate nohighlight">
 \[
-u=\frac{1}{b}\sin\phi
+u=\frac{1}{b}\sin\phi\,,
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(b\)</span> is a constant that can be interpreted as in the figure below</p>
-<blockquote>
-<div><p>picture</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week8_pictures/week8_picture2.png"><img alt="Week8_pictures/week8_picture2.png" class="bg-primary mb-1 align-center" src="Week8_pictures/week8_picture2.png" style="width: 400px;" /></a>
 <p>In this approximation, the ray passes by the object in a straight line, as it would in Newtonian theory.</p>
 <p>Now we can include GR corrections. We re-introduce the <span class="math notranslate nohighlight">\(3Mu^2\)</span> term and expand <span class="math notranslate nohighlight">\(u\)</span> in powers of <span class="math notranslate nohighlight">\(\frac{1}{b}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-u=\frac{1}{b}\sin\phi+\frac{1}{b^2}u_2(\phi)+\frac{1}{b^3}u_3(\phi)+\ldots
+u=\frac{1}{b}\sin\phi+\frac{1}{b^2}u_2(\phi)+\frac{1}{b^3}u_3(\phi)+\ldots\,.
 \]</div>
 <p>We now work keeping terms up to order <span class="math notranslate nohighlight">\(\frac{1}{b^2}\)</span>. In particular, note that <span class="math notranslate nohighlight">\(u^2=\frac{1}{b^2}\sin^2\phi+\mathcal{O}(\frac{1}{b^3})\)</span>. Putting this into our equation we obtain:</p>
 <div class="math notranslate nohighlight">
@@ -384,87 +385,87 @@ u=\frac{1}{b}\sin\phi+\frac{1}{b^2}u_2(\phi)+\frac{1}{b^3}u_3(\phi)+\ldots
 <p>that implies</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d^2u_2}{d\phi^2}+u_2=3M\sin^2\phi+\mathcal{O}(\frac{1}{b})=\frac{3M}{2}(1-\cos(2\phi))+\mathcal{O}(\frac{1}{b}).
+\frac{d^2u_2}{d\phi^2}+u_2=3M\sin^2\phi+\mathcal{O}\left(\frac{1}{b}\right)=\frac{3M}{2}(1-\cos(2\phi))+\mathcal{O}\left(\frac{1}{b}\right).
 \]</div>
-<p>We want a solution which oscillates as pictured symmetrically about <span class="math notranslate nohighlight">\(\phi=\frac{\pi}{2}\)</span>.</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
+<p>We want a solution which is symmetric about <span class="math notranslate nohighlight">\(\phi=\frac{\pi}{2}\)</span>.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week8_pictures/week8_picture3.png"><img alt="Week8_pictures/week8_picture3.png" class="bg-primary mb-1 align-center" src="Week8_pictures/week8_picture3.png" style="width: 400px;" /></a>
 <p>We do not want to consider the homogeneous equation part of solution (like <span class="math notranslate nohighlight">\(A\sin\phi+B\cos\phi\)</span>), and we just want to focus on a particular solution. We try:</p>
 <div class="math notranslate nohighlight">
 \[
-u_2=A+B\cos(2\phi)
+u_2=A+B\cos(2\phi)\,.
 \]</div>
 <p>Substituting into our equation we get:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\boxed{(-4B\cos(2\phi))+(A+B\cos(2\phi))=\frac{3M}{2}-\frac{3M}{2}\cos(2\phi)}\quad\Rightarrow\quad\boxed{ \begin{cases}A=\frac{3M}{2}\\B=\frac{M}{2}\end{cases}}\quad\Rightarrow\quad \boxed{u_2=\frac{M}{2}(3+\cos(2\phi))}
+\boxed{(-4B\cos(2\phi))+(A+B\cos(2\phi))=\frac{3M}{2}-\frac{3M}{2}\cos(2\phi)}\quad\Rightarrow\quad\boxed{ \begin{cases}A=\frac{3M}{2}\\B=\frac{M}{2}\end{cases}}
 \end{split}\]</div>
+<p>and finally</p>
+<div class="math notranslate nohighlight">
+\[
+u_2=\frac{M}{2}(3+\cos(2\phi))\,.
+\]</div>
 <p>This means that our overall solution is</p>
 <div class="math notranslate nohighlight">
 \[
-u=\frac{1}{b}\sin\phi+\frac{M}{2b^2}(3+\cos(2\phi))+\mathcal{O}(\frac{1}{b^3})
+u=\frac{1}{b}\sin\phi+\frac{M}{2b^2}(3+\cos(2\phi))+\mathcal{O}\left(\frac{1}{b^3}\right).
 \]</div>
 <p>What does this look like? For <span class="math notranslate nohighlight">\(\phi\)</span> around zero we have <span class="math notranslate nohighlight">\(u_2\approx 2M&gt;0\)</span>, so <span class="math notranslate nohighlight">\(r&lt;\frac{1}{b}\sin\phi\)</span>. For <span class="math notranslate nohighlight">\(\phi=\frac{\pi}{2}\)</span> we have <span class="math notranslate nohighlight">\(u_2\approx M\)</span> so <span class="math notranslate nohighlight">\(r&lt;\frac{1}{b}\sin\phi\)</span> but it is closer to <span class="math notranslate nohighlight">\(\frac{1}{b}\sin\phi\)</span> than near <span class="math notranslate nohighlight">\(\phi=0\)</span>. For <span class="math notranslate nohighlight">\(\phi\approx \pi\)</span>, same as for <span class="math notranslate nohighlight">\(\phi\approx 0\)</span> by symmetry.</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
-<p>Let <span class="math notranslate nohighlight">\(\delta\)</span> be the total deflection angle. When <span class="math notranslate nohighlight">\(r=\infty\)</span>, we have <span class="math notranslate nohighlight">\(u=0\)</span> <span class="math notranslate nohighlight">\(\phi\)</span> is small when <span class="math notranslate nohighlight">\(u=0\)</span>. We look at <span class="math notranslate nohighlight">\(\phi\approx 0\)</span> and we set <span class="math notranslate nohighlight">\(u=0\)</span>. Then</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week8_pictures/week8_picture4.png"><img alt="Week8_pictures/week8_picture4.png" class="bg-primary mb-1 align-center" src="Week8_pictures/week8_picture4.png" style="width: 400px;" /></a>
+<p>Let <span class="math notranslate nohighlight">\(\delta\)</span> be the total deflection angle. When <span class="math notranslate nohighlight">\(r=\infty\)</span>, we have <span class="math notranslate nohighlight">\(u=0\)</span> and moreover <span class="math notranslate nohighlight">\(\phi\)</span> is small when <span class="math notranslate nohighlight">\(u=0\)</span>. We look at <span class="math notranslate nohighlight">\(\phi\approx 0\)</span> and we set <span class="math notranslate nohighlight">\(u=0\)</span>. Then</p>
 <div class="math notranslate nohighlight">
 \[
-0=\frac{1}{b}\sin\phi+\frac{M}{2b^2}(3+\cos(2\phi))\approx \frac{1}{b}\phi+\frac{M}{2b^2}(3+1)=\frac{\phi}{b}+\frac{2M}{b^2}
+0=\frac{1}{b}\sin\phi+\frac{M}{2b^2}(3+\cos(2\phi))\approx \frac{1}{b}\phi+\frac{M}{2b^2}(3+1)=\frac{\phi}{b}+\frac{2M}{b^2}\,.
 \]</div>
 <p>This implies that <span class="math notranslate nohighlight">\(\phi\approx -\frac{2M}{b}\)</span> and the deflection angle is</p>
 <div class="math notranslate nohighlight">
 \[
-\delta\approx \frac{4M}{b}
+\delta\approx \frac{4M}{b}\,.
 \]</div>
 </div>
 <div class="section" id="orbit-precession">
 <h2><span class="section-number">8.3. </span>Orbit precession<a class="headerlink" href="#orbit-precession" title="Permalink to this headline">¶</a></h2>
 <p>In Newtonian gravity: planets should orbit the Sun following periodic elliptic orbits.</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
-<p>However, the orbit of Mercuty was observed to rotate (or “precess”) so that it does not just repeat the same path for each period.</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week8_pictures/week8_picture5.png"><img alt="Week8_pictures/week8_picture5.png" class="bg-primary mb-1 align-center" src="Week8_pictures/week8_picture5.png" style="width: 400px;" /></a>
+<p>However, the orbit of Mercury was observed to rotate (or “precess”) so that it does not just repeat the same path for each period.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week8_pictures/week8_picture6.png"><img alt="Week8_pictures/week8_picture6.png" class="bg-primary mb-1 align-center" src="Week8_pictures/week8_picture6.png" style="width: 400px;" /></a>
 <p>We will show that General Relativity predicts the correct angle of precession <span class="math notranslate nohighlight">\(\Delta\phi\)</span> for an almost circular orbit.</p>
 <p>To start, consider the orbital equation for a massive orbit</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d^2u}{d\phi^2}+u=\frac{M}{J^2}+3Mu^2
+\frac{d^2u}{d\phi^2}+u=\frac{M}{J^2}+3Mu^2\,.
 \]</div>
 <p>Again assume that <span class="math notranslate nohighlight">\(Mu\ll 1\)</span>, that means that we can ignore the <span class="math notranslate nohighlight">\(3Mu^2\)</span> term. To first approximation, we have Newtonian equation</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d^2u}{d\phi^2}+u=\frac{M}{J^2}=\frac{1}{l}
+\frac{d^2u}{d\phi^2}+u=\frac{M}{J^2}=\frac{1}{l}\,,
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(l=\frac{J^2}{M}\)</span>. Generic solution to this equation is</p>
 <div class="math notranslate nohighlight">
 \[
-u=A\cos\phi+B\sin\phi+\frac{1}{l}
+u=A\cos\phi+B\sin\phi+\frac{1}{l}\,.
 \]</div>
 <p>Now rotate axes such that</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week8_pictures/week8_picture7.png"><img alt="Week8_pictures/week8_picture7.png" class="bg-primary mb-1 align-center" src="Week8_pictures/week8_picture7.png" style="width: 400px;" /></a>
 <p>Then the solution is</p>
 <div class="math notranslate nohighlight">
 \[
-u=A\cos\phi+\frac{1}{l}=\frac{1}{l}(1+e\cos\phi)
+u=A\cos\phi+\frac{1}{l}=\frac{1}{l}(1+e\cos\phi)\,.
 \]</div>
 <p>This describes Newtonian orbits.</p>
 <p>We now include the GR correction term, taking <span class="math notranslate nohighlight">\(u\)</span> to be approximated by the Newtonian orbit. We will take the following simplification relevant to Mercury: take <span class="math notranslate nohighlight">\(e=0\)</span> so that <span class="math notranslate nohighlight">\(u_1=\frac{1}{l}\)</span>, i.e. first approximation is a circular orbit. Let the real solution be</p>
 <div class="math notranslate nohighlight">
 \[
-u=\frac{1}{l}+w(\phi)
+u=\frac{1}{l}+w(\phi)\,,
 \]</div>
 <p>and let us work to first order in <span class="math notranslate nohighlight">\(w\)</span>. Substituting into full geodesic equation</p>
 <div class="math notranslate nohighlight">
 \[
-\boxed{\frac{d^2u}{d\phi^2}+u=\frac{1}{l}+3Mu^2}\quad\Rightarrow\quad\boxed{\frac{d^2w}{d\phi^2}+\left(\frac{1}{l}+w\right)=\frac{1}{l}+3M\left(\frac{1}{l}+w\right)^2=\frac{1}{l}+3M\left(\frac{1}{l^2}+\frac{2w}{l}+w^2\right)}
+\frac{d^2u}{d\phi^2}+u=\frac{1}{l}+3Mu^2\,,
+\]</div>
+<p>that implies</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d^2w}{d\phi^2}+\left(\frac{1}{l}+w\right)=\frac{1}{l}+3M\left(\frac{1}{l}+w\right)^2=\frac{1}{l}+3M\left(\frac{1}{l^2}+\frac{2w}{l}+w^2\right).
 \]</div>
 <p>To leading order in <span class="math notranslate nohighlight">\(w\)</span> we get</p>
 <div class="math notranslate nohighlight">
@@ -474,21 +475,19 @@ u=\frac{1}{l}+w(\phi)
 <p>where <span class="math notranslate nohighlight">\(\Omega^2=\left(1-\frac{6M}{l}\right)\)</span>. This is the same type of equation as we encountered before. We can find generic solution (with <span class="math notranslate nohighlight">\(\frac{dw}{d\phi}=0\)</span> at <span class="math notranslate nohighlight">\(\phi=0\)</span>) to be</p>
 <div class="math notranslate nohighlight">
 \[
-w=C+D\cos(\Omega\phi)
+w=C+D\cos(\Omega\phi)\,,
 \]</div>
 <p>period of <span class="math notranslate nohighlight">\(w\)</span> is <span class="math notranslate nohighlight">\(\frac{2\pi}{\Omega}=2\pi\left(1-\frac{6M}{l}\right)^{-\frac{1}{2}}\)</span>. Note that our approximation was <span class="math notranslate nohighlight">\(Mu\ll 1\)</span> and our solution is near <span class="math notranslate nohighlight">\(u=\frac{1}{l}\)</span> so we are assuming that <span class="math notranslate nohighlight">\(\frac{M}{l}\ll 1\)</span>.</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week8_pictures/week8_picture8.png"><img alt="Week8_pictures/week8_picture8.png" class="bg-primary mb-1 align-center" src="Week8_pictures/week8_picture8.png" style="width: 400px;" /></a>
 <p>We can now approximate <span class="math notranslate nohighlight">\(\left(1-\frac{6M}{l}\right)^{-\frac{1}{2}}\approx 1+\frac{3M}{l}+\mathcal{O}\left(\left(\frac{M}{l}\right)\right)^2\)</span>, and therefore the period is approximately</p>
 <div class="math notranslate nohighlight">
 \[
-2\pi\left(1+\frac{3M}{l}\right)=2\pi+\frac{6\pi M}{l}
+2\pi\left(1+\frac{3M}{l}\right)=2\pi+\frac{6\pi M}{l}\,.
 \]</div>
 <p>This means that the angle <span class="math notranslate nohighlight">\(\phi\)</span> must increase by <span class="math notranslate nohighlight">\(2\pi+\Delta\phi\)</span> before it gets to next maximum, where</p>
 <div class="math notranslate nohighlight">
 \[
-\Delta\phi=\frac{6\pi M}{l}
+\Delta\phi=\frac{6\pi M}{l}\,.
 \]</div>
 </div>
 </div>
