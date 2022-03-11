@@ -99,16 +99,16 @@ $$
 \boxed{g_{\mu\nu}v^\mu v^\nu=g_{tt}v^t v^t=-\left(1-\frac{2M}{r}\right)\dot{t}^2=-1}\quad \Rightarrow \quad \boxed{\dot{t}=\left(1-\frac{2M}{r}\right)^{-\frac{1}{2}}}
 $$
 
-A proper time interval $\Delta \tau_0$ for the observer fixed at $r=r_0$ is related to the coordinate time interval $\Delta t_0$ by
-
-$$
-\frac{\Delta t_0}{\Delta\tau_0}=\left(1-\frac{2M}{r_0}\right)^{-\frac{1}{2}}\,.
-$$
-
-Similarly for the observer at $r=r_1$:
+A proper time interval $\Delta \tau_1$ for the observer fixed at $r=r_1$ is related to the coordinate time interval $\Delta t_1$ by
 
 $$
 \frac{\Delta t_1}{\Delta\tau_1}=\left(1-\frac{2M}{r_1}\right)^{-\frac{1}{2}}\,.
+$$
+
+Similarly for the observer at $r=r_2$:
+
+$$
+\frac{\Delta t_2}{\Delta\tau_2}=\left(1-\frac{2M}{r_2}\right)^{-\frac{1}{2}}\,.
 $$
 
 Suppose that the observer at $r=r_1$ sends a pulse of light towards the observer at $r=r_2$ at time intervals $\Delta \tau_1$ according to their clock (i.e proper time). The coordinate time interval is $\Delta t_1=\left(1-\frac{2M}{r_1}\right)^{-\frac{1}{2}}\Delta\tau_1$.
@@ -167,7 +167,7 @@ $$
 Since $L=-1$ then
 
 $$
-\boxed{-\left(1-\frac{2M}{r}\right)\dot{t}^2+\dot{r}^2=-\left(1-\frac{2M}{r}\right)}\quad\Rightarrow\quad \boxed{\dot{r}^2=E^2-1+\frac{2M}{r}}
+\boxed{-\left(1-\frac{2M}{r}\right)^2\dot{t}^2+\dot{r}^2=-\left(1-\frac{2M}{r}\right)}\quad\Rightarrow\quad \boxed{\dot{r}^2=E^2-1+\frac{2M}{r}}
 $$
 
 Let the motion be such that $\dot{r}\to 0$ as $r\to\infty$, i.e. $E=1$. Then
@@ -185,7 +185,7 @@ $$
 that implies
 
 $$
-\boxed{\frac{2}{3}\left(r_1^{\frac{3}{2}-r_0^{\frac{3}{2}}}\right)=-\sqrt{2M}(\tau_1-\tau_0)=-\sqrt{2M}\Delta\tau}\quad\Rightarrow\quad\boxed{ \Delta\tau=\frac{\sqrt{2}}{3\sqrt{M}}\left(r_0^{\frac{3}{2}}-r_1^{\frac{3}{2}}\right)}
+\boxed{\frac{2}{3}\left(r_1^{\frac{3}{2}}-r_0^{\frac{3}{2}}\right)=-\sqrt{2M}(\tau_1-\tau_0)=-\sqrt{2M}\Delta\tau}\quad\Rightarrow\quad\boxed{ \Delta\tau=\frac{\sqrt{2}}{3\sqrt{M}}\left(r_0^{\frac{3}{2}}-r_1^{\frac{3}{2}}\right)}
 $$
 
 This means that proper time experienced by probe to hit $r_1=2M$ is **finite**!
