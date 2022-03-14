@@ -1,5 +1,37 @@
 # Week 8
 
+## A comment on physical units
+
+Let us take a look at the temporal part of the Schwarzschild metric:
+
+$$
+ds^2\sim \frac{dt^2}{1-\frac{2M}{r}}
+$$
+
+Since $ds^2$ has units $(length)^2$ and we need $\frac{2M}{r}$ needs to be dimensionless (since it is added to $1$), then we need to re-insert factors of $G$ and $c$ to get proper units.
+
+We want to find a combination $G^\alpha c^\beta \frac{M}{r}$ that is dimensionless, where $M\sim (mass)$ and $r\sim (lenght)$. We also have $G\sim (length)^3(mass)^{-1}(time)^{-2}$ and $c\sim (length)(time)^{-1}$. We find that a dimensionless combination is $\frac{GM}{c^2 r}$.
+
+Before, we defined the Schwarzschild radius $r_S=2M$ in natural units. Then, in SI units we have
+
+$$
+r_S=\frac{2GM}{c^2}\,.
+$$
+
+We can find the Schwarzschild radius for Earth and Sun:
+
+- for Earth: $M=6\times 10^{24}kg$ that implies
+
+$$
+r_S=\frac{2GM}{c^2}\approx 9\times 10^{-3}m\approx 1cm
+$$
+
+- for Sun: $M=2\times 10^{30}kg$ that implies
+
+$$
+r_S=\frac{2GM}{c^2}\approx 3\times 10^{3}m\approx 3km
+$$
+
 ## Non-radial Schwarzschild geodesics
 
 We will take a closer look at geodesics for the Schwarzschild solution. We recall that the Lagrangian for this metric is

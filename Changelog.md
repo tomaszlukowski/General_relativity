@@ -1,5 +1,9 @@
 # Change log
 
+## 14.03.2022
+
+- Week 8 - small changes
+
 ## 03.03.2022
 
 - Week 6 lectures - typos fixed

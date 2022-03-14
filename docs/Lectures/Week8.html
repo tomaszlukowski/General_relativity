@@ -239,18 +239,23 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-comment-on-physical-units">
+   8.1. A comment on physical units
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#non-radial-schwarzschild-geodesics">
-   8.1. Non-radial Schwarzschild geodesics
+   8.2. Non-radial Schwarzschild geodesics
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#deflection-of-light">
-   8.2. Deflection of light
+   8.3. Deflection of light
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#orbit-precession">
-   8.3. Orbit precession
+   8.4. Orbit precession
   </a>
  </li>
 </ul>
@@ -266,8 +271,38 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="week-8">
 <h1><span class="section-number">8. </span>Week 8<a class="headerlink" href="#week-8" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="a-comment-on-physical-units">
+<h2><span class="section-number">8.1. </span>A comment on physical units<a class="headerlink" href="#a-comment-on-physical-units" title="Permalink to this headline">¶</a></h2>
+<p>Let us take a look at the temporal part of the Schwarzschild metric:</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2\sim \frac{dt^2}{1-\frac{2M}{r}}
+\]</div>
+<p>Since <span class="math notranslate nohighlight">\(ds^2\)</span> has units <span class="math notranslate nohighlight">\((length)^2\)</span> and we need <span class="math notranslate nohighlight">\(\frac{2M}{r}\)</span> needs to be dimensionless (since it is added to <span class="math notranslate nohighlight">\(1\)</span>), then we need to re-insert factors of <span class="math notranslate nohighlight">\(G\)</span> and <span class="math notranslate nohighlight">\(c\)</span> to get proper units.</p>
+<p>We want to find a combination <span class="math notranslate nohighlight">\(G^\alpha c^\beta \frac{M}{r}\)</span> that is dimensionless, where <span class="math notranslate nohighlight">\(M\sim (mass)\)</span> and <span class="math notranslate nohighlight">\(r\sim (lenght)\)</span>. We also have <span class="math notranslate nohighlight">\(G\sim (length)^3(mass)^{-1}(time)^{-2}\)</span> and <span class="math notranslate nohighlight">\(c\sim (length)(time)^{-1}\)</span>. We find that a dimensionless combination is <span class="math notranslate nohighlight">\(\frac{GM}{c^2 r}\)</span>.</p>
+<p>Before, we defined the Schwarzschild radius <span class="math notranslate nohighlight">\(r_S=2M\)</span> in natural units. Then, in SI units we have</p>
+<div class="math notranslate nohighlight">
+\[
+r_S=\frac{2GM}{c^2}\,.
+\]</div>
+<p>We can find the Schwarzschild radius for Earth and Sun:</p>
+<ul class="simple">
+<li><p>for Earth: <span class="math notranslate nohighlight">\(M=6\times 10^{24}kg\)</span> that implies</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+r_S=\frac{2GM}{c^2}\approx 9\times 10^{-3}m\approx 1cm
+\]</div>
+<ul class="simple">
+<li><p>for Sun: <span class="math notranslate nohighlight">\(M=2\times 10^{30}kg\)</span> that implies</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+r_S=\frac{2GM}{c^2}\approx 3\times 10^{3}m\approx 3km
+\]</div>
+</div>
 <div class="section" id="non-radial-schwarzschild-geodesics">
-<h2><span class="section-number">8.1. </span>Non-radial Schwarzschild geodesics<a class="headerlink" href="#non-radial-schwarzschild-geodesics" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.2. </span>Non-radial Schwarzschild geodesics<a class="headerlink" href="#non-radial-schwarzschild-geodesics" title="Permalink to this headline">¶</a></h2>
 <p>We will take a closer look at geodesics for the Schwarzschild solution. We recall that the Lagrangian for this metric is</p>
 <div class="math notranslate nohighlight">
 \[
@@ -353,7 +388,7 @@ J^2\left(\frac{du}{d\phi}\right)^2+J^2 u^2=E^2-k+\frac{2Mk}{r}+\frac{2MJ^2}{r^3}
 <p>The last term on the right-hand side is coming from General Relativity and was not present there in the solution to this problem in Newtonian physics. We will look at some solutions to this equation to study how GR makes revised predictions about solar system physics.</p>
 </div>
 <div class="section" id="deflection-of-light">
-<h2><span class="section-number">8.2. </span>Deflection of light<a class="headerlink" href="#deflection-of-light" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.3. </span>Deflection of light<a class="headerlink" href="#deflection-of-light" title="Permalink to this headline">¶</a></h2>
 <p>We set <span class="math notranslate nohighlight">\(k=0\)</span> in our previous equation so that we get a null geodesic</p>
 <div class="math notranslate nohighlight">
 \[
@@ -423,7 +458,7 @@ u=\frac{1}{b}\sin\phi+\frac{M}{2b^2}(3+\cos(2\phi))+\mathcal{O}\left(\frac{1}{b^
 \]</div>
 </div>
 <div class="section" id="orbit-precession">
-<h2><span class="section-number">8.3. </span>Orbit precession<a class="headerlink" href="#orbit-precession" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.4. </span>Orbit precession<a class="headerlink" href="#orbit-precession" title="Permalink to this headline">¶</a></h2>
 <p>In Newtonian gravity: planets should orbit the Sun following periodic elliptic orbits.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="Week8_pictures/week8_picture5.png"><img alt="Week8_pictures/week8_picture5.png" class="bg-primary mb-1 align-center" src="Week8_pictures/week8_picture5.png" style="width: 400px;" /></a>
 <p>However, the orbit of Mercury was observed to rotate (or “precess”) so that it does not just repeat the same path for each period.</p>
