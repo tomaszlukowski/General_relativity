@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>9. Week 9 (under construction) &#8212; General relativity</title>
+    <title>9. Week 9 &#8212; General relativity</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -142,7 +142,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   9. Week 9 (under construction)
+   9. Week 9
   </a>
  </li>
  <li class="toctree-l1">
@@ -273,98 +273,101 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="week-9-under-construction">
-<h1><span class="section-number">9. </span>Week 9 (under construction)<a class="headerlink" href="#week-9-under-construction" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="week-9">
+<h1><span class="section-number">9. </span>Week 9<a class="headerlink" href="#week-9" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="cosmological-spacetimes">
 <h2><span class="section-number">9.1. </span>Cosmological spacetimes<a class="headerlink" href="#cosmological-spacetimes" title="Permalink to this headline">¶</a></h2>
-<p>We want to think about the Universe as a whole. The Universe is build out of start and galaxies, but if we zoom out then they appear as a smooth fluid (like molecules in a glass of water). At large scales the Universe has two remarkable properties:</p>
+<p>In this part of the lecture, we want to think about the Universe as a whole. The Universe is build out of stars and galaxies, but if we zoom out then they appear as a smooth fluid (like molecules in a glass of water).</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week9_pictures/week9_picture1.png"><img alt="Week9_pictures/week9_picture1.png" class="bg-primary mb-1 align-center" src="Week9_pictures/week9_picture1.png" style="width: 400px;" /></a>
+<p>At large scales the Universe has two remarkable properties:</p>
 <ul class="simple">
-<li><p>isotropic (looks the same independent of the direction we look)</p></li>
-<li><p>homogeneous (looks the same wherever we go)</p></li>
+<li><p>it is isotropic (looks the same independent of the direction we look)</p></li>
+<li><p>it is homogeneous (looks the same wherever we go)</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Theorem</p>
 <p>These two properties imply that</p>
 <div class="math notranslate nohighlight">
 \[
-ds^2=-dt^2+a(t)^2(h_{ij}(\vec{x})dxîdx^j)
+ds^2=-dt^2+a(t)^2(h_{ij}(\vec{x})dx^idx^j)\,,
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(a(t)\)</span> is a function of time, and <span class="math notranslate nohighlight">\(h_{ij}(x)\)</span> is a particular spatial metric out of three possible cases:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-h_{ij}dx^idx^j=\begin{cases}\textnormal{Euclidean flat }h_{ij=\delta_{ij}}\\ \textnormal{three-sphere }S^3\\
-\textnormal{hyperbolic space }\mathbb{H}^3\end{cases}
+h_{ij}dx^idx^j=\begin{cases}\textnormal{Euclidean flat }h_{ij}=\delta_{ij}\,,\\ \textnormal{three-sphere }S^3\,,\\
+\textnormal{hyperbolic space }\mathbb{H}^3\,.\end{cases}
 \end{split}\]</div>
 </div>
 <p>From observations we find that <span class="math notranslate nohighlight">\(h_{ij}\approx \delta_{ij}\)</span> (i.e. roughly flat). Therefore, we will focus on the flat case:</p>
 <div class="math notranslate nohighlight">
 \[
-ds^2=-dt^2+a(t)^2(dx^2+dy^2+dz^2)=-dt^2+a(t)^2(\delta_{ij}dx^idx^j)
+ds^2=-dt^2+a(t)^2(dx^2+dy^2+dz^2)=-dt^2+a(t)^2(\delta_{ij}dx^idx^j)\,.
 \]</div>
-<p>The function <span class="math notranslate nohighlight">\(a(t)\)</span> is called the <strong>scale factor</strong>. The physical distance between the two events is:</p>
+<p>The function <span class="math notranslate nohighlight">\(a(t)\)</span> is called the <strong>scale factor</strong>.</p>
+<p>Let us focus on the following situation:</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week9_pictures/week9_picture2.png"><img alt="Week9_pictures/week9_picture2.png" class="bg-primary mb-1 align-center" src="Week9_pictures/week9_picture2.png" style="width: 400px;" /></a>
+<p>The physical distances between two events can be calculated from:</p>
 <div class="math notranslate nohighlight">
 \[
-\Delta s=\int_{\textnormal{spacelike geodesic}}ds
+\Delta s=\int_{\textnormal{spacelike geodesic}}ds\,.
 \]</div>
 <p>On <span class="math notranslate nohighlight">\(t=const\)</span> spacelike surface <span class="math notranslate nohighlight">\(ds^2=a(t)^2(\delta_{ij}dx^idx^j)\)</span> we have <span class="math notranslate nohighlight">\(ds^2=a(t)^2 ds^2_{\textnormal{Euclidean}}\)</span> that implies</p>
 <div class="math notranslate nohighlight">
 \[
-ds=a(t)ds_{\textnormal{Euclidean}}
+ds=a(t)ds_{\textnormal{Euclidean}}\,.
 \]</div>
 <p>Then integrating alond a spacelike geodesic:</p>
 <div class="math notranslate nohighlight">
 \[
-\Delta s=\int a(t)ds_{\textnormal{Euxlidean}}=a(t)\int ds_{\textnormal{Euclidean}}=a(t)|\vec{x}_2-\vec{x}_1|
+\Delta s=\int a(t)ds_{\textnormal{Euxlidean}}=a(t)\int ds_{\textnormal{Euclidean}}=a(t)|\vec{x}_2-\vec{x}_1|\,,
 \]</div>
+<p>where the last expression tells us that the distance is calculated as ordinary distance in space, multiplied by the scale factor that can change in time.</p>
 <div class="section" id="geodesics">
 <h3><span class="section-number">9.1.1. </span>Geodesics<a class="headerlink" href="#geodesics" title="Permalink to this headline">¶</a></h3>
 <p>Now we want to find geodesics in this geometry: we find the Lagrangian</p>
 <div class="math notranslate nohighlight">
 \[
-L=\frac{ds^2}{d\lambda^2}=-\left(\frac{dt}{d\lambda}\right)^2+a^2 \delta_{ij} \frac{dx^i}{d\lambda}\frac{dx^j}{d\lambda}=-\dot{t}^2+a^2\delta_{ij}\dot{x}^i\dot{x}^j
+L=\frac{ds^2}{d\lambda^2}=-\left(\frac{dt}{d\lambda}\right)^2+a^2 \delta_{ij} \frac{dx^i}{d\lambda}\frac{dx^j}{d\lambda}=-\dot{t}^2+a^2\delta_{ij}\dot{x}^i\dot{x}^j\,.
 \]</div>
 <ul class="simple">
-<li><p>temporal equation</p></li>
+<li><p>Temporal Euler-Lagrange equation:</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[
-\frac{d}{d\lambda}(2\dot{t})=2a\dot{a}(\delta_{ij}\dot{x}^i\dot{x}^j)
+\frac{d}{d\lambda}(2\dot{t})=2a\dot{a}(\delta_{ij}\dot{x}^i\dot{x}^j)\,.
 \]</div>
 <ul class="simple">
-<li><p>spatial equation</p></li>
+<li><p>Spatial Euler-Lagrange equation:</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[
-\frac{d}{d\lambda}\left(\frac{\partial L}{\partial\dot{x}^i}\right)=\frac{\partial L}{\partial x^i}=0
+\frac{d}{d\lambda}\left(\frac{\partial L}{\partial\dot{x}^i}\right)=\frac{\partial L}{\partial x^i}=0\,.
 \]</div>
 <p>To calculate the left-hand side we find</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{\partial L}{\partial \dot{x}^i}=\frac{\partial}{\partial \dot{x}^i}(-\dot{t}^2+a^2 \delta_{kj}\dot{x}^k\dot{x}^j)=a^2\delta_{kj}\frac{\partial}{\partial \dot{x}^i}(\dot{x}^k\dot{x}^j)=a^2\delta_{kj}(\delta^k_i \dot{x}^j+\dot{x}^k\delta^j_i)=2a^2\delta_{ij}\dot{x}^j
+\frac{\partial L}{\partial \dot{x}^i}=\frac{\partial}{\partial \dot{x}^i}(-\dot{t}^2+a^2 \delta_{kj}\dot{x}^k\dot{x}^j)=a^2\delta_{kj}\frac{\partial}{\partial \dot{x}^i}(\dot{x}^k\dot{x}^j)=a^2\delta_{kj}(\delta^k_i \dot{x}^j+\dot{x}^k\delta^j_i)=2a^2\delta_{ij}\dot{x}^j\,.
 \]</div>
 <p>This leads to the equation</p>
 <div class="math notranslate nohighlight">
 \[
-\boxed{\frac{d}{d\lambda}(2a^2\delta_{ij}\dot{x}^j)=0}\quad\Rightarrow\quad\boxed{2\delta_{ij}\frac{d}{d\lambda}(a^2\dot{x}^j)=0}\quad\Rightarrow\quad\boxed{\frac{d}{d\lambda}(a^2\dot{x}^i)=0}
+\boxed{\frac{d}{d\lambda}(2a^2\delta_{ij}\dot{x}^j)=0}\quad\Rightarrow\quad\boxed{2\delta_{ij}\frac{d}{d\lambda}(a^2\dot{x}^j)=0}\quad\Rightarrow\quad\boxed{\frac{d}{d\lambda}(a^2\dot{x}^i)=0}\,.
 \]</div>
-<p>This is a conservation law that come from the spatial translation symmetry of the Lagrangian: <span class="math notranslate nohighlight">\(x^i\to x^i+c^i\)</span>.</p>
-<p>We define the momentum <span class="math notranslate nohighlight">\(p^i=a^2\dot{x}^i\)</span>, and the above equation states that <span class="math notranslate nohighlight">\(p^i=const\)</span>.</p>
+<p>This is a conservation law that come from the spatial translation symmetry of the Lagrangian: <span class="math notranslate nohighlight">\(x^i\to x^i+c^i\)</span>. We define the momentum <span class="math notranslate nohighlight">\(p^i=a^2\dot{x}^i\)</span>, and the above equation states that <span class="math notranslate nohighlight">\(p^i=const\)</span>.</p>
 <p>For timelike geodesic <span class="math notranslate nohighlight">\(L=-1\)</span> that implies</p>
 <div class="math notranslate nohighlight">
 \[
-\boxed{-\dot{t}^2+a^2\delta_{ij}\dot{x}^i\dot{x}^j=-1}\quad \Rightarrow \quad \boxed{-\dot{t}^2+a^2\left(\frac{|\vec{p}|^2}{a^4}\right)=-1}\quad\Rightarrow\quad \boxed{\dot{t}^2=1-\frac{|\vec{p}|^2}{a^2}}
+\boxed{-\dot{t}^2+a^2\delta_{ij}\dot{x}^i\dot{x}^j=-1}\quad \Rightarrow \quad \boxed{-\dot{t}^2+a^2\left(\frac{|\vec{p}|^2}{a^4}\right)=-1}\quad\Rightarrow\quad \boxed{\dot{t}^2=1-\frac{|\vec{p}|^2}{a^2}}\,,
 \]</div>
 <p>that is a function of <span class="math notranslate nohighlight">\(t\)</span> only.</p>
 <p>We can find a class of solutions to this equation: let us take <span class="math notranslate nohighlight">\(\dot{\vec{x}}=\vec{0}\)</span> that implies that <span class="math notranslate nohighlight">\(\vec{x}=const\)</span>. Therefore <span class="math notranslate nohighlight">\(\dot{t}^2=1\)</span> and <span class="math notranslate nohighlight">\(t=\tau\)</span>.</p>
-<p>The physical distances between observers at fixed <span class="math notranslate nohighlight">\(\vec{x}\)</span> is changing with time because <span class="math notranslate nohighlight">\(a(t)\)</span> changes with time.</p>
-<blockquote>
-<div><p>picture</p>
-</div></blockquote>
+<p>The physical distance between observers at fixed <span class="math notranslate nohighlight">\(\vec{x}\)</span> is changing with time because <span class="math notranslate nohighlight">\(a(t)\)</span> changes with time.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week9_pictures/week9_picture3.png"><img alt="Week9_pictures/week9_picture3.png" class="bg-primary mb-1 align-center" src="Week9_pictures/week9_picture3.png" style="width: 400px;" /></a>
 <p>We call these motion the <strong>Hubble flow</strong>. Anything at constant <span class="math notranslate nohighlight">\(\vec{x}\)</span> is said to be comoving with the Hubble flow.</p>
 <p>Physical distances between points are <span class="math notranslate nohighlight">\(s=a(t)x_0\)</span> and therefore</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{ds}{dt}=x_0 \frac{da}{dt}
+\frac{ds}{dt}=x_0 \frac{da}{dt}\,,
 \]</div>
 <p>where the right-hand side tells us the rate of increase of physical distance at <span class="math notranslate nohighlight">\(x_0\)</span>.</p>
 <div class="admonition note">
@@ -375,87 +378,101 @@ L=\frac{ds^2}{d\lambda^2}=-\left(\frac{dt}{d\lambda}\right)^2+a^2 \delta_{ij} \f
 </div>
 <div class="section" id="conformal-time">
 <h2><span class="section-number">9.2. </span>Conformal time<a class="headerlink" href="#conformal-time" title="Permalink to this headline">¶</a></h2>
-<p>Introduce a new time coordinate <span class="math notranslate nohighlight">\(\sigma\)</span> - <strong>conformal time</strong> such that</p>
+<p>So far: we study a spacially flat, homogeneous and isotropic cosmology with the metric:</p>
 <div class="math notranslate nohighlight">
 \[
-ds^2=a^2(-d\sigma^2+\delta_{ij}dx^idx^j)
+ds^2=-dt^2+a(t)^2(\delta_{ij}dx^idx^j)\,.
+\]</div>
+<p>Introduce a new time coordinate <span class="math notranslate nohighlight">\(\sigma\)</span> - <strong>conformal time</strong> such that this metric turns into</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2=a^2(-d\sigma^2+\delta_{ij}dx^idx^j)\,,
 \]</div>
 <p>which is just a rescaled Minkowski metric.</p>
 <p>To be more precise:</p>
 <div class="math notranslate nohighlight">
 \[
-\boxed{-dt^2=-a^2d\sigma^2}\quad\Rightarrow\quad\boxed{\int d\sigma=\int \frac{dt}{a(t)}}\quad\Rightarrow\quad \boxed{\sigma=\int \frac{dt}{a(t)}}
+\boxed{-dt^2=-a^2d\sigma^2}\quad\Rightarrow\quad\boxed{\int d\sigma=\int \frac{dt}{a(t)}}\quad\Rightarrow\quad \boxed{\sigma=\int \frac{dt}{a(t)}}\,.
 \]</div>
-<p>Null geodesics: <span class="math notranslate nohighlight">\(L=a^2(-\dot{\sigma}^2+\delta_{ij}\dot{x}^i\dot{x^j})\)</span>. Since <span class="math notranslate nohighlight">\(\frac{\partial L}{\partial x^i}=0\)</span> then <span class="math notranslate nohighlight">\(p^i=a^2 \dot{x}^i=const\)</span>. For null geodesics we have <span class="math notranslate nohighlight">\(L=0\)</span> that implies</p>
+<p>Using this new coordinate system, we can study the null geodesics by taking the Lagrangian</p>
 <div class="math notranslate nohighlight">
 \[
-\boxed{a^2(-\dot{\sigma}^2+\dot{\vec{x}}^2)=0}\quad\Rightarrow\quad\boxed{\dot{\sigma}^2=\dot{\vec{x}}^2}
+L=a^2(-\dot{\sigma}^2+\delta_{ij}\dot{x}^i\dot{x^j})\,.
 \]</div>
-<p>Without loss of generality, we can rotate coordinates <span class="math notranslate nohighlight">\(\vec{x}\)</span> such that <span class="math notranslate nohighlight">\(\vec{p}=(p,0,0)\)</span>. Then</p>
+<p>Since <span class="math notranslate nohighlight">\(\frac{\partial L}{\partial x^i}=0\)</span> then <span class="math notranslate nohighlight">\(p^i=a^2 \dot{x}^i=const\)</span>. For null geodesics we have <span class="math notranslate nohighlight">\(L=0\)</span> that implies</p>
 <div class="math notranslate nohighlight">
 \[
-\dot{x}=\frac{p}{a^2}\,,\quad \dot{y}=0\,,\quad \dot{z}=0
+\boxed{a^2(-\dot{\sigma}^2+\dot{\vec{x}}^2)=0}\quad\Rightarrow\quad\boxed{\dot{\sigma}^2=\dot{\vec{x}}^2}\,.
+\]</div>
+<p>Without loss of generality, we can rotate coordinates <span class="math notranslate nohighlight">\(\vec{x}\)</span> such that <span class="math notranslate nohighlight">\(\vec{p}=(p,0,0)\)</span>. Then the equations become</p>
+<div class="math notranslate nohighlight">
+\[
+\dot{x}=\frac{p}{a^2}\,,\quad \dot{y}=0\,,\quad \dot{z}=0\,,
 \]</div>
 <p>and from the null geodesic condition we have</p>
 <div class="math notranslate nohighlight">
 \[
-\boxed{\dot{\sigma}^2=\dot{x}^2}\quad\Rightarrow\quad \boxed{\left(\frac{\dot{\sigma}}{\dot{x}}\right)^2=1}\quad\Rightarrow\quad \boxed{\frac{d\sigma}{dx}=\pm 1}\quad\Rightarrow\quad\boxed{x=x_0\pm \sigma}
+\boxed{\dot{\sigma}^2=\dot{x}^2}\quad\Rightarrow\quad \boxed{\left(\frac{\dot{\sigma}}{\dot{x}}\right)^2=1}\quad\Rightarrow\quad \boxed{\frac{d\sigma}{dx}=\pm 1}\quad\Rightarrow\quad\boxed{x=x_0\pm \sigma}\,.
 \]</div>
 <p>This implies that <span class="math notranslate nohighlight">\(\vec{x}=(x_0\pm \sigma,y_0,z_0)=\vec{x}_0\pm \sigma \hat{p}\)</span>, where <span class="math notranslate nohighlight">\(\hat{p}\)</span> is the unit vector in direction of <span class="math notranslate nohighlight">\(\vec{p}\)</span>. Using conformal time, light rays follow <span class="math notranslate nohighlight">\(45^\circ\)</span> lines like in the Minkowski space.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week9_pictures/week9_picture4.png"><img alt="Week9_pictures/week9_picture4.png" class="bg-primary mb-1 align-center" src="Week9_pictures/week9_picture4.png" style="width: 400px;" /></a>
 <div class="section" id="cosmological-redshift">
 <h3><span class="section-number">9.2.1. </span>Cosmological redshift<a class="headerlink" href="#cosmological-redshift" title="Permalink to this headline">¶</a></h3>
-<p>What happens to the frequency of light rays as they propagate through an expanding spacetime?</p>
-<p>Consider that a galaxy at <span class="math notranslate nohighlight">\(x=x_g\)</span> sends light signals back to observer at <span class="math notranslate nohighlight">\(x=0\)</span>, as in the figure.</p>
-<blockquote>
-<div><p>picture</p>
-</div></blockquote>
+<p>Next, we want to ask what happens to the frequency of light rays as they propagate through an expanding spacetime?</p>
+<p>Consider a galaxy at <span class="math notranslate nohighlight">\(x=x_g\)</span> sending light signals back to observer at <span class="math notranslate nohighlight">\(x=0\)</span>, as in the figure.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week9_pictures/week9_picture5.png"><img alt="Week9_pictures/week9_picture5.png" class="bg-primary mb-1 align-center" src="Week9_pictures/week9_picture5.png" style="width: 400px;" /></a>
 <p>Say the proper time interval between the sending of two light signals according to the galaxy is <span class="math notranslate nohighlight">\(\Delta\tau_g\)</span>. Then we want to find the proper time interval <span class="math notranslate nohighlight">\(\Delta\tau_0\)</span> between reception of the signals (according to the observer).</p>
 <p>Proper time from observer at constant <span class="math notranslate nohighlight">\(\vec{x}\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[
-d\tau^2=-ds^2=-a(\sigma)^2(-d\sigma^2+d\vec{x}^2)=a(\sigma)^2 d\sigma^2
+d\tau^2=-ds^2=-a(\sigma)^2(-d\sigma^2+d\vec{x}^2)=a(\sigma)^2 d\sigma^2\,,
 \]</div>
-<p>for constant <span class="math notranslate nohighlight">\(\vec{x}\)</span>. We find <span class="math notranslate nohighlight">\(d\tau=a(\sigma d\sigma)\)</span> and therefore <span class="math notranslate nohighlight">\(\Delta \tau_g=a(\sigma_g)\Delta\sigma_g\)</span> and <span class="math notranslate nohighlight">\(\Delta \tau_0=a(\tau_0)\Delta\sigma_g\)</span>. This implies</p>
+<p>for constant <span class="math notranslate nohighlight">\(\vec{x}\)</span>. We find <span class="math notranslate nohighlight">\(d\tau=a(\sigma) d\sigma\)</span> and therefore <span class="math notranslate nohighlight">\(\Delta \tau_g=a(\sigma_g)\Delta\sigma_g\)</span> and <span class="math notranslate nohighlight">\(\Delta \tau_0=a(\tau_0)\Delta\sigma_g\)</span>. This implies</p>
 <div class="math notranslate nohighlight">
 \[
-\Delta\tau_0=\frac{a(\sigma_0)}{a(\sigma_g)}\Delta\tau_g
+\Delta\tau_0=\frac{a(\sigma_0)}{a(\sigma_g)}\Delta\tau_g\,.
 \]</div>
-<p>if the two null rays are two crests of a wave, so <span class="math notranslate nohighlight">\(\Delta\tau_g\)</span> is the period of the wave, then frequency (as seen by galaxy) is <span class="math notranslate nohighlight">\(\nu_g=\frac{1}{\Delta\tau_g}\)</span>. This implies</p>
+<p>If the two null rays are two crests of a wave, so <span class="math notranslate nohighlight">\(\Delta\tau_g\)</span> is the period of the wave, then frequency (as seen by galaxy) is <span class="math notranslate nohighlight">\(\nu_g=\frac{1}{\Delta\tau_g}\)</span>. This implies</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{\nu_0}{\nu_g}=\frac{a(\sigma_g)}{a(\sigma_0)}
+\frac{\nu_0}{\nu_g}=\frac{a(\sigma_g)}{a(\sigma_0)}\,.
 \]</div>
-<p>In expending universe, <span class="math notranslate nohighlight">\(a(\sigma_0)&gt;a(\sigma_g)\)</span> so <span class="math notranslate nohighlight">\(\nu_0&lt;\nu_g\)</span> and we get red shift.</p>
-<p>If we define <span class="math notranslate nohighlight">\(z=\frac{\nu_g}{\nu_0}-1=\frac{a(\sigma_0)}{a(\sigma_g)}-1=\frac{a(\sigma_0)-a(\sigma_g)}{a(\sigma_g)}\)</span> and we suppose that <span class="math notranslate nohighlight">\(\sigma_0-\sigma_g\)</span> is small. Let us introduce</p>
+<p>In expanding universe, <span class="math notranslate nohighlight">\(a(\sigma_0)&gt;a(\sigma_g)\)</span> so <span class="math notranslate nohighlight">\(\nu_0&lt;\nu_g\)</span> and we get red shift.</p>
+<p>We define</p>
 <div class="math notranslate nohighlight">
 \[
-H=\frac{1}{a}\frac{da}{dt}
+z=\frac{\nu_g}{\nu_0}-1=\frac{a(\sigma_0)}{a(\sigma_g)}-1=\frac{a(\sigma_0)-a(\sigma_g)}{a(\sigma_g)}\,,
+\]</div>
+<p>and we suppose that <span class="math notranslate nohighlight">\(\sigma_0-\sigma_g\)</span> is small. We also introduce</p>
+<div class="math notranslate nohighlight">
+\[
+H=\frac{1}{a}\frac{da}{dt}\,,
 \]</div>
 <p>where the derivative is with respect to the coordinate time and not conformal time. We can write</p>
 <div class="math notranslate nohighlight">
 \[
-H=\frac{1}{a}\frac{da}{ad\sigma}=\frac{1}{a^2}\frac{da}{d\sigma}
+H=\frac{1}{a}\frac{da}{ad\sigma}=\frac{1}{a^2}\frac{da}{d\sigma}\,.
 \]</div>
 <p>If <span class="math notranslate nohighlight">\(a(\sigma_0)\approx a(\sigma_g)\)</span> then</p>
 <div class="math notranslate nohighlight">
 \[
-a(\sigma_0)=a(\sigma_g)+(\sigma_0-\sigma_g)\frac{da}{d\sigma}\Big|_{\sigma_g}+\ldots
+a(\sigma_0)=a(\sigma_g)+(\sigma_0-\sigma_g)\frac{da}{d\sigma}\Big|_{\sigma_g}+\ldots\,.
 \]</div>
 <p>Then we have</p>
 <div class="math notranslate nohighlight">
 \[
-a(\sigma_0)-a(\sigma_g)\approx (\sigma_0-\sigma_g)\frac{da}{d\sigma}\Big|_{\sigma_g}\approx (\sigma_0-\sigma_g)a^2(\sigma_g)H(\sigma_g)
+a(\sigma_0)-a(\sigma_g)\approx (\sigma_0-\sigma_g)\frac{da}{d\sigma}\Big|_{\sigma_g}\approx (\sigma_0-\sigma_g)a^2(\sigma_g)H(\sigma_g)\,,
 \]</div>
 <p>and finally</p>
 <div class="math notranslate nohighlight">
 \[
-z=\frac{a(\sigma_0)-a(\sigma_g)}{a(\sigma_g)}\approx (\sigma_0-\sigma_g)a(\sigma_g)H(\sigma_g)=D_g H(\sigma_g)
+z=\frac{a(\sigma_0)-a(\sigma_g)}{a(\sigma_g)}\approx (\sigma_0-\sigma_g)a(\sigma_g)H(\sigma_g)=\Delta_g H(\sigma_g)\,,
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(D_g\)</span> is the physical distance to the galaxy.</p>
+<p>where <span class="math notranslate nohighlight">\(\Delta_g\)</span> is the physical distance to the galaxy.</p>
 <p>We arrive at the <strong>Hubble’s law</strong></p>
 <div class="math notranslate nohighlight">
 \[
-z\approx D_g H(\sigma_g)
+z\approx \Delta_g H(\sigma_g)\,.
 \]</div>
 </div>
 </div>

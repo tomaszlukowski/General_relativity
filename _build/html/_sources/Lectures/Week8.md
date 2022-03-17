@@ -5,7 +5,7 @@
 Let us take a look at the temporal part of the Schwarzschild metric:
 
 $$
-ds^2\sim \frac{dt^2}{1-\frac{2M}{r}}
+ds^2\sim \left(1-\frac{2M}{r}\right)dt^2\,.
 $$
 
 Since $ds^2$ has units $(length)^2$ and we need $\frac{2M}{r}$ needs to be dimensionless (since it is added to $1$), then we need to re-insert factors of $G$ and $c$ to get proper units.
@@ -23,13 +23,13 @@ We can find the Schwarzschild radius for Earth and Sun:
 - for Earth: $M=6\times 10^{24}kg$ that implies
 
 $$
-r_S=\frac{2GM}{c^2}\approx 9\times 10^{-3}m\approx 1cm
+r_S=\frac{2GM}{c^2}\approx 9\times 10^{-3}m\approx 1cm\,,
 $$
 
 - for Sun: $M=2\times 10^{30}kg$ that implies
 
 $$
-r_S=\frac{2GM}{c^2}\approx 3\times 10^{3}m\approx 3km
+r_S=\frac{2GM}{c^2}\approx 3\times 10^{3}m\approx 3km\,.
 $$
 
 ## Non-radial Schwarzschild geodesics

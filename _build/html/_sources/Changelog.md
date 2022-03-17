@@ -1,5 +1,11 @@
 # Change log
 
+## 17.03.2022
+
+- Week 9 lectures completed
+- minor changes to lectures 7-8
+- Week 10 lectures updated
+
 ## 14.03.2022
 
 - Week 8 - small changes

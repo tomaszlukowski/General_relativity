@@ -66,7 +66,7 @@ We identify $M$ with the mass of the spherically symmetric object.
 
 But it can happen that all of the matter is contained inside the two-sphere radius $r=2M$ (right figure). the solution should then remain valid right up to $r=2M$ and beyond. Clearly something interesting happens at $r=2M$ (called the **Schwarzschild radius** of the object)!
 
-- As $r\to \infty$, we have $ds^2\approx -dt^2+d\vec{x}^2$. This means that this is asymptotically flat solution. Moreover, for $r>2M$ we have $\frac{dr^2}{1-\frac{2M}{r}}>dr^2$. This means that the physical distances between spheres at $r$ and $r+\delta r$ is slightly greater than $\delta r$ (much greated as $r\to 2M$). Physical distance from $r=2M$ to $r=r_0>2M$ is finite though:
+- As $r\to \infty$, we have $ds^2\approx -dt^2+d\vec{x}^2$. This means that this is asymptotically flat solution. Moreover, for $r>2M$ we have $\frac{dr^2}{1-\frac{2M}{r}}>dr^2$. This means that the physical distances between spheres at $r$ and $r+\delta r$ is slightly greater than $\delta r$ (much greater as $r\to 2M$). Physical distance from $r=2M$ to $r=r_0>2M$ is finite though:
 
 $$
 \begin{align*}

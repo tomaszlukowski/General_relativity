@@ -55,7 +55,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="11. Week 11 (under construction)" href="Week11.html" />
-    <link rel="prev" title="9. Week 9 (under construction)" href="Week9.html" />
+    <link rel="prev" title="9. Week 9" href="Week9.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -142,7 +142,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Week9.html">
-   9. Week 9 (under construction)
+   9. Week 9
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -265,11 +265,6 @@
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-comment-on-physical-units">
-   10.4. A comment on physical units
-  </a>
- </li>
 </ul>
 
             </nav>
@@ -288,95 +283,77 @@
 <p>Consider the cosmological metric</p>
 <div class="math notranslate nohighlight">
 \[
-ds^2=a^2(-d\sigma^2+d\vec{x}^2)
+ds^2=a^2(-d\sigma^2+d\vec{x}^2)\,.
 \]</div>
 <p>Suppose the universe begins in a <em>Big Bang</em> at <span class="math notranslate nohighlight">\(\sigma=0\)</span> when <span class="math notranslate nohighlight">\(a(0)=0\)</span>. We now sit at a point <span class="math notranslate nohighlight">\(\vec{x}_0\)</span> in space at a finite value of <span class="math notranslate nohighlight">\(\sigma\)</span>. The coordinates <span class="math notranslate nohighlight">\(\vec{x}=(x,y,z)\)</span> have infinite range, i.e. <span class="math notranslate nohighlight">\(-\infty&lt;x,y,z&lt;\infty\)</span>. This means that the spatial slice of the universe at fixed <span class="math notranslate nohighlight">\(\sigma\)</span> has infinite size. But how much of the universe can we actually see? To answer this question, we must consider which parts of the universe we can have received light signals from:</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week10_pictures/week10_picture1.png"><img alt="Week10_pictures/week10_picture1.png" class="bg-primary mb-1 align-center" src="Week10_pictures/week10_picture1.png" style="width: 500px;" /></a>
 <p>Suppose we are at <span class="math notranslate nohighlight">\(\vec{x}=\vec{0}\)</span> and consider a light ray coming towards us from the positive <span class="math notranslate nohighlight">\(x\)</span>-direction.</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
-<p>At <span class="math notranslate nohighlight">\(\sigma=0\)</span> we have <span class="math notranslate nohighlight">\(x_0=\sigma_0\)</span>. Only events in the purple shaded region can possibly influence our state at <span class="math notranslate nohighlight">\(\sigma-\sigma_0\)</span>.</p>
-<blockquote>
-<div><p>picture</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week10_pictures/week10_picture2.png"><img alt="Week10_pictures/week10_picture2.png" class="bg-primary mb-1 align-center" src="Week10_pictures/week10_picture2.png" style="width: 400px;" /></a>
+<p>At <span class="math notranslate nohighlight">\(\sigma=0\)</span> we have <span class="math notranslate nohighlight">\(x_0=\sigma_0\)</span>. Only events in the purple shaded region can possibly influence our state at <span class="math notranslate nohighlight">\(\sigma=\sigma_0\)</span>.</p>
 <p>The surface in spacetime made by the paths of the red photons is called the <strong>particle horizon</strong>.</p>
 <p>At time <span class="math notranslate nohighlight">\(\sigma_0\)</span>, the particle horizon is at <span class="math notranslate nohighlight">\(|\vec{x}|=\sigma_0\)</span>.</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
-<p>The physical distance to the furthest visible object is</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week10_pictures/week10_picture3.png"><img alt="Week10_pictures/week10_picture3.png" class="bg-primary mb-1 align-center" src="Week10_pictures/week10_picture3.png" style="width: 400px;" /></a>
+<p>We can calculate the physical distance to the furthest visible object:</p>
 <div class="math notranslate nohighlight">
 \[
-\Delta s=a(\sigma_0)\Delta x=a(\sigma_0)\sigma_0
+\Delta s=a(\sigma_0)\Delta x=a(\sigma_0)\sigma_0\,.
 \]</div>
 <p>In terms of the time coordinate <span class="math notranslate nohighlight">\(t\)</span> (assuming <span class="math notranslate nohighlight">\(t=0\)</span> when <span class="math notranslate nohighlight">\(\sigma=0\)</span> and <span class="math notranslate nohighlight">\(t=t_0\)</span> when <span class="math notranslate nohighlight">\(\sigma=\sigma_0\)</span>) we have:</p>
 <div class="math notranslate nohighlight">
 \[
-\Delta s=a(\sigma_0)\int_0^{t_0}\frac{dt}{a(t)}
+\Delta s=a(\sigma_0)\int_0^{t_0}\frac{dt}{a(t)}\,.
 \]</div>
+<p>We cannot see objects that are further away than this.</p>
 </div>
 <div class="section" id="event-horizons">
 <h2><span class="section-number">10.2. </span>Event horizons<a class="headerlink" href="#event-horizons" title="Permalink to this headline">¶</a></h2>
-<p>Similarly, we can consider which events in spacetime will ever be able to influence us, if we follow a timelike geodesic path. It may be that light rays from some events will never reach us. The formal way to see this is to change coordinates such that the metric in the radial direction becomes:</p>
+<p>Similarly, we can consider which events in spacetime will ever be able to influence us, if we follow a timelike geodesic path. In particular, it may be that light rays from some events will never reach us. The formal way to see this is to change coordinates such that the metric in the radial direction becomes:</p>
 <div class="math notranslate nohighlight">
 \[
-ds^2=F(T,R)^2\left[-dT^2+dR^2\right]
+ds^2=F(T,R)^2\left[-dT^2+dR^2\right]\,,
 \]</div>
 <p>where finite ranges of <span class="math notranslate nohighlight">\(T\)</span> and <span class="math notranslate nohighlight">\(R\)</span> cover all of spacetime. This allows us to draw all of spacetime including <em>infinity</em> in the space and time directions. Also because <span class="math notranslate nohighlight">\(ds^2=0\)</span> then <span class="math notranslate nohighlight">\(-dT^2+dR^2=0\)</span>. Light rays will travel along <span class="math notranslate nohighlight">\(45^\circ\)</span> straight lines in the <span class="math notranslate nohighlight">\((T,R)\)</span>-plane.</p>
 <p>The picture of the Minkowski space is</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
-<p>At any point inside the triangle, you can draw a light ray that will intersect the path of the timelike geodesic observer at some point in the future. However, this is not generarically true.</p>
-<p>For some spacetimes, the line of <em>finite infinity</em> is spacelike. The picture becomes</p>
-<blockquote>
-<div><p>picture</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week10_pictures/week10_picture4.png"><img alt="Week10_pictures/week10_picture4.png" class="bg-primary mb-1 align-center" src="Week10_pictures/week10_picture4.png" style="width: 400px;" /></a>
+<p>At any point inside the triangle, you can draw a light ray that will intersect the path of the timelike geodesic observer at some point in the future.</p>
+<p>However, this is not generically true.</p>
+<p>For some spacetimes, the line of <em>finite infinity</em> is spacelike. In such case, the picture becomes</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week10_pictures/week10_picture5.png"><img alt="Week10_pictures/week10_picture5.png" class="bg-primary mb-1 align-center" src="Week10_pictures/week10_picture5.png" style="width: 400px;" /></a>
 <p>As signals can travel at the speed of light at most, events outside the shaded region cannot influence the observer.</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
 <p>The boundary (in spacetime) of the shaded region is called <strong>future event horizon</strong>.</p>
 <p>Similarly, the line of <em>past infinity</em> can be spacelike.</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week10_pictures/week10_picture6.png"><img alt="Week10_pictures/week10_picture6.png" class="bg-primary mb-1 align-center" src="Week10_pictures/week10_picture6.png" style="width: 400px;" /></a>
 <p>In this case the boundary of the shaded region is called a <strong>past event horizon</strong>.</p>
-<p>Note that also the lifetime of the universe is finite. In those cases <span class="math notranslate nohighlight">\(t=\pm \infty\)</span> are replaced by the finite values of <span class="math notranslate nohighlight">\(t\)</span> at the Big Bang and Big Crunch.</p>
+<p>Note that also the lifetime of the universe could be finite. In those cases <span class="math notranslate nohighlight">\(t=\pm \infty\)</span> are replaced by the finite values of <span class="math notranslate nohighlight">\(t\)</span> at the Big Bang and Big Crunch.</p>
 </div>
 <div class="section" id="examples-of-horizons">
 <h2><span class="section-number">10.3. </span>Examples of Horizons<a class="headerlink" href="#examples-of-horizons" title="Permalink to this headline">¶</a></h2>
 <p>Consider the two spacetimes (for <span class="math notranslate nohighlight">\(t&gt;0\)</span>):</p>
 <div class="math notranslate nohighlight">
 \[
-ds^2_1=-dt^2+t^2 dx^2\qquad\qquad ds_2^2=-dt^2+t^4 dx^2
+ds^2_1=-dt^2+t^2 dx^2\,,\qquad\qquad ds_2^2=-dt^2+t^4 dx^2\,.
 \]</div>
 <p>Our goal is to:</p>
 <ul class="simple">
-<li><p>find the equations of generic null geodesics and draw graphs of typical light rays</p></li>
-<li><p>deduce what horizons are present (if any)</p></li>
-<li><p>calculate what values of the conformal time <span class="math notranslate nohighlight">\(\sigma\)</span> are possible</p></li>
-<li><p>deduce what the finite picture of these spacetimes should look like</p></li>
+<li><p>find the equations of generic null geodesics and draw graphs of typical light rays,</p></li>
+<li><p>deduce what horizons are present (if any),</p></li>
+<li><p>calculate what values of the conformal time <span class="math notranslate nohighlight">\(\sigma\)</span> are possible,</p></li>
+<li><p>deduce what the finite picture of these spacetimes should look like.</p></li>
 </ul>
 <div class="section" id="null-geodesics">
 <h3><span class="section-number">10.3.1. </span>Null geodesics<a class="headerlink" href="#null-geodesics" title="Permalink to this headline">¶</a></h3>
 <p>We want to solve the equation <span class="math notranslate nohighlight">\(ds^2=0\)</span>:</p>
 <ul class="simple">
-<li><p>for <span class="math notranslate nohighlight">\(ds_1\)</span>:</p></li>
+<li><p>for the metric <span class="math notranslate nohighlight">\(ds_1\)</span>:</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[
 \boxed{-dt^2+t^2 dx^2=0}\quad\Rightarrow\quad \boxed{dt=\pm tdx}\quad\Rightarrow\quad\boxed{\pm\int dx=\int \frac{dt}{t}}\quad\Rightarrow\quad \boxed{\pm(x-x_0)=\log\frac{t}{t_0}}\quad\Rightarrow\quad \boxed{t=t_0 e^{\pm(x-x_0)}}
 \]</div>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week10_pictures/week10_picture7.png"><img alt="Week10_pictures/week10_picture7.png" class="bg-primary mb-1 align-center" src="Week10_pictures/week10_picture7.png" style="width: 400px;" /></a>
 <p>Light rays from <span class="math notranslate nohighlight">\((t_0,x_0)\)</span> can reach <span class="math notranslate nohighlight">\(x=\pm \infty\)</span> as <span class="math notranslate nohighlight">\(t\to\infty\)</span> or <span class="math notranslate nohighlight">\(t\to 0\)</span>. There are no horizons in this case.</p>
 <ul class="simple">
-<li><p>for <span class="math notranslate nohighlight">\(ds_2\)</span>:</p></li>
+<li><p>for the metric <span class="math notranslate nohighlight">\(ds_2\)</span>:</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[
@@ -385,90 +362,52 @@ ds^2_1=-dt^2+t^2 dx^2\qquad\qquad ds_2^2=-dt^2+t^4 dx^2
 <p>and finally we find</p>
 <div class="math notranslate nohighlight">
 \[
-t=\frac{1}{\frac{1}{t_0}\pm(x-x_0)}=\frac{t_0}{1\pm t_0(x-x_0)}
+t=\frac{1}{\frac{1}{t_0}\pm(x-x_0)}=\frac{t_0}{1\pm t_0(x-x_0)}\,.
 \]</div>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week10_pictures/week10_picture8.png"><img alt="Week10_pictures/week10_picture8.png" class="bg-primary mb-1 align-center" src="Week10_pictures/week10_picture8.png" style="width: 400px;" /></a>
 <p>As <span class="math notranslate nohighlight">\(x\to\pm\infty\)</span> we have <span class="math notranslate nohighlight">\(t\to 0\)</span>. For the “+” solution, the denominator is zero at <span class="math notranslate nohighlight">\((x-x_0)=-\frac{1}{t_0}\)</span>. For the “-” solution, the denominator is zero at <span class="math notranslate nohighlight">\((x-x_0)=\frac{1}{t_0}\)</span>.</p>
 <p>As <span class="math notranslate nohighlight">\(t\to 0\)</span> the light ray can reach any value of <span class="math notranslate nohighlight">\(x\)</span>. This means that there is no past horizon. As <span class="math notranslate nohighlight">\(t\to\infty\)</span>, light rays from <span class="math notranslate nohighlight">\((x_0,t_0)\)</span> are bounded to the inside <span class="math notranslate nohighlight">\(x_0-\frac{1}{t_0}&lt;x&lt;x_0+\frac{1}{t_0}\)</span>. Signals will never reach values of <span class="math notranslate nohighlight">\(x\)</span> outside this region. This means that there is a future event horizon.</p>
-<blockquote>
-<div><p>picture</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week10_pictures/week10_picture9.png"><img alt="Week10_pictures/week10_picture9.png" class="bg-primary mb-1 align-center" src="Week10_pictures/week10_picture9.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="conformal-time">
 <h3><span class="section-number">10.3.2. </span>Conformal time<a class="headerlink" href="#conformal-time" title="Permalink to this headline">¶</a></h3>
 <p>Recap: for cosmological geometries, the metric using conformal time is</p>
 <div class="math notranslate nohighlight">
 \[
-ds^2=a^2(-d\sigma^2+dx^2)
+ds^2=a^2(-d\sigma^2+dx^2)\,.
 \]</div>
 <p>For null geodesics: <span class="math notranslate nohighlight">\(ds^2=0\)</span> therefore <span class="math notranslate nohighlight">\(d\sigma=\pm dx\)</span>.</p>
 <ul class="simple">
-<li><p>for <span class="math notranslate nohighlight">\(ds_1\)</span>:</p></li>
+<li><p>for the metric <span class="math notranslate nohighlight">\(ds_1\)</span>:</p></li>
 </ul>
 <p>In this case <span class="math notranslate nohighlight">\(a(t)=t\)</span> and we find</p>
 <div class="math notranslate nohighlight">
 \[
-\int d\sigma=\int\frac{dt}{t}=\log\frac{t}{t_0}
+\int d\sigma=\int\frac{dt}{t}=\log\frac{t}{t_0}\,.
 \]</div>
 <p>Let us choose <span class="math notranslate nohighlight">\(\sigma_0\)</span> when <span class="math notranslate nohighlight">\(t_0=1\)</span>. Then</p>
 <div class="math notranslate nohighlight">
 \[
-\sigma=\log(t) \quad\Rightarrow\quad t=e^\sigma
+\sigma=\log(t) \quad\Rightarrow\quad t=e^\sigma\,.
 \]</div>
 <p>We have <span class="math notranslate nohighlight">\(0&lt;t&lt;\infty\)</span> and therefore <span class="math notranslate nohighlight">\(-\infty&lt;\sigma&lt;\infty\)</span>. The light rays in <span class="math notranslate nohighlight">\((\sigma,x)\)</span> plane are</p>
-<blockquote>
-<div><p>pictures</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week10_pictures/week10_picture10.png"><img alt="Week10_pictures/week10_picture10.png" class="bg-primary mb-1 align-center" src="Week10_pictures/week10_picture10.png" style="width: 500px;" /></a>
 <ul class="simple">
-<li><p>for <span class="math notranslate nohighlight">\(ds_2\)</span>:</p></li>
+<li><p>for the metric <span class="math notranslate nohighlight">\(ds_2\)</span>:</p></li>
 </ul>
 <p>In this case <span class="math notranslate nohighlight">\(a(t)=t^2\)</span> and thefore</p>
 <div class="math notranslate nohighlight">
 \[
-d\sigma=\frac{dt}{t^2}\quad\Rightarrow\quad \sigma-\sigma_0=\frac{1}{t_0}-\frac{1}{t}
+d\sigma=\frac{dt}{t^2}\quad\Rightarrow\quad \sigma-\sigma_0=\frac{1}{t_0}-\frac{1}{t}\,.
 \]</div>
 <p>Again, choose <span class="math notranslate nohighlight">\(\sigma_0=0\)</span> when <span class="math notranslate nohighlight">\(t_0=1\)</span>. Then</p>
 <div class="math notranslate nohighlight">
 \[
-\sigma=1-\frac{1}{t}
+\sigma=1-\frac{1}{t}\,.
 \]</div>
 <p>In this case when <span class="math notranslate nohighlight">\(0&lt;t&lt;\infty\)</span>, we get <span class="math notranslate nohighlight">\(-\infty &lt;\sigma&lt;1\)</span>.</p>
-<blockquote>
-<div><p>picture</p>
-</div></blockquote>
+<a class="bg-primary mb-1 reference internal image-reference" href="Week10_pictures/week10_picture11.png"><img alt="Week10_pictures/week10_picture11.png" class="bg-primary mb-1 align-center" src="Week10_pictures/week10_picture11.png" style="width: 500px;" /></a>
 </div>
-</div>
-<div class="section" id="a-comment-on-physical-units">
-<h2><span class="section-number">10.4. </span>A comment on physical units<a class="headerlink" href="#a-comment-on-physical-units" title="Permalink to this headline">¶</a></h2>
-<p>Let us take a look at the temporal part of the Schwarzschild metric:</p>
-<div class="math notranslate nohighlight">
-\[
-\frac{d\sigma^2}{1-\frac{2M}{r}}
-\]</div>
-<p>Since <span class="math notranslate nohighlight">\(ds^2\)</span> has units <span class="math notranslate nohighlight">\((length)^2\)</span> and we need <span class="math notranslate nohighlight">\(\frac{2M}{r}\)</span> needs to be dimensionless (since it is added to <span class="math notranslate nohighlight">\(1\)</span>), then we need to re-insert factors of <span class="math notranslate nohighlight">\(G\)</span> and <span class="math notranslate nohighlight">\(c\)</span> to get proper units.</p>
-<p>We want to find a combination <span class="math notranslate nohighlight">\(G^\alpha c^\beta \frac{M}{r}\)</span> that is dimensionless, where <span class="math notranslate nohighlight">\(M\sim (mass)\)</span> and <span class="math notranslate nohighlight">\(r\sim (lenght)\)</span>. We also have <span class="math notranslate nohighlight">\(G\sim (length)^3(mass)^{-1}(time)^{-2}\)</span> and <span class="math notranslate nohighlight">\(c\sim (length)(time)^{-1}\)</span>. We find that a dimensionless combination is <span class="math notranslate nohighlight">\(\frac{GM}{c^2 r}\)</span>.</p>
-<p>Before we defined the Schwarzschild radius <span class="math notranslate nohighlight">\(r_S=2M\)</span> in natural units. In SI units we have</p>
-<div class="math notranslate nohighlight">
-\[
-r_S=\frac{2GM}{c^2}
-\]</div>
-<p>We can find the Schwarzschild radius for Earth and Sun:</p>
-<ul class="simple">
-<li><p>for Earth: <span class="math notranslate nohighlight">\(M=6\times 10^{24}kg\)</span> that implies</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-r_S=\frac{2GM}{c^2}\approx 9\times 10^{-3}m\approx 1cm
-\]</div>
-<ul class="simple">
-<li><p>for Sun: <span class="math notranslate nohighlight">\(M=2\times 10^{30}kg\)</span> that implies</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-r_S=\frac{2GM}{c^2}\approx 3\times 10^{3}m\approx 3km
-\]</div>
 </div>
 </div>
 
@@ -501,7 +440,7 @@ r_S=\frac{2GM}{c^2}\approx 3\times 10^{3}m\approx 3km
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">9. </span>Week 9 (under construction)</p>
+            <p class="prev-next-title"><span class="section-number">9. </span>Week 9</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Week11.html" title="next page">
