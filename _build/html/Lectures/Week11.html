@@ -243,6 +243,16 @@
    11.1. The energy-momentum tensor
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#einstein-s-field-equations">
+   11.2. Einstein’s field equations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#application-cosmology-and-the-friedmann-equations">
+   11.3. Application: Cosmology and the Friedmann equations
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -261,18 +271,18 @@
 <p>Einstein’s equations are schematically:</p>
 <div class="math notranslate nohighlight">
 \[
-\textnormal{&quot;Curvature tensor&quot;=&quot;matter tensor&quot;}
+\textnormal{&quot;Curvature tensor&quot;=&quot;matter tensor&quot;.}
 \]</div>
 <p>The right-hand side is given by the energy-momentum tensor <span class="math notranslate nohighlight">\(T_{\mu\nu}\)</span>. In vacuum we have <span class="math notranslate nohighlight">\(T_{\mu\nu}=0\)</span>.</p>
 <p>The energy-momentum tensor has two important properties:</p>
 <ul class="simple">
-<li><p>it is conserved <span class="math notranslate nohighlight">\(\nabla_\mu T^{\mu\nu}=0\)</span></p></li>
-<li><p>it is symmetric <span class="math notranslate nohighlight">\(T_{\mu\nu}=T_{\nu\mu}\)</span></p></li>
+<li><p>it is conserved <span class="math notranslate nohighlight">\(\nabla_\mu T^{\mu\nu}=0\)</span>,</p></li>
+<li><p>it is symmetric <span class="math notranslate nohighlight">\(T_{\mu\nu}=T_{\nu\mu}\)</span>.</p></li>
 </ul>
 <p>The energy-momentum tensor is schematically:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-T^{\mu\nu}=\begin{pmatrix}\textnormal{Energy density }\rho&amp;\textnormal{Energy flux }\epsilon^i\\\textnormal{Momentum density }\pi^i&amp;\textnormal{Stress tensor }T^{ij}\end{pmatrix}
+T^{\mu\nu}=\begin{pmatrix}\textnormal{Energy density }\rho&amp;\textnormal{Energy flux }\epsilon^i\\\textnormal{Momentum density }\pi^i&amp;\textnormal{Stress tensor }T^{ij}\end{pmatrix}\,.
 \end{split}\]</div>
 <p>For example, consider a box full of particles, which are at rest with respect to the box, in Special Relativity in an inertial frame where the box has three-velocity <span class="math notranslate nohighlight">\(\vec{v}\)</span>.</p>
 <blockquote>
@@ -281,13 +291,143 @@ T^{\mu\nu}=\begin{pmatrix}\textnormal{Energy density }\rho&amp;\textnormal{Energ
 <p>Say there are <span class="math notranslate nohighlight">\(\mathcal{N}\)</span> particles in the box and in its rest frame it is a cube of side <span class="math notranslate nohighlight">\(L\)</span>. Let us assume that the box is moving along <span class="math notranslate nohighlight">\(x\)</span>-axis with velocity <span class="math notranslate nohighlight">\(v\)</span>. The length of the box in the <span class="math notranslate nohighlight">\(x\)</span>-direction is Lorentz contracted to <span class="math notranslate nohighlight">\(\frac{L}{\gamma}\)</span>, so its volume is <span class="math notranslate nohighlight">\(V=\frac{L}{\gamma}L^2=\frac{L^3}{\gamma}=\frac{V_\star}{\gamma}\)</span>, where <span class="math notranslate nohighlight">\(V_\star=L^3\)</span> is the volume in the rest frame. The number density (particles/unit volume) is</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{cases}n_\star=\frac{\mathcal{N}}{V_\star}&amp; \textnormal{rest frame}\\n=\frac{\mathcal{N}}{V}=\gamma n_\star&amp; \textnormal{lab frame}\end{cases}
+\begin{cases}n_\star=\frac{\mathcal{N}}{V_\star}&amp; \textnormal{rest frame,}\\n=\frac{\mathcal{N}}{V}=\gamma n_\star&amp; \textnormal{lab frame.}\end{cases}
 \end{split}\]</div>
-<p>Note that its four-velocity is <span class="math notranslate nohighlight">\(V^\mu=(\gamma,\gamma \vec{v})\)</span> so we can write <span class="math notranslate nohighlight">\(n=n_\star V^t\)</span>. If the particles have rest mass <span class="math notranslate nohighlight">\(m\)</span>, then</p>
+<p>Note that its four-velocity is <span class="math notranslate nohighlight">\(V^\mu=(\gamma,\gamma \vec{v})\)</span> so we can write <span class="math notranslate nohighlight">\(n=n_\star V^t=n_\star \gamma\)</span>. If the particles have rest mass <span class="math notranslate nohighlight">\(m\)</span>, then</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{cases}\textnormal{Energy of each particle}=m\gamma=m V^t\\\textnormal{Three-momentum of each particle}=m\gamma v^i=m V^i\end{cases}
+\begin{cases}\textnormal{Energy of each particle}=m\gamma=m V^t\,,\\\textnormal{Three-momentum of each particle}=m\gamma v^i=m V^i\,.\end{cases}
 \end{split}\]</div>
+<p>We have that <em>Energy density = (number density) x (energy of each particle)</em>, and therefore</p>
+<div class="math notranslate nohighlight">
+\[
+\rho=(n_\star V^t)(m V^t)=n_\star m V^t V^t=\rho_\star V^t V^t\,,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\rho_\star=n_\star m\)</span> is the energy (mass) density in rest frame.</p>
+<p>Similarly, the three-momentum density in the <span class="math notranslate nohighlight">\(i^{th}\)</span> direction is</p>
+<div class="math notranslate nohighlight">
+\[
+\pi^i=(n_\star V^t)(mV^i)=mn_\star V^t V^i=\rho_\star V^t V^i\,,
+\]</div>
+<p>and therefore we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}T^{tt}=\rho_\star V^t V^t\,,\\T^{it}=\rho_\star V^iV^t\,.\end{cases}
+\end{split}\]</div>
+<p>We still need to determine the stress-energy tensor <span class="math notranslate nohighlight">\(T^{ij}\)</span>. This gives the force in the <span class="math notranslate nohighlight">\(i^{th}\)</span> direction acting on a surface of normal direction <span class="math notranslate nohighlight">\(j\)</span> per unit area</p>
+<blockquote>
+<div><p>picture</p>
+</div></blockquote>
+<p>If we assume that our particles just sit there and do not interact then <span class="math notranslate nohighlight">\(T^{ij}=0\)</span>. Then in the rest frame of the box</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T^{\mu\nu}\stackrel{\star}{=}\begin{pmatrix}\rho_\star&amp;0\\0&amp;0\end{pmatrix}.
+\end{split}\]</div>
+<p>But, in the rest frame <span class="math notranslate nohighlight">\(V^\mu\stackrel{\star}{=}(1,\vec{0})\)</span> so</p>
+<div class="math notranslate nohighlight">
+\[
+T^{\mu\nu}\stackrel{\star}{=}\rho_\star V^\mu V^\nu\,.
+\]</div>
+<p>This is a tensor equation and threfore it is valid in any coordinate system.</p>
+<p>Another possibility is a <strong>perfect fluid</strong>, characterised by <strong>energy density <span class="math notranslate nohighlight">\(\rho\)</span></strong> and <strong>pressure <span class="math notranslate nohighlight">\(p\)</span></strong>. Pressure always acts normal to the surface it presses on and is isotropic so <span class="math notranslate nohighlight">\(T^{ij}=p\,\delta^{ij}\)</span>. So, in the rest frame</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T^{\mu\nu}\stackrel{\star}{=}\begin{pmatrix}\rho_\star&amp;0\\0&amp;p\,\delta^{ij}\end{pmatrix},
+\end{split}\]</div>
+<p>and we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+V^\mu V^\nu\stackrel{\star}{=}\begin{pmatrix}1&amp;0\\0&amp;0\end{pmatrix},\qquad \eta^{\mu\nu}=\begin{pmatrix}-1&amp;0\\0&amp;\delta^{ij}\end{pmatrix},
+\end{split}\]</div>
+<p>so</p>
+<div class="math notranslate nohighlight">
+\[
+T^{\mu\nu}\stackrel{\star}{=}(\rho_\star+p)V^\mu V^\nu+p\,\eta^{\mu\nu}\,.
+\]</div>
+<p>This is a tensor equations (in Special Relativity).</p>
+<p>In General Relativity, we can always describe our system in a local inertial frame and get the same equation as above. Therefore in any coordinate system we have</p>
+<div class="math notranslate nohighlight">
+\[
+T^{\mu\nu}=(\rho_\star+p)V^{\mu}V^\nu+p\,g^{\mu\nu}\,,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(V^\mu (x)\)</span> is the four-velocity field of the fluid.</p>
+<p>In Special Relativity, the equations <span class="math notranslate nohighlight">\(\partial_\mu T^{\mu\nu}=0\)</span> directly become the standard equations for the conservation of energy and momentum in a perfect fluid.</p>
+<p>In General Relativity we impose “local conservation” <span class="math notranslate nohighlight">\(\nabla_\mu T^{\mu\nu}=0\)</span>. This reduces to <span class="math notranslate nohighlight">\(\partial_\mu T^{\mu\nu}\stackrel{\star}{=}0\)</span> in a local inertial frame. However, the energy of matter is <strong>not</strong> conserved in the usual sense in dynamical (non-static) spacetimes. For example, photons undergo <strong>red shift</strong> in expanding cosmological spacetimes and this decreases their energy (since <span class="math notranslate nohighlight">\(E=\hbar \nu\)</span>)!</p>
+</div>
+<div class="section" id="einstein-s-field-equations">
+<h2><span class="section-number">11.2. </span>Einstein’s field equations<a class="headerlink" href="#einstein-s-field-equations" title="Permalink to this headline">¶</a></h2>
+<p>We want the field equations to be</p>
+<ul class="simple">
+<li><p>second order in derivatives of <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> (like <span class="math notranslate nohighlight">\(\nabla^2\phi=4\pi G\rho\)</span>),</p></li>
+<li><p>tensor equations (since only tensor quantities are <em>physical</em>),</p></li>
+<li><p>reduce to <span class="math notranslate nohighlight">\(R_\mu\nu=0\)</span> in vacuum.</p></li>
+</ul>
+<p>This leaves us with the following ansatz for the Einstein’s equation in the presence of matter:</p>
+<div class="math notranslate nohighlight">
+\[
+R_{\mu\nu}+c_1 R g_{\mu\nu}=c_2 T_{\mu\nu}\,,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(c_1\)</span> and <span class="math notranslate nohighlight">\(c_2\)</span> are constants.</p>
+<p>To fix <span class="math notranslate nohighlight">\(c_1\)</span> we use local conservation <span class="math notranslate nohighlight">\(\nabla_\mu T^{\mu\nu}=0\)</span>. before, we showed that for any metric <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> we have the identity <span class="math notranslate nohighlight">\(\nabla_\mu G^{\mu\nu}=0\)</span>, where <span class="math notranslate nohighlight">\(G^{\mu\nu}=R^{\mu\nu}-\frac{1}{2}g^{\mu\nu}R\)</span>. This implies that <span class="math notranslate nohighlight">\(c_1=\frac{1}{2}\)</span>.</p>
+<p>To fix <span class="math notranslate nohighlight">\(c_2\)</span> we require the consistency with Newtonian gravity in the non-relativistic limit. In this limit, we have a weak field <span class="math notranslate nohighlight">\(\phi(\vec{x})\)</span> and low velocity <span class="math notranslate nohighlight">\(|\vec{v}|\ll 1\)</span>, and the metric reduces to</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2=-(1+2\phi)dt^2+(1-2\phi)d\vec{x}^2\,.
+\]</div>
+<p>For non-relativistic matter, <span class="math notranslate nohighlight">\(|\vec{v}|\ll 1\)</span>, the rest mass energy <span class="math notranslate nohighlight">\(\rho(\vec{x})\)</span> dominates over kinetic energy <span class="math notranslate nohighlight">\(\rho |\vec{v}|^2\)</span> or potential energy <span class="math notranslate nohighlight">\(\rho \phi\)</span>, or pressure <span class="math notranslate nohighlight">\(p\)</span>. Therefore <span class="math notranslate nohighlight">\(T^{\mu\nu}=\rho V^\mu V^\nu\)</span> with <span class="math notranslate nohighlight">\(V^\mu=(1,\vec{0})\)</span>. In particular, <span class="math notranslate nohighlight">\(T^{tt}=\rho\)</span>. For the Newtonian limit metric, we have</p>
+<div class="math notranslate nohighlight">
+\[
+G^{tt}=2\partial^i\partial_i\phi=2\nabla^2\phi\,,
+\]</div>
+<p>so the <span class="math notranslate nohighlight">\(tt\)</span>-component of Einstein eqution becomes</p>
+<div class="math notranslate nohighlight">
+\[
+2\partial^i\partial_i\phi=c_2 \rho\,.
+\]</div>
+<p>But, Newtonian gravity has <span class="math notranslate nohighlight">\(\partial^i\partial_i \phi=4\pi G\rho\)</span>, that implies <span class="math notranslate nohighlight">\(c_2=8\pi G\)</span>. We finally arrive at the Einstein’s equation</p>
+<div class="math notranslate nohighlight">
+\[
+G_{\mu\nu}=8\pi GT_{\mu\nu}\,.
+\]</div>
+<p>This gives the relationship between the curvature of spacetime and the distribution of matter/energy in that spacetime.</p>
+<p>Comments:</p>
+<ul class="simple">
+<li><p>Einstein’s equations provide 10 partial differential equations for <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> which are non-linear, and therefore much harder to solve than for example Maxwell’s equations,</p></li>
+<li><p>only six equations are independent. This comes from the fact that there are four Bianchi identities <span class="math notranslate nohighlight">\(\nabla_\mu G^{\mu\nu}=0\)</span>,</p></li>
+<li><p>in a vacuum <span class="math notranslate nohighlight">\(T_{\mu\nu}=0\)</span> so <span class="math notranslate nohighlight">\(G_{\mu\nu}=0\)</span>. This implies that</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R=0\quad\Rightarrow\quad g^{\lambda\mu}(R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R)=0\quad \Rightarrow \quad R^{\lambda}_{\,\,\,\nu}-\frac{1}{2}\delta^\lambda_{\,\,\,\nu}R=0\,,
+\]</div>
+<p>and we can contract the last equality to get</p>
+<div class="math notranslate nohighlight">
+\[
+R^\lambda_{\,\,\,\lambda}-\frac{1}{2}\delta^\lambda_{\,\,\,\lambda}R=R-\frac{1}{2}4R=-R=0\,.
+\]</div>
+<p>This implies that <span class="math notranslate nohighlight">\(R_{\mu\nu}=0\)</span>, as required in vacuum.</p>
+</div>
+<div class="section" id="application-cosmology-and-the-friedmann-equations">
+<h2><span class="section-number">11.3. </span>Application: Cosmology and the Friedmann equations<a class="headerlink" href="#application-cosmology-and-the-friedmann-equations" title="Permalink to this headline">¶</a></h2>
+<p>The general homogeneous and isotropic universe has</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2=-dt^2+a(t)^2\left[\frac{dr^2}{1-kr^2}+r^2(d\theta^2+\sin^2\theta d\phi^2)\right]\,,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(k=0\)</span> or <span class="math notranslate nohighlight">\(k=\pm 1\)</span> for flat or positive or negative spatial curvature solutions.</p>
+<p>A homogeneous and isotropic perfect fluid has</p>
+<div class="math notranslate nohighlight">
+\[
+T^{\mu\nu}=(\rho+p)U^\mu U^\nu+p\,g^{\mu\nu}\,,
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(U^\mu=(1,\vec{0})\)</span> and <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(\rho\)</span> depending only on <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<p>We can put these into the Einstein equation. A long calculation reveals that <span class="math notranslate nohighlight">\(G_{tt}=\frac{3}{a^2}(\dot{a}^2+k)\)</span> so <span class="math notranslate nohighlight">\(G_{tt}=8\pi GT_{tt}=8\pi G\rho\)</span> becomes</p>
+<div class="math notranslate nohighlight">
+\[
+\left(\frac{\dot{a}}{a}\right)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2}\,.
+\]</div>
+<p>This is the Friedmann equation which you may have seen in other modules.</p>
+<p>It can be solved to find the scale factor <span class="math notranslate nohighlight">\(a(t)\)</span> given assumptions about the matter content of the universe (which relate the density <span class="math notranslate nohighlight">\(\rho\)</span> to the pressure <span class="math notranslate nohighlight">\(p\)</span>).</p>
 </div>
 </div>
 
