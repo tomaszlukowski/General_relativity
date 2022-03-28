@@ -1,5 +1,10 @@
 # Change log
 
+## 28.03.2022
+
+- Week 10 completed
+- Week 11 completed
+
 ## 17.03.2022
 
 - Week 9 lectures completed

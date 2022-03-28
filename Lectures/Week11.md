@@ -1,4 +1,4 @@
-# Week 11 (under construction)
+# Week 11
 
 ## The energy-momentum tensor
 

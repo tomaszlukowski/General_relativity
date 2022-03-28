@@ -1,4 +1,4 @@
-# Week 10 (under construction)
+# Week 10
 
 ## Cosmological Horizons
 

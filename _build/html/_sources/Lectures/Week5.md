@@ -76,7 +76,7 @@ If we choose $2\gamma_{(\mu\nu)\lambda}=-\frac{\partial}{\partial x'^\lambda}g_{
 
 ## Riemann tensor in LIC
 
-Working in LIC, we will use the symbol $\stackrel{\star}{=}$ to mean 'true in LIC at $x=0$', where $x=0$ at point $p$. For example $g_{\mu\nu}\stackrel{\star}{=}\eta_{\mu\nu}$, $\partial_\lambda g_{\mu\nu}\stackrel{\star}{=}0$, $\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}\stackrel{\star}{=}0$, but $\partial_\mu\partial_\nu g_{\lambda\kappa}\not\stackrel{\star}{=}0$ in general. We then have
+Working in LIC, we will use the symbol $\stackrel{\star}{=}$ to mean 'true in LIC at $x'=0$, where $x=0$ at point $p$. For example $g_{\mu\nu}\stackrel{\star}{=}\eta_{\mu\nu}$, $\partial_\lambda g_{\mu\nu}\stackrel{\star}{=}0$, $\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}\stackrel{\star}{=}0$, but $\partial_\mu\partial_\nu g_{\lambda\kappa}\not\stackrel{\star}{=}0$ in general. We then have
 
 $$
 R_{\mu\nu\,\,\,\kappa}^{\,\,\,\,\,\,\lambda}=\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\lambda}-\partial_\nu \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\lambda}+ \Gamma_{\mu\,\,\,\rho}^{\,\,\,\lambda} \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\rho}-\Gamma_{\nu\,\,\,\rho}^{\,\,\,\lambda} \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\rho}\stackrel{\star}{=}\partial_\mu \Gamma_{\nu\,\,\,\kappa}^{\,\,\,\lambda}-\partial_\nu \Gamma_{\mu\,\,\,\kappa}^{\,\,\,\lambda}\,.
