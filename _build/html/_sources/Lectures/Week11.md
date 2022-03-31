@@ -22,7 +22,11 @@ $$
 
 For example, consider a box full of particles, which are at rest with respect to the box, in Special Relativity in an inertial frame where the box has three-velocity $\vec{v}$.
 
->pictures
+```{image} ../Week11_pictures/week11_picture1.png
+:class: bg-primary mb-1
+:width: 500px
+:align: center
+```
 
 Say there are $\mathcal{N}$ particles in the box and in its rest frame it is a cube of side $L$. Let us assume that the box is moving along $x$-axis with velocity $v$. The length of the box in the $x$-direction is Lorentz contracted to $\frac{L}{\gamma}$, so its volume is $V=\frac{L}{\gamma}L^2=\frac{L^3}{\gamma}=\frac{V_\star}{\gamma}$, where $V_\star=L^3$ is the volume in the rest frame. The number density (particles/unit volume) is
 
@@ -58,7 +62,11 @@ $$
 
 We still need to determine the stress-energy tensor $T^{ij}$. This gives the force in the $i^{th}$ direction acting on a surface of normal direction $j$ per unit area
 
->picture
+```{image} ../Week11_pictures/week11_picture2.png
+:class: bg-primary mb-1
+:width: 500px
+:align: center
+```
 
 If we assume that our particles just sit there and do not interact then $T^{ij}=0$. Then in the rest frame of the box
 

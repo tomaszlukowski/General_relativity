@@ -351,8 +351,8 @@ $$
 ```
 Note that the covector field transform with the inverse of the matrix for the vectors. With these definitions, the contraction $v^\mu\omega_\mu$ is invariant: $v'^\mu\omega'_{\mu}=v^\mu\omega_\mu$, it is a scalar field.
 
-```{admonition}
-A scalar field is a well-defined function with no trnsformation, namely
+```{admonition} Scalar 
+A scalar field is a well-defined function with no transformation, namely
 
 $$
 \phi'(x')=\phi(x)
