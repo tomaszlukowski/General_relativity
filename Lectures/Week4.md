@@ -79,7 +79,7 @@ In all these expression, $\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}$ is a **connecti
 
 Check that $\nabla_{\mu} \delta^\nu_{\,\,\,\lambda}=0$.
 ```
-It is important to note that $\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}$ in **not** a tensor!
+It is important to note that $\Gamma_{\mu\,\,\,\lambda}^{\,\,\,\nu}$ is **not** a tensor!
 
 ## Christoffel symbols
 
